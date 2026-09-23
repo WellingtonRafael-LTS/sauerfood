@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*secao de detalhes e diferenciais*/
+
+.section-paddingFeatures-section {
+  background-color: #1f2024;
+  color: #f0f0f2;
+  width: 100vw;
+  height: 90vh;
+}
+
+.textoDetalhes {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 30px;
+  padding: 30px;
+  gap: 20px;
+}
+
+.SubTitleGray {
+  color: #b0b3b8;
+  padding: 20px;
+
+  font-size: larger;
+}
+.textoAmarelo {
+  color: #8c734b;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100vw;
+  gap: 35px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #212126;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 25px;
+  width: 300px;
+}
+
+.grid-card {
+  height: 240px;
+  align-items: center;
+}
+
+.feature-item h3 {
+  margin-top: 10px;
+  padding: 0px 10px 20px 0px;
+}
+
+.SubTitleCard {
+  color: #b0b3b8;
+}
+
+.imagemDetalhes {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/*secao da jornada do sabor */
+
+.section-padding-Sabor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2024;
+  color: #f0f0f2;
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 20px;
+  border-top: 1px solid rgba(192, 192, 192, 0.2);
+  border-bottom: 1px solid rgba(192, 192, 192, 0.2);
+}
+
+.ajustes {
+  display: flex;
+  gap: 60px;
+  width: 100%;
+  max-width: 1100px;
+  align-items: center;
+}
+
+.containerSplit-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.split-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.split-text > p {
+  color: #b0b3b8;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.step-item {
+  margin-top: 20px;
+  width: 100%;
+  border-left: 2px solid #8c734b;
+  padding-left: 15px;
+}
+
+.textNumber {
+  color: #8c734b;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.step-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.step-item p {
+  color: #b0b3b8;
+  font-size: 0.9rem;
+}
+
+.split-image {
+  flex: 1;
+  height: 550px;
+}
+
+.split-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
