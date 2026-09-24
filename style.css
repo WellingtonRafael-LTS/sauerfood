@@ -4,6 +4,158 @@
   box-sizing: border-box;
 }
 
+/*secao de tecnicas de inicio*/
+
+#section-1 {
+    width: 100%;
+    padding: 100px 8%;
+    box-sizing: border-box;
+    background-color: #212126;
+    color: white;
+}
+
+#container-section-1 {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+#text-section-1 {
+    width: 50%;
+}
+
+#text-section-1 > p:first-child {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #8c734b;
+}
+
+#text-section-1 h2 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+#text-section-1 hr {
+    width: 70px;
+    margin: 25px 0;
+    margin-left: 0;
+    background:#8c734b;
+}
+
+#text-section-1 > p:nth-of-type(2) {
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+/* =========================
+   ESTATÍSTICAS
+========================= */
+
+#text-statistic-section-1 {
+    display: flex;
+    gap: 70px;
+    margin: 40px 0;
+}
+
+#text-statistic-section-1 > div p:first-child {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: #8c734b;
+}
+
+#text-statistic-section-1 > div p:last-child {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+/* =========================
+   FRASE
+========================= */
+
+#commit-section-1 {
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+#section-1 .btn-outline {
+    display: inline-block;
+    padding: 14px 28px;
+    text-decoration: none;
+    background: transparent;
+    color: #8c734b;
+    font-weight: bold;
+    border: solid 2px;
+    border-color: #8c734b;
+}
+
+/* =========================
+   IMAGENS
+========================= */
+
+#images-section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 12px;
+}
+
+#images-horizontal-section-1 {
+    display: flex;
+    gap: 12px;
+}
+
+#images-section-1 img {
+    display: block;
+    object-fit: cover;
+}
+
+#images-horizontal-section-1 img {
+    width: calc(50% - 6px);
+    aspect-ratio: 1 / 1;
+}
+
+#images-section-1 > img {
+    width: 100%;
+    aspect-ratio: 2.1 / 1;
+}
+/*#container-section-1{
+  display: flex;
+}
+
+#text-section-1{
+  display: flex;
+  flex-direction: column;
+}
+
+#images-section-1{
+  display: flex;
+  flex-direction: column;
+
+  img{
+    width: 100px;
+  }
+}
+
+#images-horizontal-section-1{
+  display: flex;
+}*/
+
 /*secao de detalhes e diferenciais*/
 
 .section-paddingFeatures-section {
