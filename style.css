@@ -304,3 +304,238 @@
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
+
+/*secao churrasco*/
+.body-churrasco {
+  font-family: "Montserrat", sans-serif;
+  background: #272525;
+  color:white;
+
+}
+
+.churrasco {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  flex-direction: row-reverse;
+}
+
+
+.churrasco-imagem {
+  flex: 1;
+  margin-bottom: 20px;
+
+}
+
+.churrasco-imagem img {
+  display: flex;
+  width: 400px;
+  height: auto;
+  
+}
+
+
+.churrasco-conteudo {
+  flex: 1;
+  
+}
+
+.churrasco-titulo {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;/*por no geral talvez*/
+  margin-bottom: 22px;
+  justify-content: center;
+  
+}
+
+.churrasco-texto {
+  font-size: 25px;  /*por no geral talvez*/ 
+  line-height: 1.3; /*por no geral talvez*/
+  letter-spacing:2px;
+  color:rgb(190, 189, 189);
+  margin-bottom: 22px;
+
+}
+
+.saber-mais-churrasco {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #1e1e1e;
+  color: #afa11a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px 32px;
+  border: 1px solid #afa11a
+  
+}
+
+.saber-mais-churrasco::after {
+  content: "→";
+}
+
+.saber-mais-churrasco:hover {
+  background: #444;
+}
+
+/*secao coffe*/
+.body-coffe {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  color: #333;
+
+}
+
+.coffe {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+ 
+}
+
+
+.coffe-imagem {
+  flex: 1;
+  margin-bottom: 20px;
+
+}
+
+.coffe-imagem img {
+  display: flex;
+  width: 400px;
+  height: auto;
+  
+}
+
+
+.coffe-conteudo {
+  flex: 1;
+  
+}
+
+.coffe-titulo {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;/*por no geral talvez*/
+  margin-bottom: 22px;
+  justify-content: center;
+  
+
+}
+
+.coffe-texto {
+  font-size: 25px;  /*por no geral talvez*/
+  letter-spacing:2px;
+  line-height:1.3; /*por no geral talvez*/
+  color: #333333;
+  margin-bottom: 22px;
+  
+}
+
+.saber-mais-coffe {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #1e1e1e;
+  color: #afa11a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px 32px;
+  
+}
+
+.saber-mais-coffe::after{
+  content: "→";
+}
+
+.saber-mais-coffe:hover {
+  background: #444;
+}
+
+/*secao finger*/
+.body-finger {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  color: #333;
+
+}
+
+.finger-food {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+}
+
+
+.finger-food-imagem {
+  flex: 1;
+  margin-bottom: 20px;
+
+}
+
+.finger-food-imagem img {
+  display: flex;
+  width: 400px;
+  height: auto;
+  
+}
+
+
+.finger-food-conteudo {
+  flex: 1;
+  
+}
+
+.finger-food-titulo {
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;/*por no geral talvez*/
+  margin-bottom: 22px;
+  justify-content: center;
+  
+}
+
+.finger-food-texto {
+  font-size: 25px;  /*por no geral talvez*/ 
+  line-height: 1.3; /*por no geral talvez*/
+  letter-spacing:2px;
+  color: #333333;
+  margin-bottom: 22px;
+
+}
+
+.saber-mais-finger {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #1e1e1e;
+  color: #afa11a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px 32px;
+  
+}
+
+.saber-mais-finger::after {
+  content: "→";
+}
+
+.saber-mais-finger:hover {
+  background: #444;
+}
