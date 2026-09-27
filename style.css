@@ -74,6 +74,44 @@ header{
   padding: 5px;
   font-size: 0.9rem;
 }
+/*hero*/
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: /*linear-gradient(rgba(31, 32, 36, 0.6), var(--preto)),*/
+  url('assets/carne.png') center/cover fixed no-repeat
+  /*padding: 120px 20px 40px;*/
+}
+
+.hero .container { /*isando o comportamento desse contanier somente pro hero (mudei especificamente somente as propriedades que devem ser contidas aqui)*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left
+}
+
+.hero h1 {
+  margin-bottom: 24px;
+  font-family: Cormorant Garamond;
+  font-size: 80px;
+  line-height: 88px;
+  font-weight: 500;
+  text-shadow: 0px 4px 12px #00000099;
+  color: #FFFFFFFF;
+}
+
+.hero p {
+  margin-bottom: 24px;
+  clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.5;
+  color: var(--texto-claro);
+  max-width: 700px;
+}
+/*ate aqui wellington*/
 
 /*secao de tecnicas de inicio*/
 
