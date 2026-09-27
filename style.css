@@ -87,11 +87,36 @@ header{
   /*padding: 120px 20px 40px;*/
 }
 
-.hero .container { /*isando o comportamento desse contanier somente pro hero (mudei especificamente somente as propriedades que devem ser contidas aqui)*/
+.hero .container { /*usando o comportamento desse contanier somente pro hero (mudei especificamente somente as propriedades que devem ser contidas aqui)*/
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: left
+}
+
+.tagline{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  transform: translateY(20px);
+}
+
+.line {
+  width: 35px;
+  height: 1px;
+  background-color: #C9A24BFF;
+  /*transform: translateY(-12px);*/
+}
+
+.hero .linename{
+  color: #C9A24BFF;
+  font-size: 0.55rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1;
 }
 
 .hero h1 {
@@ -102,6 +127,14 @@ header{
   font-weight: 500;
   text-shadow: 0px 4px 12px #00000099;
   color: #FFFFFFFF;
+  /*animate__fadeInLeft: pesquisar sobre essa animacao que peguei no https://animate.style/*/
+}
+
+.hero h1 .destaque {
+  display: inline-block;
+  font-family: "Rage Italic";
+  color: #C9A24BFF;
+
 }
 
 .hero p {
