@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sauer Food</title>
 </head>
+
 <body>
 
-<!-- navbar -->
 <header>
     <div class="container">
-        <a href="#" class="logo">Sauer Food</a>
-        <nav>
-            <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">SERVICOS</a></li>
-                <li><a href="#">EVENTOS</a></li>
-                <li><a href="#">SOBRE</a></li>
-                <li><a href="#">CONTATO</a></li>
+
+        <a href="#inicio" class="logo">
+            <img src="assets/logo_sem_fundo_256_256px.png.png" alt="">
+        </a>
+
+        <!--<h1 class="titulo">Sauer</h1>
+        <h2 class="subtitulo">Food</h2> em ideia-->
+
+        <nav class="navbar" aria-label="Navegação principal">
+            <ul class="menu">
+                <li class="menu-item"><a href="#inicio">Início</a></li>
+                <li class="menu-item"><a href="#servicos">Serviços</a></li>
+                <li class="menu-item"><a href="#eventos">Eventos</a></li>
+                <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                <li class="menu-item"><a href="#contato">Contato</a></li>
+                <li class="menu-item idiomas">
+                    <a href="#pt">PT</a>
+                    <a href="#es">ES</a>
+                    <a href="#en">EN</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -27,11 +43,19 @@
 <!-- secao do hero da pagina -->
 <section class="hero">
     <div class="container">
-        <h1>Onde o sabor transforma a <br>Sua Celebração</h1>
-        <p>Experiências gastronômicas exclusivas e sob medida. Unimos técnica, ingredientes selecionados e o domínio do fogo para transformar cada evento em uma experiência única e inesquecível.</p>
-        <div class="hero-buttons">
-            <a href="#" class="btn btn-gold">SOLICITAR ORCAMENTO</a>
-            <a href="#" class="btn btn-outline">EXPLORAR CARDAPIOS</a>
+        <div class="hero-content">
+            <div class="tagline">
+                <span class="line"></span>
+                <p class="linename">Muito além do sabor</p>
+            </div>
+            <h1>Onde o sabor transforma a
+                <span class="destaque">Sua Celebração</span>
+            </h1>
+            <p>Experiências gastronômicas exclusivas e sob medida. Unimos técnica, ingredientes selecionados e o domínio do fogo para transformar cada evento em uma experiência única e inesquecível.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-gold">SOLICITAR ORCAMENTO</a>
+                <a href="#" class="btn btn-outline">EXPLORAR CARDAPIOS</a>
+            </div>
         </div>
     </div>
 </section>
