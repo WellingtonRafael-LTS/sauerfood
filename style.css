@@ -145,7 +145,6 @@ header{
 
 .hero p {
   margin-bottom: 24px;
-  clamp(1rem, 1.5vw, 1.2rem);
   line-height: 1.5;
   color: var(--texto-claro);
   max-width: 700px;
@@ -665,4 +664,125 @@ header{
 
 .saber-mais-finger:hover {
   background: #444;
+}
+
+/*secao de reservas*/
+
+#section-reserve {
+    width: 100%;
+    height: 445px;
+    background-image:linear-gradient(rgba(5, 12, 14, 0.58), rgba(5, 8, 10, 0.78));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#container-reserve {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#subtitle-reserve {
+  margin: 0 0 12px;
+  color: #c9a33e;
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+#title-reserve {
+  margin: 0;
+  color: #f2f2f2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.15;
+}
+
+#title-reserve span {
+  color: #c9a33e;
+  font-size: 28px;
+  font-style: italic;
+}
+
+#text-reserve {
+  margin: 20px 0 22px;
+  color: #b8b8b8;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+#buttons-reserve {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 52px;
+}
+
+#buttons-reserve a {
+  width: 140px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#button-budget-reserve {
+  background-color: #d1a53d;
+  color: #171717;
+}
+
+#button-consultant-reserve {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: white;
+}
+
+#button-budget-reserve:hover {
+  background-color: #e0b64f;
+}
+
+#button-consultant-reserve:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+#info-reserve {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 25px;
+}
+
+.info-reserve-item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-reserve-item img {
+  width: 11px;
+  height: 11px;
+  object-fit: contain;
+  margin-bottom: 7px;
+  filter: brightness(0) saturate(100%) invert(69%) sepia(45%) saturate(700%) hue-rotate(2deg) brightness(91%);
+}
+
+.info-reserve-item p {
+  margin: 0;
+  color: #e5e5e5;
+  font-size: 6px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
