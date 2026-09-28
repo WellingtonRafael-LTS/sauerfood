@@ -24,10 +24,11 @@ header{
 }
 
 .container {
+  gap: 510px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -42,11 +43,15 @@ header{
   width: 80px;
   height: auto;
 }
+.navbar{
+  max-width: 1200px;
+}
 
 .menu {
   display: flex;
   list-style: none;
   gap: 30px;
+  text-transform: uppercase;
 }
 
 .menu-item a{
@@ -100,6 +105,7 @@ header{
   gap: 10px;
   margin-bottom: 20px;
   transform: translateY(20px);
+
 }
 
 .line {
@@ -111,7 +117,7 @@ header{
 
 .hero .linename{
   color: #C9A24BFF;
-  font-size: 0.55rem;
+  font-size: 0.85rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 500;
