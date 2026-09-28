@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sauer Food</title>
 </head>
+
 <body>
 
-<!-- navbar -->
 <header>
     <div class="container">
-        <a href="#" class="logo">Sauer Food</a>
-        <nav>
-            <ul>
-                <li><a href="#">INICIO</a></li>
-                <li><a href="#">SERVICOS</a></li>
-                <li><a href="#">EVENTOS</a></li>
-                <li><a href="#">SOBRE</a></li>
-                <li><a href="#">CONTATO</a></li>
+
+        <a href="#inicio" class="logo">
+            <img src="assets/logo_sem_fundo_256_256px.png.png" alt="">
+        </a>
+
+        <!--<h1 class="titulo">Sauer</h1>
+        <h2 class="subtitulo">Food</h2> em ideia-->
+
+        <nav class="navbar" aria-label="Navegação principal">
+            <ul class="menu">
+                <li class="menu-item"><a href="#inicio">Início</a></li>
+                <li class="menu-item"><a href="#servicos">Serviços</a></li>
+                <li class="menu-item"><a href="#eventos">Eventos</a></li>
+                <li class="menu-item"><a href="#sobre">Sobre</a></li>
+                <li class="menu-item"><a href="#contato">Contato</a></li>
+                <li class="menu-item idiomas">
+                    <a href="#pt">PT</a>
+                    <a href="#es">ES</a>
+                    <a href="#en">EN</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -27,71 +43,126 @@
 <!-- secao do hero da pagina -->
 <section class="hero">
     <div class="container">
-        <h1>Onde o sabor transforma a <br>Sua Celebração</h1>
-        <p>Experiências gastronômicas exclusivas e sob medida. Unimos técnica, ingredientes selecionados e o domínio do fogo para transformar cada evento em uma experiência única e inesquecível.</p>
-        <div class="hero-buttons">
-            <a href="#" class="btn btn-gold">SOLICITAR ORCAMENTO</a>
-            <a href="#" class="btn btn-outline">EXPLORAR CARDAPIOS</a>
+        <div class="hero-content">
+            <div class="tagline">
+                <span class="line"></span>
+                <p class="linename">Muito além do sabor</p>
+            </div>
+            <h1>Onde o sabor transforma a
+                <span class="destaque">Sua Celebração</span>
+            </h1>
+            <p>Experiências gastronômicas exclusivas e sob medida. Unimos técnica, ingredientes selecionados e o domínio do fogo para transformar cada evento em uma experiência única e inesquecível.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-gold">SOLICITAR ORCAMENTO</a>
+                <a href="#" class="btn btn-outline">EXPLORAR CARDAPIOS</a>
+            </div>
         </div>
     </div>
 </section>
 
 <!-- secao das tecnicas de inicio -->
-<section class="section-padding">
-    <div class="container split-section">
-        <div class="split-text">
+<section id="section-1">
+    <div id="container-section-1">
+        <div id="text-section-1">
+            <p>ESSÊNCIA SAUER FOOD</p>
             <h2>Unimos Técnica e Paixão</h2>
+            <hr>
             <p>Na Sauer Food, acreditamos que a excelência está nos detalhes. Técnica, ingredientes selecionados e paixão se encontram para criar uma gastronomia que vai além do prato e permanece na memória.</p>
-            <p>Um ambiente pensado para o seu conforto, combinando rusticidade, elegância e um atendimento impecável.</p>
-            <br>
-            <a href="#" class="btn btn-outline">VER TODOS OS SERVIÇOS</a>
+            <div id="text-statistic-section-1">
+                <div id="statistic-1-section-1">
+                    <p>12+</p>
+                    <p>ANOS DE MAESTRIA</p>
+                </div>
+                <div id="statistic-2-section-1">
+                    <p>500+</p>
+                    <p>EVENTOS REALIZADOS</p>
+                </div>
+            </div>
+            <p id="commit-section-1">"Acreditamos que a gastronomia tem o poder de despertar sentidos, criar conexões e dar novos significados aos momentos que compartilhamos."<br>SAUER FOOD</p>
+            <button href="#" class="btn btn-outline">VER TODOS OS SERVIÇOS</button>
         </div>
-        <div class="split-image">
-            <img src="" alt=""> <!--onde ficara preposto a imagem de INICIO-->
+        <div id="images-section-1">
+            <div id="images-horizontal-section-1">
+                <img src="img\imagem 1.png" alt="imagem 1">
+                <img src="img\imagem 2.png" alt="imagem 2">
+            </div>
+            <img src="img\imagem 3.png" alt="imagem 3">
         </div>
     </div>
 </section>
 
 <!-- secao do finger food -->
-<section class="section-padding">
-    <div class="container split-section reverse">
-        <div class="split-text">
-            <h2>Finger Food Gourmet</h2>
-            <p>Criações delicadas, pensadas para surpreender em cada detalhe. Apresentações sofisticadas, texturas marcantes e sabores que transformam coquetéis e recepções em experiências memoráveis.</p>
-            <a href="#" class="btn btn-gold">SABER MAIS</a>
-        </div>
-        <div class="split-image">
-            <img src="" alt=""> <!--onde ficara preposto a imagem de FIGER FOOD-->
-        </div>
-    </div>
+<section class="body-finger">
+  <section class="finger-food">  
+      <div class="finger-food-imagem">
+        <img src="img/FINGER.jpg" alt="Finger Food Gourmet">
+      </div>
+      
+       <div class="finger-food-conteudo">
+          <h2 class="finger-food-titulo">
+              FINGER FOOD GOURMET
+          </h2>
+
+           <p class="finger-food-texto">
+               Criações delicadas, pensadas para surpreender em cada detalhe. Apresentações sofisticadas, texturas marcantes e sabores que transformam coquetéis e recepções em experiências memoráveis.
+
+            </p>
+
+        <a href="COLOCAR AINDA " class="saber-mais-finger">
+        Saber Mais
+        </a>
+       </div>
+    </section> 
 </section>
 
 <!-- secao do churrasco -->
-<section class="section-padding">
-    <div class="container split-section reverse">
-        <div class="split-text">
-            <h2>Churrasco & FOGO</h2>
-            <p>A nossa assinatura. Cortes selecionados das melhores raças, preparados em diferentes técnicas de fogo da parrilla ao fogo de chão e à defumação. A intensidade da brasa encontra a precisão do preparo para revelar todo o potencial de cada corte.</p>
-            <a href="#" class="btn btn-gold">SABER MAIS</a>
-        </div>
-        <div class="split-image">
-            <img src="" alt=""> <!--onde ficara preposto a imagem de CHURRASCO-->
-        </div>
-    </div>
-</section>
+<section class="body-churrasco">   
+  <section class="churrasco">  
+      <div class="churrasco-imagem">
+        <img src="img/CHURRASCO.jpg" alt="Churrasco Imagem">
+      </div>
+      
+       <div class="churrasco-conteudo">
+          <h2 class="churrasco-titulo">
+              CHURRASCO & FOGO
+          </h2>
 
+           <p class="churrasco-texto">
+               A nossa assinatura. Cortes selecionados das melhores raças, preparados em diferentes técnicas de fogo da parrilla ao fogo de chão e à defumação.
+               A intensidade da brasa encontra a precisão do preparo para revelar todo potencial de cada corte.
+
+            </p>
+
+        <a href="COLOCAR AINDA " class="saber-mais-churrasco">
+        Saber Mais
+        </a>
+       </div>
+    </section> 
+      
+</section>
 <!-- secao de coffee break e brunch -->
-<section class="section-padding">
-    <div class="container split-section reverse">
-        <div class="split-text">
-            <h2>Coffee Break & Brunch</h2>
-            <p>Transformamos pausas em experiências gastronômicas. Uma seleção cuidadosamente elaborada de sabores doces e salgados, pensada para acompanhar reuniões, treinamentos, congressos e encontros corporativos com praticidade, qualidade e sofisticação.</p>
-            <a href="#" class="btn btn-gold">SABER MAIS</a>
-        </div>
-        <div class="split-image">
-            <img src="" alt=""> <!--onde ficara preposto a imagem de COFFEE BREAK-->
-        </div>
-    </div>
+<section class="body-coffe">
+    <section class="coffe">  
+      <div class="coffe-imagem">
+        <img src="img/COFFE.jpg" alt="Coffe -img">
+      </div>
+
+       <div class="coffe-conteudo">
+          <h2 class="coffe-titulo">
+              COFFE BREAK & FOGO
+          </h2>
+
+           <p class="coffe-texto">
+               Transformamos pausas em experiências gastronômicas. Uma seleção cuidadosamente elaborada de sabores doces e salgados,
+                pensado para acompanhar reuniões, treinamentos, congressos e encontros corporativos com praticidade, qualidade e sofisticação.
+
+            </p>
+
+        <a href="COLOCAR AINDA " class="saber-mais-coffe">
+        Saber Mais
+        </a>
+       </div>
+    </section>
 </section>
 
 <!-- secao de detalhes e diferenciais -->
