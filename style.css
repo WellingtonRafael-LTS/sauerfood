@@ -316,7 +316,6 @@ header{
 
 .features-grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
   width: 100vw;
@@ -331,17 +330,8 @@ header{
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   padding: 25px;
+  gap: 16px;
   width: 300px;
-}
-
-.grid-card {
-  height: 240px;
-  align-items: center;
-}
-
-.feature-item h3 {
-  margin-top: 10px;
-  padding: 0px 10px 20px 0px;
 }
 
 .SubTitleCard {
@@ -350,9 +340,7 @@ header{
 
 .imagemDetalhes {
   width: 50px;
-  height: 50px;
   display: block;
-  margin-bottom: 15px;
 }
 
 /*secao da jornada do sabor */
@@ -370,18 +358,13 @@ header{
   border-bottom: 1px solid rgba(192, 192, 192, 0.2);
 }
 
-.ajustes {
-  display: flex;
-  gap: 60px;
-  width: 100%;
-  max-width: 1100px;
-  align-items: center;
-}
+
 
 .containerSplit-section {
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .split-text h2 {
@@ -420,16 +403,18 @@ header{
 
 .split-image {
   flex: 1;
-  height: 550px;
+  padding: 10px;
+
 }
 
 .split-image img {
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 600px;
+  margin-top: 25px;
   object-fit: cover;
   border-radius: 6px;
+  border-top: 1px solid rgba(192, 192, 192, 0.2);
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /*secao churrasco*/
