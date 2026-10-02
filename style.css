@@ -28,7 +28,6 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  /*max-width: 1200px;*/
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -99,7 +98,7 @@ header{
   text-align: left
 }
 
-.tagline{
+.tagline {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -150,6 +149,7 @@ header{
   color: var(--texto-claro);
   max-width: 700px;
 }
+
 /*ate aqui wellington*/
 
 /*secao de tecnicas de inicio*/
