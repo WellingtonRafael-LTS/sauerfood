@@ -1,0 +1,71 @@
+body {
+   background-image: url(../../assets/background\ lanche.png);
+   backdrop-filter: none;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.contatos {
+   background-color: gray;
+   border: solid orange 1.5px;
+   gap: 10px;
+   padding: 10px;
+}
+
+.enderecos {
+   border: solid red 3px;
+   display: flex;
+   flex-direction: row;
+   justify-content: start;
+   align-items: center;
+   gap: 10px;
+}
+
+.caixinha {
+   border: solid pink 3px;
+   gap: -5px;
+}
+
+.sessao_4 {
+   display: flex;
+   flex-direction: column;
+   border: solid white 0.5px;
+   border-radius: 10px;
+   justify-content: center;
+   align-items: center;
+   gap: 15px;
+   padding: 10px;
+}
+
+.logos {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.icones {
+   font-size: 30px;
+   border: solid white 1px;
+   border-radius: 10px;
+   background-color: black;
+   padding: 10px;
+   transition: 0.3s;
+}
+
+.icones:hover {
+   scale: 1.03;
+}
+
+.vertical {
+   display: flex;
+   flex-direction: column;
+}
+
+.horizontal {
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+   font-size: 25px;
+}
