@@ -4,7 +4,12 @@
 }
 
 body {
+   background-image: url(../../assets/Background\ fogueira.jpg);
    background-color: black;
+   backdrop-filter: blur(10px);
+   background-image:
+   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+   url("../../assets/Background\ fogueira.jpg");
 }
 
 #main {
