@@ -145,7 +145,6 @@ header{
 
 .hero p {
   margin-bottom: 24px;
-  clamp(1rem, 1.5vw, 1.2rem);
   line-height: 1.5;
   color: var(--texto-claro);
   max-width: 700px;
@@ -316,7 +315,6 @@ header{
 
 .features-grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
   width: 100vw;
@@ -331,17 +329,8 @@ header{
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   padding: 25px;
+  gap: 16px;
   width: 300px;
-}
-
-.grid-card {
-  height: 240px;
-  align-items: center;
-}
-
-.feature-item h3 {
-  margin-top: 10px;
-  padding: 0px 10px 20px 0px;
 }
 
 .SubTitleCard {
@@ -350,9 +339,7 @@ header{
 
 .imagemDetalhes {
   width: 50px;
-  height: 50px;
   display: block;
-  margin-bottom: 15px;
 }
 
 /*secao da jornada do sabor */
@@ -370,18 +357,13 @@ header{
   border-bottom: 1px solid rgba(192, 192, 192, 0.2);
 }
 
-.ajustes {
-  display: flex;
-  gap: 60px;
-  width: 100%;
-  max-width: 1100px;
-  align-items: center;
-}
+
 
 .containerSplit-section {
   flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .split-text h2 {
@@ -420,16 +402,18 @@ header{
 
 .split-image {
   flex: 1;
-  height: 550px;
+  padding: 10px;
+
 }
 
 .split-image img {
-  width: 100%;
-  height: 100%;
+  width: 600px;
+  height: 600px;
+  margin-top: 25px;
   object-fit: cover;
   border-radius: 6px;
+  border-top: 1px solid rgba(192, 192, 192, 0.2);
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /*secao churrasco*/
@@ -665,4 +649,197 @@ header{
 
 .saber-mais-finger:hover {
   background: #444;
+}
+
+/*secao de reservas*/
+
+#section-reserve {
+    width: 100%;
+    height: 445px;
+    background-image:linear-gradient(rgba(5, 12, 14, 0.58), rgba(5, 8, 10, 0.78));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#container-reserve {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#subtitle-reserve {
+  margin: 0 0 12px;
+  color: #c9a33e;
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+#title-reserve {
+  margin: 0;
+  color: #f2f2f2;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1.15;
+}
+
+#title-reserve span {
+  color: #c9a33e;
+  font-size: 28px;
+  font-style: italic;
+}
+
+#text-reserve {
+  margin: 20px 0 22px;
+  color: #b8b8b8;
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+#buttons-reserve {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 52px;
+}
+
+#buttons-reserve a {
+  width: 140px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#button-budget-reserve {
+  background-color: #d1a53d;
+  color: #171717;
+}
+
+#button-consultant-reserve {
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  color: white;
+}
+
+#button-budget-reserve:hover {
+  background-color: #e0b64f;
+}
+
+#button-consultant-reserve:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+#info-reserve {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 25px;
+}
+
+.info-reserve-item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-reserve-item img {
+  width: 11px;
+  height: 11px;
+  object-fit: contain;
+  margin-bottom: 7px;
+  filter: brightness(0) saturate(100%) invert(69%) sepia(45%) saturate(700%) hue-rotate(2deg) brightness(91%);
+}
+
+.info-reserve-item p {
+  margin: 0;
+  color: #e5e5e5;
+  font-size: 6px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.section-padding {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #1f2024;
+  color: #f0f0f2;
+  width: 100%;
+  min-height: 100vh;
+  padding: 60px 20px;
+  border-top: 1px solid rgba(192, 192, 192, 0.2);
+  border-bottom: 1px solid rgba(192, 192, 192, 0.2);
+}
+
+.gallery-grid {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  gap: 12px;
+  justify-content: center;
+}
+
+.botao_galeria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ver_galeria_completa {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #1e1e1e;
+  color: #afa11a;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px 32px;
+  justify-content: center;
+}
+
+.citacao {
+  border: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.text_citacao {
+  font-style: italic;
+}
+
+.avaliacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.foto_avaliacao {
+  border: solid white 1px;
+  border-radius: 100px;
+}
+
+.avaliacao_grid {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
 }

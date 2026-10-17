@@ -1,0 +1,142 @@
+* {
+   color: white;
+   gap: 10px;
+}
+
+body {
+   background-image: url(../../assets/Background\ fogueira.jpg);
+   background-color: black;
+   backdrop-filter: blur(10px);
+   background-image:
+   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+   url("../../assets/Background\ fogueira.jpg");
+}
+
+#main {
+   border: none; 
+   border-radius: 10px; 
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.sessoes {
+   border: none;
+   width: 90%;
+   height: 25%;
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   padding: 10px;
+}
+
+.texto {
+   border: none;
+   width: 70%;
+   padding: 10px;
+}
+
+.imagem {
+   border: solid goldenrod 1.5px;
+   width: 30%;
+   border-radius: 10px;
+}
+
+.grid_triplo {
+   border: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: start;
+}
+
+.quadradinho {
+   border: none;
+   padding: 10px;
+   gap: 10px;
+   height: 20vh;
+   width: 33%;
+}
+
+.icon {
+   font-size: 25px;
+   color: goldenrod;
+   border: solid goldenrod 1.5px;
+   border-radius: 50px;
+   padding: 10px;
+}
+
+.sessao_3 {
+   border: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+.retangulos {
+   border: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.retangulo {
+   border: none;
+   width: 33%;
+   height: 12vh;
+   padding: 1px;
+   display: flex;
+   justify-content: start;
+   align-items: start;
+   flex-direction: column;
+}
+
+.citacao {
+   border: none;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   width: 40%;
+}
+
+.sessao_4 {
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   gap: 10px;
+   width: 70%;
+}
+
+.service_button {
+   border: solid goldenrod 1.5px;
+   background-color: transparent;
+   color: goldenrod;
+   width: 50%;
+   padding: 10px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+   transition: 0.3s;
+}
+
+.service_button:hover {
+   scale: 1.03;
+}
+
+.dourado {
+   color: goldenrod;
+}
