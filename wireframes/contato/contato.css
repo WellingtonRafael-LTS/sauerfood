@@ -7,14 +7,19 @@ body {
 }
 
 .contatos {
-   background-color: gray;
-   border: solid orange 1.5px;
-   gap: 10px;
-   padding: 10px;
+   width: 100%;
+   border: solid goldenrod 1.5px;
+   border-radius: 10px;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   background-color: rgb(0 0 0 / 0.55);
+   backdrop-filter: blur(6px);
 }
 
 .enderecos {
-   border: solid red 3px;
+   border: none;
    display: flex;
    flex-direction: row;
    justify-content: start;
@@ -23,39 +28,51 @@ body {
 }
 
 .caixinha {
-   border: solid pink 3px;
-   gap: -5px;
+   display: flex;
+   flex-direction: column;
+}
+
+.caixinha h3,
+.caixinha h4 {
+   margin: 0;
 }
 
 .sessao_4 {
    display: flex;
    flex-direction: column;
-   border: solid white 0.5px;
+   border: goldenrod solid 1.5px;
    border-radius: 10px;
    justify-content: center;
    align-items: center;
    gap: 15px;
    padding: 10px;
+   background-color: rgb(0 0 0 / 0.55);
+   backdrop-filter: blur(6px);
 }
 
 .logos {
    display: flex;
-   justify-content: center;
-   align-items: center;
    flex-direction: column;
+   align-items: center;
+   gap: 8px;
+   text-decoration: none;
+   color: white;
+   font-size: 14px;
 }
 
 .icones {
    font-size: 30px;
-   border: solid white 1px;
+   color: goldenrod;
+   border: solid goldenrod 1.5px;
    border-radius: 10px;
-   background-color: black;
    padding: 10px;
    transition: 0.3s;
 }
 
-.icones:hover {
-   scale: 1.03;
+.logos:hover .icones {
+   background-color: goldenrod;
+   color: black;
+   scale: 1.08;
 }
 
 .vertical {
@@ -66,6 +83,15 @@ body {
 .horizontal {
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
    gap: 30px;
-   font-size: 25px;
+}
+
+.final {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   width: 90%;
 }
