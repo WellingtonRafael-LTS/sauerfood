@@ -13,7 +13,7 @@ dist/
 dist-ssr/
 *.local
 
-# arquivos de ia e contexto local
+# contexto local
 .agents/
 .agents
 GEMINI.md

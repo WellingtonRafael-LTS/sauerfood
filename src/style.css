@@ -108,6 +108,7 @@ footer a:focus-visible {
     opacity: 0;
     transform: translateY(18px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -120,7 +121,7 @@ footer a:focus-visible {
   min-height: 100dvh;
   display: flex;
   align-items: center;
-  padding: 140px 0 90px;
+  padding: 380px 0 90px;
   background-color: var(--preto);
   background-image:
     linear-gradient(180deg, rgba(13, 13, 13, 0.62) 0%, rgba(13, 13, 13, 0) 22%),
@@ -147,12 +148,12 @@ footer a:focus-visible {
 .tagline {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 22px;
+  gap: 8px;
+  margin-bottom: 5px;
 }
 
 .line {
-  width: 44px;
+  width: 30px;
   height: 1px;
   background-color: var(--dourado);
 }
@@ -160,7 +161,7 @@ footer a:focus-visible {
 .hero .linename,
 .page-hero .linename {
   color: var(--dourado);
-  font-size: 0.78rem;
+  font-size: 0.60rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   font-weight: 600;
@@ -191,9 +192,9 @@ footer a:focus-visible {
 }
 
 .hero p {
-  margin-bottom: 36px;
+  margin-bottom: 10px;
   font-size: clamp(0.98rem, 1.25vw, 1.12rem);
-  line-height: 1.75;
+  line-height: 1.50;
   color: rgba(240, 240, 242, 0.86);
   max-width: 540px;
 }
@@ -360,7 +361,7 @@ footer a:focus-visible {
   flex: 1;
 }
 
-#text-section-1 > p:first-child {
+#text-section-1>p:first-child {
   font-size: 0.875rem;
   letter-spacing: 3px;
   font-weight: 700;
@@ -382,7 +383,7 @@ footer a:focus-visible {
   background: var(--dourado);
 }
 
-#text-section-1 > p:nth-of-type(2) {
+#text-section-1>p:nth-of-type(2) {
   max-width: 600px;
   line-height: 1.8;
   color: var(--texto-claro);
@@ -395,14 +396,14 @@ footer a:focus-visible {
   margin: 36px 0;
 }
 
-#text-statistic-section-1 > div p:first-child {
+#text-statistic-section-1>div p:first-child {
   font-size: 2.25rem;
   font-weight: 700;
   margin: 0;
   color: var(--dourado);
 }
 
-#text-statistic-section-1 > div p:last-child {
+#text-statistic-section-1>div p:last-child {
   font-size: 0.75rem;
   letter-spacing: 2px;
   margin-top: 5px;
@@ -439,7 +440,7 @@ footer a:focus-visible {
   aspect-ratio: 1 / 1;
 }
 
-#images-section-1 > img {
+#images-section-1>img {
   width: 100%;
   aspect-ratio: 2.1 / 1;
 }
@@ -669,7 +670,7 @@ footer a:focus-visible {
   margin-bottom: 15px;
 }
 
-.split-text > p {
+.split-text>p {
   color: var(--texto-secundario);
   margin-bottom: 30px;
   line-height: 1.6;
@@ -728,7 +729,7 @@ footer a:focus-visible {
   margin-bottom: 14px;
 }
 
-.section-padding .container > p {
+.section-padding .container>p {
   max-width: 680px;
   margin: 0 auto 40px;
   color: var(--texto-secundario);
@@ -901,10 +902,12 @@ footer hr {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55);
   }
+
   70% {
     transform: scale(1);
     box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
   }
+
   100% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
@@ -950,6 +953,7 @@ footer hr {
 }
 
 @media (max-width: 992px) {
+
   #container-section-1,
   .finger-food,
   .churrasco,
