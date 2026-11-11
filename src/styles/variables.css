@@ -1,0 +1,16 @@
+:root {
+  --preto: #0d0d0d;
+  --fundo-principal: #1f2024;
+  --fundo-secundario: #212126;
+  --dourado: #c9a24b;
+  --dourado-suave: #8c734b;
+  --off-white: #f8f6f2;
+  --texto-claro: #f0f0f2;
+  --texto-secundario: #b0b3b8;
+  --texto-escuro: #1f2024;
+  --borda-sutil: rgba(255, 255, 255, 0.08);
+  --borda-dourada: rgba(201, 162, 75, 0.25);
+  --fonte-titulo: 'Cormorant Garamond', Georgia, serif;
+  --fonte-corpo: 'Montserrat', sans-serif;
+}
+

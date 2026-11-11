@@ -6,6 +6,14 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 11/11/2026 — Modularizacao Profissional de CSS por Camadas e Paginas
+- Arquivos: `src/styles/variables.css`, `src/styles/reset.css`, `src/styles/typography.css`, `src/styles/buttons.css`, `src/styles/footer-whatsapp.css`, `src/styles/global.css`, `src/main.js`, `wireframes/wireframe.css`, `wireframes/*/index.html`, `wireframes/*/*.css`, `.agents/GEMINI.md`, `BACKLOG.md` (removido `src/style.css`).
+- Resumo:
+  - Eliminado o arquivo monolitico de 1055 linhas `src/style.css`.
+  - Criada camada de estilos globais em `src/styles/` com tokens e componentes compartilhados.
+  - Isolados estilos de cada pagina em sua respectiva pasta (`wireframes/<pagina>/<pagina>.css`), eliminando riscos de merge conflict no Git entre os membros da equipe.
+  - Atualizadas as ligacoes HTML para os novos arquivos de estilo e validado o build e lint sem erros.
+
 ### 11/11/2026 — Ajuste do .gitignore e Limpeza de Pastas Orfas
 - Arquivos: `.gitignore`, `BACKLOG.md`.
 - Resumo:
@@ -61,6 +69,7 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ### Concluido
 - [x] Setup JavaScript Modular (Vanilla JS) + Vite + ESLint sem erros
+- [x] Arquitetura de CSS modularizada (camada global em `src/styles/` e CSS isolado por pagina em `wireframes/`)
 - [x] Componente `Header.js` responsivo com transicao de scroll e barra nos idiomas
 - [x] Redirecionador leve na raiz (`/index.html`) apontando para `/wireframes/inicio/index.html`
 - [x] Arquitetura multipagina funcional entre Inicio, Servicos, Eventos, Cardapio, Sobre e Contato
@@ -69,7 +78,7 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 - [x] Configuracao do `.gitignore` para blindagem de IA e IDEs
 
 ### Em Aberto (Equipe)
-- [ ] Evoluir o conteudo interno de cada pagina em `wireframes/<pagina>/index.html` conforme divisao do Trello
+- [ ] Evoluir o conteudo interno de cada pagina em `wireframes/<pagina>/index.html` e seus respectivos `.css` conforme divisao do Trello
 - [ ] Implementar a calculadora de orcamento na pagina `cardapio` apos recebimento da tabela do cliente
 
 ### Pendente (Cliente)

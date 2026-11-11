@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fonte-titulo);
+  color: var(--off-white);
+  font-weight: 500;
+}
+
+p {
+  color: var(--texto-secundario);
+}
+
+.tagline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.line {
+  width: 30px;
+  height: 1px;
+  background-color: var(--dourado);
+}
+
+.linename {
+  color: var(--dourado);
+  font-size: 0.60rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1;
+}
+

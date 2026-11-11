@@ -1,3 +1,4 @@
+import './styles/global.css';
 import { renderHeader } from './components/header/Header.js';
 
 function mountHeader() {
@@ -10,4 +11,3 @@ if (document.readyState === 'loading') {
 } else {
   mountHeader();
 }
-
