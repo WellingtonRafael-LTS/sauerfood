@@ -1,13 +1,29 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Ignored default folder with query files
-/queries/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
-.idea
-.idea/vcs.xml
-.idea/modules.xml
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# dependencias e build
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# arquivos de ia e contexto local
+.agents/
+.agents
+GEMINI.md
+
+# editores e ide
+.vscode/
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
