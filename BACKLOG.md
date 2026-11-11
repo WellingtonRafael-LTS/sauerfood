@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 11/11/2026 — Instalacao e Validacao do Vite 8
+- Arquivos: `wireframes/wireframe.css`, `BACKLOG.md`.
+- Resumo:
+  - Instaladas as dependencias declaradas no `package-lock.json`, incluindo Vite 8.3.3.
+  - Corrigidos os caminhos das importacoes dos estilos compartilhados, que impediam o build multipagina.
+  - Validado o projeto com build de producao e lint.
+
 ### 11/11/2026 — Modularizacao Profissional de CSS por Camadas e Paginas
 - Arquivos: `src/styles/variables.css`, `src/styles/reset.css`, `src/styles/typography.css`, `src/styles/buttons.css`, `src/styles/footer-whatsapp.css`, `src/styles/global.css`, `src/main.js`, `wireframes/wireframe.css`, `wireframes/*/index.html`, `wireframes/*/*.css`, `.agents/GEMINI.md`, `BACKLOG.md` (removido `src/style.css`).
 - Resumo:
