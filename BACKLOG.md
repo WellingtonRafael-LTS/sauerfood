@@ -6,6 +6,21 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 12/11/2026 — Restauracao e Centralizacao dos Estilos de Servicos
+- Arquivos: `src/styles/sections.css`, `.agents/GEMINI.md`, `BACKLOG.md`.
+- Resumo:
+  - Adicionadas as regras de layout dos 3 servicos oficiais (.finger-food, .churrasco, .coffe e suas respectivas imagens e textos) em `src/styles/sections.css`, restaurando a apresentacao visual compartilhada entre a pagina Inicio e a pagina Servicos.
+  - Atualizado `.agents/GEMINI.md` para versao 3.2 adicionando a regra obrigatoria de sugestao de mensagem de commit (Conventional Commits) ao final de cada alteracao.
+
+### 12/11/2026 — Refatoracao Arquitetural do inicio.css e Expansao da Camada Global
+- Arquivos: `src/styles/typography.css`, `src/styles/buttons.css`, `src/styles/sections.css`, `src/styles/global.css`, `wireframes/inicio/inicio.css`, `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Extraidos mais de 230 linhas de estilos repetitivos e globais do `inicio.css` para a camada central em `src/styles/`.
+  - Criado `src/styles/sections.css` com regras compartilhadas de servicos (.body-finger, .body-churrasco, .body-coffe), testemunho e bloco de CTA final.
+  - Adicionada classe utilitaria reutilizavel `.btn-service` em `buttons.css` substituindo classes especificas isoladas.
+  - Centralizada a regra de tipografia `.destaque` em `typography.css`.
+  - `inicio.css` reduzido significativamente, focando exclusivamente na estrutura do Hero, Essencia e secoes exclusivas do inicio.
+
 ### 12/11/2026 — Redesign da Secao Essencia e Correcao de Imports CSS
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/servicos/servicos.css`, `wireframes/sobre/sobre.css`, `BACKLOG.md`.
 - Resumo:

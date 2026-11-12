@@ -8,6 +8,15 @@ p {
   color: var(--texto-secundario);
 }
 
+.destaque {
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--dourado);
+  text-shadow: 0 4px 24px rgba(201, 162, 75, 0.18);
+}
+
 .tagline {
   display: inline-flex;
   align-items: center;
@@ -30,4 +39,3 @@ p {
   margin: 0;
   line-height: 1;
 }
-
