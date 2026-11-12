@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--fonte-titulo);
   color: var(--off-white);
   font-weight: 500;
@@ -30,12 +35,13 @@ p {
   background-color: var(--dourado);
 }
 
+.tagline .linename,
 .linename {
   color: var(--dourado);
-  font-size: 0.60rem;
-  letter-spacing: 0.24em;
+  font-size: 11px;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
   line-height: 1;
 }

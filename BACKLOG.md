@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 12/11/2026 — Correcao de Especificidade na Tipografia da Tagline
+- Arquivos: `src/styles/typography.css`, `wireframes/inicio/inicio.css`, `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Blindada a especificidade do seletor `.tagline .linename` na camada global de tipografia, garantindo a aplicacao correta da cor dourada (--dourado) e espacamento de letras de 4px.
+  - Substituido seletor generico `.hero p` por `.hero-description` no `inicio.css` para eliminar vazamento de escopo (style leakage) sobre a tagline.
+  - Atualizada a imagem de fundo do Hero para `/img/churrasco_3.jpg` em desktop e mobile.
+
 ### 12/11/2026 — Restauracao e Centralizacao dos Estilos de Servicos
 - Arquivos: `src/styles/sections.css`, `.agents/GEMINI.md`, `BACKLOG.md`.
 - Resumo:
