@@ -12,6 +12,16 @@
   }
 }
 
+@keyframes heroZoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.08);
+  }
+}
+
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -26,6 +36,14 @@
   align-items: center;
   padding: 380px 0 90px;
   background-color: var(--preto);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   background-image:
     linear-gradient(180deg, rgba(13, 13, 13, 0.62) 0%, rgba(13, 13, 13, 0) 22%),
     linear-gradient(0deg, rgba(13, 13, 13, 0.88) 0%, rgba(13, 13, 13, 0) 28%),
@@ -34,9 +52,14 @@
   background-position: center, center, center, 68% center;
   background-size: cover;
   background-repeat: no-repeat;
+  transform-origin: center center;
+  animation: heroZoom 20s ease-in-out infinite alternate;
+  pointer-events: none;
 }
 
 .hero .container {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -469,9 +492,12 @@
 @media (max-width: 768px) {
   .hero {
     padding: 130px 0 70px;
+  }
+
+  .hero::before {
     background-image:
       linear-gradient(180deg, rgba(13, 13, 13, 0.72) 0%, rgba(13, 13, 13, 0.55) 55%, rgba(13, 13, 13, 0.92) 100%),
-      url('/img/carne.png');
+      url('/img/churrasco_3.jpg');
     background-position: center, 62% center;
   }
 
@@ -507,7 +533,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hero-content {
+  .hero-content,
+  .hero::before {
     animation: none;
   }
 

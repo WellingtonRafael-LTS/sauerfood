@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 12/11/2026 — Efeito de Zoom Suave no Fundo do Hero (Ken Burns)
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Isolada a imagem de fundo e os gradientes do Hero no pseudo-elemento `.hero::before` com `overflow: hidden` na secao principal.
+  - Implementada a animacao @keyframes heroZoom (20s, ease-in-out, alternate infinite de scale(1) ate scale(1.08)), afetando exclusivamente a imagem sem alterar textos, botoes ou a estrutura da pagina.
+  - Preservada acessibilidade em prefers-reduced-motion e compatibilidade responsiva no mobile.
+
 ### 12/11/2026 — Correcao de Especificidade na Tipografia da Tagline
 - Arquivos: `src/styles/typography.css`, `wireframes/inicio/inicio.css`, `wireframes/inicio/index.html`, `BACKLOG.md`.
 - Resumo:
