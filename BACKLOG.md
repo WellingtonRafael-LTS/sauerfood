@@ -6,6 +6,23 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 12/11/2026 — Refinamento Editorial da Secao Essencia e Animacao da Citacao
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Eliminados dados artificiais e imprecisos da secao (removido bloco de estatisticas nao confirmadas pelo cliente e simplificado o badge do retrato para "CHEF DA SAUER FOOD").
+  - Adicionado fundo atmosferico profundo com gradiente grafite aquecido (#121316 a #17181c), sutil overlay com malha radial e marca d'agua monumental "SAUER".
+  - Reestruturada a tipografia do lead editorial com frase de destaque com alto contraste seguida pelo texto detalhado.
+  - Implementada a animacao Gold Line Wipe Reveal na citacao oficial: crescimento vertical da linha guia dourada (@keyframes quoteLineGrow) sincronizado com abertura suave horizontal do texto (@keyframes quoteWipeReveal com clip-path).
+  - Incluida regra de acessibilidade em prefers-reduced-motion para neutralizar a animacao da citacao quando solicitado pelo usuario.
+
+### 12/11/2026 — Redesign Editorial da Secao Essencia com Retrato do Chef
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Substituida a colagem de placeholders por uma composicao editorial de alto padrao destacando a fotografia vertical do Chef (/img/chef.jpeg).
+  - Adicionada moldura geometrica dourada reativa, badge em glassmorphism translucido ("Chef & Fundador") e glow ambiente sutil.
+  - Reestruturado o lado esquerdo com tipografia integrada ao Hero (Cormorant Garamond com destaque italico dourado), manifesto sensorial, metricas de prestigio minimalistas conectadas por divisor em ouro escovado e citacao com aspas decorativas.
+  - Totalmente responsivo com adaptacao fluida para tablets e dispositivos moveis.
+
 ### 12/11/2026 — Sincronizacao Git e Correcao de Import em Eventos
 - Arquivos: `wireframes/eventos/eventos.css`, `BACKLOG.md`.
 - Resumo:
