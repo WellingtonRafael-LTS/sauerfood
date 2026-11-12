@@ -12,7 +12,6 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./inicio.css">
-    <link rel="stylesheet" href="../wireframe.css">
 </head>
 
 <body>
@@ -39,35 +38,45 @@
             </div>
         </section>
 
-        <section id="sobre">
-            <div id="container-section-1">
-                <div id="text-section-1">
-                    <p>ESSÊNCIA SAUER FOOD</p>
+        <section class="essencia-section" id="sobre">
+            <div class="container essencia-container">
+                <div class="essencia-content">
+                    <div class="tagline">
+                        <span class="line" aria-hidden="true"></span>
+                        <p class="linename">Essência Sauer Food</p>
+                    </div>
                     <h2>Unimos Técnica e Paixão</h2>
-                    <hr>
-                    <p>Na Sauer Food, acreditamos que a excelência está nos detalhes. Técnica, ingredientes selecionados
+                    <span class="essencia-divider" aria-hidden="true"></span>
+                    <p class="essencia-lead">
+                        Na Sauer Food, acreditamos que a excelência está nos detalhes. Técnica, ingredientes selecionados
                         e paixão se encontram para criar uma gastronomia que vai além do prato e permanece na memória.
                     </p>
-                    <div id="text-statistic-section-1">
-                        <div id="statistic-1-section-1">
-                            <p>12+</p>
-                            <p>ANOS DE MAESTRIA</p>
+                    <div class="essencia-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Anos de Maestria</span>
                         </div>
-                        <div id="statistic-2-section-1">
-                            <p>500+</p>
-                            <p>EVENTOS REALIZADOS</p>
+                        <div class="stat-card">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Eventos Realizados</span>
                         </div>
                     </div>
-                    <p id="commit-section-1">"Acreditamos que a gastronomia tem o poder de despertar sentidos, criar
-                        conexões e dar novos significados aos momentos que compartilhamos."<br>SAUER FOOD</p>
-                    <a href="/wireframes/servicos/index.html" class="btn btn-outline">VER TODOS OS SERVIÇOS</a>
+                    <blockquote class="essencia-quote">
+                        <p>"Acreditamos que a gastronomia tem o poder de despertar sentidos, criar conexões e dar novos significados aos momentos que compartilhamos."</p>
+                        <cite>SAUER FOOD</cite>
+                    </blockquote>
+                    <div class="essencia-actions">
+                        <a href="/wireframes/servicos/index.html" class="btn btn-outline">VER TODOS OS SERVIÇOS</a>
+                    </div>
                 </div>
-                <div id="images-section-1">
-                    <div id="images-horizontal-section-1">
+                <div class="essencia-gallery">
+                    <div class="gallery-primary">
+                        <img src="/img/imagem-3.png" alt="Espaço reservado para foto de evento atendido">
+                    </div>
+                    <div class="gallery-subgrid">
                         <img src="/img/imagem-1.png" alt="Espaço reservado para foto institucional da Sauer Food">
                         <img src="/img/imagem-2.png" alt="Espaço reservado para foto de preparo gastronômico">
                     </div>
-                    <img src="/img/imagem-3.png" alt="Espaço reservado para foto de evento atendido">
                 </div>
             </div>
         </section>

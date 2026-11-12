@@ -6,6 +6,14 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 12/11/2026 — Redesign da Secao Essencia e Correcao de Imports CSS
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/servicos/servicos.css`, `wireframes/sobre/sobre.css`, `BACKLOG.md`.
+- Resumo:
+  - Redesenhada a secao de Essencia Sauer Food na pagina Inicio: novo layout em grid com cards refinados de estatisticas (12+ anos e 500+ eventos), bloco de citacao institucional e mosaico de fotos responsivo.
+  - Corrigidos os imports de CSS nas paginas `servicos` e `sobre` para apontar para `src/styles/global.css`, eliminando o erro de arquivo inexistente `wireframe.css` que quebrava o carregamento.
+  - Removido link orfao para `wireframe.css` no cabecalho de `wireframes/inicio/index.html`.
+  - Registrada a padronizacao previa dos diretorios de CSS realizada pela equipe.
+
 ### 11/11/2026 — Instalacao e Validacao do Vite 8
 - Arquivos: `wireframes/wireframe.css`, `BACKLOG.md`.
 - Resumo:
