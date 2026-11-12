@@ -1,7 +1,5 @@
 @import '../../src/styles/global.css';
 
-@import '../wireframe.css';
-
 main,
 footer {
   font-family: var(--fonte-corpo);

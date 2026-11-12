@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 12/11/2026 — Sincronizacao Git e Correcao de Import em Eventos
+- Arquivos: `wireframes/eventos/eventos.css`, `BACKLOG.md`.
+- Resumo:
+  - Sincronizadas as alteracoes remotas da branch `feature/inicio` com rebase limpo.
+  - Removido import orfao `@import '../wireframe.css'` em `wireframes/eventos/eventos.css` que quebrava o build apos o commit do colega.
+  - Validado lint e build com 0 erros.
+
 ### 12/11/2026 — Efeito de Zoom Suave no Fundo do Hero (Ken Burns)
 - Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
