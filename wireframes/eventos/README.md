@@ -1,6 +1,6 @@
 # Especificacao da Pagina — Eventos
 
-- Responsavel: Vittor Fernando Sauer (Scrum Master)
+- Responsavel: Vittor Fernando Sauer (Dev)
 - Arquivo HTML: [`index.html`](./index.html)
 
 ## Secoes
