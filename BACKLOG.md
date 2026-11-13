@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 12/11/2026 — Padronizacao de Assinatura do Chef Alisson Sauer e Efeito de Emergencia na Linha
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Adicionada tipografia de assinatura "Alisson Sauer" em Cormorant Garamond italico dourado no badge do retrato e na citacao oficial, substituindo o texto generico SAUER FOOD.
+  - Implementado comportamento interativo no badge do retrato: a funcao "CHEF DA SAUER FOOD" surge em transicao fluida ao passar o mouse sobre o frame da imagem.
+  - Adicionadas aspas tipograficas a citacao e refinada a animacao @keyframes quoteEmergingFromLine, fazendo o texto emergir diretamente da linha vertical dourada com deslocamento horizontal e abertura por mascara de recorte.
+
 ### 12/11/2026 — Refinamento Editorial da Secao Essencia e Animacao da Citacao
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
