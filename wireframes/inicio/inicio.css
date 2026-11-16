@@ -98,8 +98,10 @@
 .essencia-section {
   width: 100%;
   padding: 140px 0;
-  background: radial-gradient(ellipse 70% 60% at 75% 30%, rgba(201, 162, 75, 0.07) 0%, rgba(201, 162, 75, 0) 65%),
-    linear-gradient(180deg, #121316 0%, #17181c 45%, #121316 100%);
+  background:
+    radial-gradient(ellipse 65% 60% at 75% 42%, rgba(201, 162, 75, 0.16) 0%, rgba(201, 162, 75, 0.04) 50%, transparent 72%),
+    radial-gradient(ellipse 50% 45% at 20% 38%, rgba(201, 162, 75, 0.06) 0%, transparent 60%),
+    linear-gradient(180deg, #111215 0%, #16171b 45%, #111215 100%);
   color: var(--texto-claro);
   border-top: 1px solid var(--borda-sutil);
   border-bottom: 1px solid var(--borda-sutil);
@@ -111,75 +113,10 @@
   position: absolute;
   inset: 0;
   background-image: radial-gradient(rgba(201, 162, 75, 0.08) 1px, transparent 1px);
-  background-size: 36px 36px;
+  background-size: 34px 34px;
   opacity: 0.35;
   pointer-events: none;
   z-index: 1;
-}
-
-.essencia-flame-backdrop {
-  position: absolute;
-  top: 50%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  width: clamp(380px, 45vw, 680px);
-  aspect-ratio: 1 / 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-  z-index: 1;
-  user-select: none;
-}
-
-.flame-ambient-glow {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(201, 162, 75, 0.14) 0%, rgba(201, 162, 75, 0.04) 45%, rgba(18, 19, 22, 0) 70%);
-  filter: blur(40px);
-  animation: flameGlowPulse 8s ease-in-out infinite alternate;
-}
-
-.flame-watermark-img {
-  width: 85%;
-  height: auto;
-  opacity: 0.065;
-  filter: drop-shadow(0 0 24px rgba(201, 162, 75, 0.25)) grayscale(10%) sepia(20%);
-  mix-blend-mode: screen;
-  animation: flameBreathe 9s ease-in-out infinite alternate;
-}
-
-@keyframes flameBreathe {
-  0% {
-    transform: scale(1) translateY(0);
-    opacity: 0.055;
-    filter: drop-shadow(0 0 16px rgba(201, 162, 75, 0.2)) grayscale(10%) sepia(20%);
-  }
-
-  50% {
-    transform: scale(1.04) translateY(-6px);
-    opacity: 0.085;
-    filter: drop-shadow(0 0 32px rgba(201, 162, 75, 0.4)) grayscale(0%) sepia(35%);
-  }
-
-  100% {
-    transform: scale(1.02) translateY(-2px);
-    opacity: 0.065;
-    filter: drop-shadow(0 0 24px rgba(201, 162, 75, 0.3)) grayscale(5%) sepia(25%);
-  }
-}
-
-@keyframes flameGlowPulse {
-  0% {
-    transform: scale(0.92);
-    opacity: 0.6;
-  }
-
-  100% {
-    transform: scale(1.08);
-    opacity: 1;
-  }
 }
 
 .essencia-container {
@@ -365,11 +302,24 @@
 
 .portrait-ambient-glow {
   position: absolute;
-  inset: -15%;
-  background: radial-gradient(circle, rgba(201, 162, 75, 0.14) 0%, rgba(201, 162, 75, 0) 70%);
-  filter: blur(28px);
+  inset: -28%;
+  background: radial-gradient(circle, rgba(201, 162, 75, 0.32) 0%, rgba(201, 162, 75, 0.12) 42%, rgba(201, 162, 75, 0) 72%);
+  filter: blur(48px);
   pointer-events: none;
   z-index: 1;
+  animation: portraitGlowPulse 6s ease-in-out infinite alternate;
+}
+
+@keyframes portraitGlowPulse {
+  0% {
+    transform: scale(0.96);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
 }
 
 .portrait-frame {
@@ -791,8 +741,7 @@
   .quote-body,
   .essencia-section.animate .quote-line,
   .essencia-section.animate .quote-body,
-  .flame-ambient-glow,
-  .flame-watermark-img {
+  .portrait-ambient-glow {
     animation: none;
   }
 

@@ -6,12 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
-### 16/11/2026 — Substituicao de Marca d'Agua por Chama Oficial Animada na Secao Essencia
+### 16/11/2026 — Intensificacao do Fade Termico Dourado Atras do Chef e Remocao da Chama
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
-  - Removido texto estatico SAUER do fundo da secao Essencia, eliminando o corte visual atras do retrato do Chef.
-  - Implementada a marca d'agua monumental com a chama oficial da Sauer Food (/img/logo_sem_fundo_256_256px.png.png) combinada a brilho termico ambiente (radial-gradient com blur e @keyframes flameGlowPulse).
-  - Adicionada animacao organica de respiracao termica da chama (@keyframes flameBreathe) com variacoes graduais de escala, elevacao e drop-shadow ambar, preservando acessibilidade em prefers-reduced-motion.
+  - Removido experimento de marca d'agua de chama no fundo da secao Essencia, mantendo layout limpo e direto.
+  - Intensificado o glow/fade dourado ambiente diretamente atras da moldura da foto do Chef (.portrait-ambient-glow com expansao para -28%, opacidade aumentada para 32%, blur de 48px e animacao @keyframes portraitGlowPulse).
+  - Alinhado degradê radial da secao para 75% 42% no quadrante do Chef, destacando a fotografia autoral.
 
 ### 16/11/2026 — Padronizacao de Formato de Commit sem Escopo
 - Arquivos: `.agents/GEMINI.md`, `BACKLOG.md`.
