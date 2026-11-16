@@ -6,6 +6,14 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 13/11/2026 — Gatilho de Animacao com IntersectionObserver na Secao Essencia
+- Arquivos: `wireframes/inicio/inicio.js`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Criado modulo JavaScript `wireframes/inicio/inicio.js` implementando `IntersectionObserver` na secao `.essencia-section`.
+  - Configurado estado inicial oculto dos elementos da citacao (.quote-line com transform scaleY(0) e opacity 0; .quote-body com clip-path e translacao negativa).
+  - A animacao de emergencia da linha e do texto passa a ser engatilhada exclusivamente quando a secao entra no campo de visao do usuario via adicao da classe `.animate`.
+  - O observador e desconectado apos o disparo unico, garantindo que o texto e a linha permaneçam fixos e visiveis sem recalculos adicionais.
+
 ### 12/11/2026 — Padronizacao de Assinatura do Chef Alisson Sauer e Efeito de Emergencia na Linha
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
