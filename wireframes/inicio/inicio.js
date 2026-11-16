@@ -1,24 +1,25 @@
 export function initEssenciaObserver() {
   const essenciaSection = document.querySelector('.essencia-section');
-  if (!essenciaSection) {
+  const triggerButton = document.querySelector('.essencia-actions .btn');
+  if (!essenciaSection || !triggerButton) {
     return;
   }
 
   const observerOptions = {
     root: null,
-    threshold: 0.35,
+    threshold: 1.0,
   };
 
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('animate');
+        essenciaSection.classList.add('animate');
         obs.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  observer.observe(essenciaSection);
+  observer.observe(triggerButton);
 }
 
 if (document.readyState === 'loading') {

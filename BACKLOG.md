@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 16/11/2026 — Sincronizacao do Gatilho da Citacao com Visibilidade Total do Botao de Acao
+- Arquivos: `wireframes/inicio/inicio.js`, `BACKLOG.md`.
+- Resumo:
+  - Ajustado o alvo do IntersectionObserver no modulo `wireframes/inicio/inicio.js`: o observador agora monitora o botao de acao (.essencia-actions .btn) com threshold 1.0 (100% visivel na tela).
+  - Garante que mesmo em rolagem lenta a animacao da linha e do texto da citacao so dispare quando todo o bloco da secao Essencia, incluindo o botao inferior, estiver visivel no campo de visao do usuario.
+
 ### 13/11/2026 — Gatilho de Animacao com IntersectionObserver na Secao Essencia
 - Arquivos: `wireframes/inicio/inicio.js`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
