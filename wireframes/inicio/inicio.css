@@ -117,20 +117,69 @@
   z-index: 1;
 }
 
-.essencia-watermark {
+.essencia-flame-backdrop {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 65%;
   transform: translate(-50%, -50%);
-  font-family: var(--fonte-titulo);
-  font-size: clamp(8rem, 22vw, 24rem);
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  color: rgba(255, 255, 255, 0.015);
-  user-select: none;
+  width: clamp(380px, 45vw, 680px);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   pointer-events: none;
   z-index: 1;
-  white-space: nowrap;
+  user-select: none;
+}
+
+.flame-ambient-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 162, 75, 0.14) 0%, rgba(201, 162, 75, 0.04) 45%, rgba(18, 19, 22, 0) 70%);
+  filter: blur(40px);
+  animation: flameGlowPulse 8s ease-in-out infinite alternate;
+}
+
+.flame-watermark-img {
+  width: 85%;
+  height: auto;
+  opacity: 0.065;
+  filter: drop-shadow(0 0 24px rgba(201, 162, 75, 0.25)) grayscale(10%) sepia(20%);
+  mix-blend-mode: screen;
+  animation: flameBreathe 9s ease-in-out infinite alternate;
+}
+
+@keyframes flameBreathe {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 0.055;
+    filter: drop-shadow(0 0 16px rgba(201, 162, 75, 0.2)) grayscale(10%) sepia(20%);
+  }
+
+  50% {
+    transform: scale(1.04) translateY(-6px);
+    opacity: 0.085;
+    filter: drop-shadow(0 0 32px rgba(201, 162, 75, 0.4)) grayscale(0%) sepia(35%);
+  }
+
+  100% {
+    transform: scale(1.02) translateY(-2px);
+    opacity: 0.065;
+    filter: drop-shadow(0 0 24px rgba(201, 162, 75, 0.3)) grayscale(5%) sepia(25%);
+  }
+}
+
+@keyframes flameGlowPulse {
+  0% {
+    transform: scale(0.92);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
 }
 
 .essencia-container {
@@ -741,7 +790,9 @@
   .quote-line,
   .quote-body,
   .essencia-section.animate .quote-line,
-  .essencia-section.animate .quote-body {
+  .essencia-section.animate .quote-body,
+  .flame-ambient-glow,
+  .flame-watermark-img {
     animation: none;
   }
 

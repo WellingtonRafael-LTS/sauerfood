@@ -6,6 +6,18 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 16/11/2026 — Substituicao de Marca d'Agua por Chama Oficial Animada na Secao Essencia
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Removido texto estatico SAUER do fundo da secao Essencia, eliminando o corte visual atras do retrato do Chef.
+  - Implementada a marca d'agua monumental com a chama oficial da Sauer Food (/img/logo_sem_fundo_256_256px.png.png) combinada a brilho termico ambiente (radial-gradient com blur e @keyframes flameGlowPulse).
+  - Adicionada animacao organica de respiracao termica da chama (@keyframes flameBreathe) com variacoes graduais de escala, elevacao e drop-shadow ambar, preservando acessibilidade em prefers-reduced-motion.
+
+### 16/11/2026 — Padronizacao de Formato de Commit sem Escopo
+- Arquivos: `.agents/GEMINI.md`, `BACKLOG.md`.
+- Resumo:
+  - Atualizada a regra 5 do projeto no contexto do agente (.agents/GEMINI.md versao 3.3) definindo sugestoes de mensagens de commit estritamente sem escopo entre parenteses (ex.: `feat: ...`, `fix: ...`).
+
 ### 16/11/2026 — Sincronizacao do Gatilho da Citacao com Visibilidade Total do Botao de Acao
 - Arquivos: `wireframes/inicio/inicio.js`, `BACKLOG.md`.
 - Resumo:
