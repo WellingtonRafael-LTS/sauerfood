@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 17/11/2026 — Alinhamento Simetrico Global da Secao Essencia com Servicos
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Removido o limitador restrito .container da secao Essencia, adotando a mesma estrutura de grid de tela cheia do Churrasco e Finger Food.
+  - Alinhado o inicio do bloco de texto da Essencia (.essencia-content com padding e justify-self: center) exatamente na linha vertical guia do conteudo do Festival de Churrasco.
+  - Alinhada a extremidade direita da moldura do chef (.essencia-portrait-wrapper com flex-end e justify-self: center) exatamente na linha vertical guia final do conteudo de Finger Food, mantendo simetria perfeita entre as secoes da Home.
+
 ### 17/11/2026 — Ajuste Proporcional Aureo no Header
 - Arquivos: `src/components/header/Header.css`, `BACKLOG.md`.
 - Resumo:
