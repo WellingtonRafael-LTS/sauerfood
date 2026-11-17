@@ -6,6 +6,14 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 16/11/2026 — Ajuste Proporcional do Finger Food e Nova Fotografia
+- Arquivos: `public/img/finger_food_mesa.jpg`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `.agents/GEMINI.md`, `BACKLOG.md`.
+- Resumo:
+  - Substituida a imagem anterior de Finger Food pela nova fotografia real da mesa gourmet de Finger Food (`/img/finger_food_mesa.jpg`).
+  - Ajustado o espacamento da secao `.body-finger` adicionando respiro vertical (`padding: 80px 0`) com o fundo claro (`--off-white`), evitando que a imagem se estenda desproporcionalmente de cima a baixo.
+  - A imagem foi mantida encostada na margem esquerda da tela, com cantos retos (sem borda arredondada), altura controlada de 480px e sombra sutil.
+  - Atualizada a regra 2 em `.agents/GEMINI.md` para registrar a autorizacao permanente concedida pelo Wellington para execucao direta de tarefas solicitadas.
+
 ### 16/11/2026 — Substituicao de Marca d'Agua por Chama Oficial Animada na Secao Essencia
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
