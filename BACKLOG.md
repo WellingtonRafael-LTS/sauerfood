@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 17/11/2026 — Ajuste Proporcional Aureo no Header
+- Arquivos: `src/components/header/Header.css`, `BACKLOG.md`.
+- Resumo:
+  - Reduzido o padding vertical do cabecalho no topo para 14px e ampliada a altura da logo para 80px (60px no scroll), trazendo imponencia a marca.
+  - Refinada a tipografia dos links do menu para 0.75rem em caixa alta com espacamento entre letras, consolidando a hierarquia visual e contraste proporcional.
+
 ### 17/11/2026 — Migracao da Secao A Jornada do Sabor da Home para Eventos
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/eventos/index.html`, `wireframes/eventos/eventos.css`, `BACKLOG.md`.
 - Resumo:
