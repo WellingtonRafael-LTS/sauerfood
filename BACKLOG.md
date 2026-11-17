@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 16/11/2026 — Gradiente Lateral Grafite e Zoom Frontal na Imagem de Finger Food
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Adicionado degradê grafite suave com linear-gradient da margem direita em direcao ao centro na secao `.body-finger`, proporcionando contraste e eliminando o fundo monocromatico claro.
+  - Implementado efeito de expansao pura para frente (scale 1.08 com transform-origin central) e elevacao de camada (z-index) no hover da imagem, gerando profundidade sem deslocamento lateral.
+
 ### 16/11/2026 — Refinamento de Copywriting na Secao Finger Food
 - Arquivos: `wireframes/inicio/index.html`, `BACKLOG.md`.
 - Resumo:
