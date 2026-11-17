@@ -6,6 +6,11 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 17/11/2026 — Delimitacao do Gatilho de Zoom para o Box Finger Food
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Ajustado o gatilho de hover do zoom da imagem (.body-finger .finger-food:hover .finger-food-imagem img): o efeito agora e ativado exclusivamente dentro dos limites do box .finger-food (altura e largura do container de conteudo e imagem), sem disparar nos espacos de padding superior e inferior da secao.
+
 ### 16/11/2026 — Gradiente Lateral Grafite e Zoom Frontal na Imagem de Finger Food
 - Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
