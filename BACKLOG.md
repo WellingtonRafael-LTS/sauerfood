@@ -6,6 +6,14 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 17/11/2026 — Redesign Editorial em Alternancia da Secao Festival de Churrasco
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Implementado layout editorial em alternancia (zig-zag): texto posicionado a esquerda e fotografia de churrasco sangrada encostada a margem direita da tela.
+  - Alinhada a hierarquia visual ao padrao de luxo do site: inclusao da tagline oficial "Festival & Brasa Viva", titulo em Cormorant Garamond com destaque italico dourado, divisor linear e paragrafo lead de impacto.
+  - Aplicado fundo preto refinado (--preto: #0d0d0d) com degradê termico ambar sutil e botao de acao estilizado com borda e brilho dourado (.btn-service-churrasco).
+  - Configurado efeito de zoom frontal suave (scale 1.08) com elevacao de camada delimitado ao hover da caixa do churrasco (.body-churrasco .churrasco:hover).
+
 ### 17/11/2026 — Delimitacao do Gatilho de Zoom para o Box Finger Food
 - Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
