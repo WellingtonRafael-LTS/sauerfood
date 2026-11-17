@@ -6,6 +6,34 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 16/11/2026 — Gradiente Lateral Grafite e Zoom Frontal na Imagem de Finger Food
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Adicionado degradê grafite suave com linear-gradient da margem direita em direcao ao centro na secao `.body-finger`, proporcionando contraste e eliminando o fundo monocromatico claro.
+  - Implementado efeito de expansao pura para frente (scale 1.08 com transform-origin central) e elevacao de camada (z-index) no hover da imagem, gerando profundidade sem deslocamento lateral.
+
+### 16/11/2026 — Refinamento de Copywriting na Secao Finger Food
+- Arquivos: `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Atualizada a tagline da secao para `Eventos & Recepções`.
+  - Reestruturado o titulo principal para `Finger Food & Celebração`, eliminando o termo generico "Gourmet".
+  - Refinado o texto editorial com foco em grandiosas experiencias gastronomicas para ocasioes especiais e celebracoes.
+
+### 16/11/2026 — Refinamento Editorial e Tipografico da Secao Finger Food
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Alinhada a tipografia da secao Finger Food ao padrao de design editorial do Hero e da secao Essencia.
+  - Adicionada a tagline oficial com linha guia dourada (`Cardápio Volante`).
+  - Reestruturado o titulo em Cormorant Garamond com destaque italico (`Finger Food Gourmet`) e divisor dourado sutil.
+  - Criado paragrafo lead de destaque com tipografia editorial e ajustada a hierarquia do corpo de texto e transicoes do botao de acao.
+
+### 16/11/2026 — Ajuste Proporcional do Finger Food e Nova Fotografia
+- Arquivos: `public/img/finger_food_mesa.jpg`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `.agents/GEMINI.md`, `BACKLOG.md`.
+- Resumo:
+  - Substituida a imagem anterior de Finger Food pela nova fotografia real da mesa gourmet de Finger Food (`/img/finger_food_mesa.jpg`).
+  - Ajustado o espacamento da secao `.body-finger` adicionando respiro vertical (`padding: 80px 0`) com o fundo claro (`--off-white`), evitando que a imagem se estenda desproporcionalmente de cima a baixo.
+  - A imagem foi mantida encostada na margem esquerda da tela, com cantos retos (sem borda arredondada), altura controlada de 480px e sombra sutil.
+
 ### 16/11/2026 — Intensificacao do Fade Termico Dourado Atras do Chef e Remocao da Chama
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
