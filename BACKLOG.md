@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 17/11/2026 — Migracao da Secao A Jornada do Sabor da Home para Eventos
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/eventos/index.html`, `wireframes/eventos/eventos.css`, `BACKLOG.md`.
+- Resumo:
+  - Removida a secao .section-padding-Sabor (A Jornada do Sabor) e todas as suas classes CSS nao utilizadas de `wireframes/inicio/`, eliminando sobrecarga de rolagem e focando a Home na conversao direta para WhatsApp e na experiencia sob medida.
+  - Transferida a secao e seus estilos de layout/responsividade para `wireframes/eventos/` para organizacao da equipe.
+
 ### 17/11/2026 — Redesign Editorial da Secao Coffee Break
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
