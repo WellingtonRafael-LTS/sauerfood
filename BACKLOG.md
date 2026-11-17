@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 16/11/2026 — Refinamento de Copywriting na Secao Finger Food
+- Arquivos: `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Atualizada a tagline da secao para `Eventos & Recepções`.
+  - Reestruturado o titulo principal para `Finger Food & Celebração`, eliminando o termo generico "Gourmet".
+  - Refinado o texto editorial com foco em grandiosas experiencias gastronomicas para ocasioes especiais e celebracoes.
+
 ### 16/11/2026 — Refinamento Editorial e Tipografico da Secao Finger Food
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
