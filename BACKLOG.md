@@ -6,6 +6,14 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 16/11/2026 — Refinamento Editorial e Tipografico da Secao Finger Food
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Alinhada a tipografia da secao Finger Food ao padrao de design editorial do Hero e da secao Essencia.
+  - Adicionada a tagline oficial com linha guia dourada (`Cardápio Volante`).
+  - Reestruturado o titulo em Cormorant Garamond com destaque italico (`Finger Food Gourmet`) e divisor dourado sutil.
+  - Criado paragrafo lead de destaque com tipografia editorial e ajustada a hierarquia do corpo de texto e transicoes do botao de acao.
+
 ### 16/11/2026 — Ajuste Proporcional do Finger Food e Nova Fotografia
 - Arquivos: `public/img/finger_food_mesa.jpg`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `.agents/GEMINI.md`, `BACKLOG.md`.
 - Resumo:
