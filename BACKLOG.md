@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 17/11/2026 — Redesign Editorial da Secao Coffee Break
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Reestruturado o Coffee Break no padrao editorial de alto luxo com fundo claro (--off-white) e imagem a esquerda, consolidando o ritmo de alternancia (zig-zag) com Finger Food e Churrasco.
+  - Adicionada tagline "Corporativo & Social", titulo em Cormorant Garamond com destaque italico, divisor dourado linear e lead sensorial.
+  - Alinhado o container de texto com justify-self: center e configurado o zoom frontal suave na imagem delimitado ao hover do box .coffe.
+
 ### 17/11/2026 — Redesign Editorial em Alternancia da Secao Festival de Churrasco
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
