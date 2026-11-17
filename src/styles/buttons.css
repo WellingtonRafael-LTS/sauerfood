@@ -68,10 +68,11 @@ footer a:focus-visible {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/*
 .btn-service::after {
   content: '→';
 }
-
+*/
 .btn-service:hover {
   background-color: var(--dourado);
   color: var(--preto);
