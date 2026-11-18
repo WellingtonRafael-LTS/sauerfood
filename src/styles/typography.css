@@ -14,7 +14,7 @@ p {
   color: var(--texto-secundario);
 }
 
-.destaque {
+.span {
   display: block;
   font-family: var(--fonte-titulo);
   font-style: italic;

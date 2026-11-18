@@ -22,8 +22,30 @@ export function initEssenciaObserver() {
   observer.observe(triggerButton);
 }
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initEssenciaObserver);
-} else {
+export function initSpotlightCards() {
+  const cards = document.querySelectorAll('.experiencia-card');
+  if (!cards.length) {
+    return;
+  }
+
+  cards.forEach((card) => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
+}
+
+function initPage() {
   initEssenciaObserver();
+  initSpotlightCards();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPage);
+} else {
+  initPage();
 }

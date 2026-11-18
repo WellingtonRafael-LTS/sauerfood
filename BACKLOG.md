@@ -6,6 +6,41 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 17/11/2026 — Calibracao Total da Largura da Secao e Delimitacao Precisa no Hover
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Restaurada a distribuicao proporcional total dos 3 cards ocupando 100% da largura da section (flex: 1 no repouso), eliminando o agrupamento a esquerda.
+  - Ajustada a largura real do texto descritivo para 440px estaticos, fazendo com que no hover (flex: 1.6) o card abra exatamente ate o fim do texto, sem sobras de espaco vazio.
+  - Mantida a compensacao fluida dos cards vizinhos (flex: 0.7) para assegurar o preenchimento total do grid.
+
+### 17/11/2026 — Implementacao do Efeito Cortina Lateral com Texto Estatico Travado
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Definida largura real fixa estatica de 460px para .card-description (flex-shrink: 0), mantendo o texto fixo e sem quebras indesejadas.
+  - Configurada a largura inicial dos cards em flex: 0 0 220px com overflow: hidden no repouso, deixando o texto fisicamente cortado e escondido para fora da div na lateral direita quando sem foco.
+  - Implementada abertura elastica para a direita no hover (flex: 1 0 540px), desmascarando suavemente a totalidade do texto estatico apenas no foco.
+
+### 17/11/2026 — Restauracao do Layout Equilibrado dos Cards de Experiencia
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Revertidas as larguras forcadas e o corte lateral estatico de .card-description, restaurando a tipografia e o fluxo natural do texto.
+  - Reestabelecida a proporcao harmoniosa flex: 1 no estado de repouso, com expansao dinamica fluida flex: 1.35 e elevacao no foco de cada pilar, preservando o efeito spotlight reativo.
+
+### 17/11/2026 — Ajuste de Corte Lateral Estatico no Texto dos Cards de Experiencia
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Definida largura fixa estatica de 320px com flex-shrink: 0 para o texto descritivo (.card-description), mantendo a tipografia inalterada.
+  - Ajustada a proporcao inicial dos cards para flex: 0.48 com overflow: hidden, garantindo que o texto fique cortado para fora da div no estado de repouso (sem foco).
+  - Configurada a expansao para a direita em flex: 1.8 no hover, revelando o texto completo apenas quando o card recebe o foco do cursor.
+
+### 17/11/2026 — Redesign Interativo Editorial da Secao Experiencia sob Medida
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/inicio/inicio.js`, `BACKLOG.md`.
+- Resumo:
+  - Reestruturada a secao com header editorial de luxo: tagline dourada, titulo em Cormorant Garamond com destaque italico e divisor linear.
+  - Implementada galeria interativa de pilares com efeito acordeao flex (`flex: 1.35` no foco vs `flex: 0.85` nos vizinhos) e elevacao suave.
+  - Criado efeito spotlight de iluminacao dinamica em tempo real via JavaScript modular Vanilla com variaveis CSS locais (`--mouse-x`, `--mouse-y`), reagindo com halo dourado ao movimento do cursor do usuario.
+  - Adicionadas numeracoes ordinais serifadas em dourado translucido (`01`, `02`, `03`) e caixas de icones estilizadas com inclinacao e brilho dourado no hover.
+
 ### 17/11/2026 — Alinhamento Simetrico Global da Secao Essencia com Servicos
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
