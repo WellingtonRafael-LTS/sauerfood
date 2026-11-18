@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 18/11/2026 — Remocao de Box e Animacao de Surgimento nos Icones SVG dos Cards
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Eliminado o container de moldura .card-icon-box em todos os cards de experiencia, mantendo apenas o vetor SVG puro (.card-icon).
+  - Implementada animacao de surgimento suave no foco (opacity: 0 e scale: 0.6 em repouso transicionando para opacity: 1 e scale: 1 com delay de 0.12s no hover), fazendo com que o icone apareca organicamente apenas quando o card se expande.
+
 ### 18/11/2026 — Alinhamento Textual e Extensao do Card Equipe de Elite
 - Arquivos: `wireframes/inicio/index.html`, `BACKLOG.md`.
 - Resumo:
