@@ -1,39 +1,30 @@
-<p align="center">
-  <img src="./assets/logo.png" alt="Logo SauerFood">
-</p>
+# Sauer Food — Site Institucional (PIE 2026-2)
 
+Site institucional multipagina da Sauer Food (Foz do Iguacu, PR), desenvolvido com HTML5, CSS3, JavaScript modular (Vanilla JS) e Vite como Projeto Integrador de Extensao do Centro Universitario Descomplica Uniamerica.
 
+## Tecnologias
 
-# Sauer Food
-Landing page para restaurante, desenvolvida como projeto integrador.
+- JavaScript Modular (ES Modules / Vanilla JS para componentes reutilizaveis)
+- Vite 8
+- HTML5 e CSS3 (identidade visual preta, dourada e off-white)
+- ESLint
 
+## Estrutura de entrada
 
-## Sobre o projeto:
-O **Sauer Food** é uma landing page criada com o objetivo de apresentar um restaurante de forma moderna e atrativa, exibindo informações como cardápio, localização e contato, facilitando o acesso dos clientes às informações do estabelecimento.
+- `index.html` (raiz): redirecionador leve para `/wireframes/inicio/index.html`.
+- `wireframes/*/index.html`: paginas independentes do site (`inicio`, `servicos`, `eventos`, `cardapio`, `sobre`, `contato`).
+- `src/components/header/Header.js`: componente reutilizavel da barra de navegacao montado por `src/main.js` em todas as paginas.
 
+## Como executar
 
-## Tecnologias utilizadas:
-- HTML5
-- CSS3
-- JavaScript
-- Trello
-- Claude Code
-- VSCODE
-- ChatGPT
-- Gemini
+```bash
+npm install
+npm run dev
+```
 
+## Scripts disponiveis
 
-## Funcionalidades:
-- Apresentação do restaurante
-- Exibição do cardápio
-- Seção de localização/contato
-- Layout responsivo
-
-
-## Autores:
-- João Vitor Peres — [@Peressjj](https://github.com/Peressjj)
-- Wellington Rafael — [@WellingtonRafael-LTS](https://github.com/WellingtonRafael-LTS)
-
-
-## Licença:
-Projeto acadêmico desenvolvido para fins de aprendizado.
+- `npm run dev` — inicia o servidor de desenvolvimento
+- `npm run build` — gera a versao de producao na pasta `dist/`
+- `npm run lint` — executa a verificacao estatica de codigo com ESLint
+- `npm run preview` — visualiza o build de producao localmente
