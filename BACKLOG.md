@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 18/11/2026 — Alinhamento Vertical do Header de Experiencia com a Tagline do Hero
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Ajustado .experiencia-header para alinhamento a esquerda (align-items: flex-start e text-align: left), posicionando a tagline Experiencia sob Medida na mesma coordenada vertical exata da tagline Muito alem do sabor do Hero.
+  - Alinhado o divisor linear dourado a esquerda com degradê direcional para continuidade visual.
+
 ### 18/11/2026 — Remocao de Box e Animacao de Surgimento nos Icones SVG dos Cards
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
@@ -292,6 +298,7 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 - [x] Configuracao do `.gitignore` para blindagem de IA e IDEs
 
 ### Em Aberto (Equipe)
+- [ ] Implementar efeito de janela estatica com background-attachment: fixed e overlay fume na secao de Depoimentos/Avaliacoes
 - [ ] Evoluir o conteudo interno de cada pagina em `wireframes/<pagina>/index.html` e seus respectivos `.css` conforme divisao do Trello
 - [ ] Implementar a calculadora de orcamento na pagina `cardapio` apos recebimento da tabela do cliente
 
