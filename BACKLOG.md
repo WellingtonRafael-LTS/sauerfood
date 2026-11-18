@@ -6,6 +6,11 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 18/11/2026 — Correcao de Marcacao e Ajuste Limpo na Secao de Avaliacoes
+- Arquivos: `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Removido erro de marcacao e eliminada a introducao duplicada, conectando o titulo diretamente a citacao editorial com alinhamento visual limpo.
+
 ### 18/11/2026 — Padronizacao Semantica Oficial da Secao de Avaliacoes
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
