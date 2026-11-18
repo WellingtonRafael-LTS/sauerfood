@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 18/11/2026 — Remocao da Secao Momentos Registrados da Home
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Removida a secao #cardapio (Momentos Registrados) e seus placeholders de imagens da pagina Inicio, evitando duplicacao de portfolio com a pagina de Eventos e otimizando o fluxo de rolagem para conversao.
+  - Eliminadas as regras CSS orfas .gallery-grid e .gallery-placeholder, incluindo suas variantes de media queries.
+
 ### 18/11/2026 — Alinhamento Vertical do Header de Experiencia com a Tagline do Hero
 - Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
