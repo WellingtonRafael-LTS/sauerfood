@@ -884,14 +884,6 @@
   margin: 0 0 18px 0;
 }
 
-.experiencia-divider {
-  display: block;
-  width: 64px;
-  height: 2px;
-  background: linear-gradient(90deg, var(--dourado) 0%, rgba(201, 162, 75, 0) 100%);
-  margin-bottom: 22px;
-}
-
 .experiencia-lead {
   font-family: var(--fonte-corpo);
   font-size: clamp(0.98rem, 1.2vw, 1.1rem);
