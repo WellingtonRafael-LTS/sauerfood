@@ -6,6 +6,27 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 18/11/2026 — Refinamento Editorial Autentico e Imagem Fixa na Secao de Avaliacoes
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Adicionado background-attachment: fixed na secao .oga-exp, travando a fotografia no viewport para o efeito de janela fisica real durante o scroll.
+  - Substituido o texto generico por copywriting autentico de avaliacao e confianca institucional da Sauer Food ("O que dizem sobre nós").
+  - Removido o botao de WhatsApp da secao, preservando o foco exclusivo no depoimento e na prova social do cliente.
+
+### 18/11/2026 — Redesign Editorial da Secao de Avaliacoes Inspirado em OGA Experience
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Aplicada a composicao cinematografica e assimetrica do OGA: fotografia rústica texturizada ao fundo com gradiente direcional escuro a esquerda e revelacao da textura a direita.
+  - Alinhado todo o bloco de conteudo no terco esquerdo (.oga-content-col com max-width de 520px), com eyebrow sutil, titulo "Um momento para recordar" em Cormorant Garamond 400 (line-height 1.05), paragrafo de atmosfera sensorial com entrelinha 1.85 e citacao delimitada por linha dourada fina.
+  - Integrado botao retangular de alta conversao para WhatsApp (.btn-oga-whatsapp) em bronze/dourado com icone oficial.
+
+### 18/11/2026 — Implementacao Estrutural Exata da Secao OGA Experience em Avaliacoes
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Aplicada a arquitetura estrutural geometrica documentada de .oga-exp com .oga-exp__inner (width 100%, z-index 2, padding inferior de 92px e zero padding superior/lateral).
+  - Configurado o container de conteudo .oga-wrap com max-width de 1240px, margin horizontal automatica e padding lateral de 40px em box-sizing: border-box.
+  - Implementado o identificador .oga-eyebrow (inline-flex, gap 14px, margin-bottom 20px) e titulo principal .oga-exp h2 com font-size clamp(30px, 4.2vw, 56px), peso 400, line-height 1.05 e max-width de 15ch.
+
 ### 18/11/2026 — Remocao da Secao Momentos Registrados da Home
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:

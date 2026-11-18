@@ -1067,6 +1067,115 @@
   }
 }
 
+.oga-exp {
+  position: relative;
+  width: 100%;
+  background-color: var(--preto);
+  background-image:
+    linear-gradient(90deg, rgba(13, 13, 13, 0.94) 0%, rgba(13, 13, 13, 0.82) 42%, rgba(13, 13, 13, 0.28) 100%),
+    url('/img/churrasco_5.jpg');
+  background-attachment: fixed;
+  background-position: center left, center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 1px solid var(--borda-sutil);
+  border-bottom: 1px solid var(--borda-sutil);
+  overflow: hidden;
+}
+
+.oga-exp__inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 120px 0 92px;
+}
+
+.oga-wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.oga-content-col {
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.oga-exp .oga-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.oga-exp h2,
+.oga-title {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(32px, 4.2vw, 56px);
+  max-width: 15ch;
+  margin-bottom: 16px;
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--off-white);
+  letter-spacing: -0.01em;
+}
+
+.oga-description {
+  font-family: var(--fonte-corpo);
+  font-weight: 300;
+  font-size: clamp(0.95rem, 1.15vw, 1.05rem);
+  line-height: 1.85;
+  color: rgba(240, 240, 242, 0.82);
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.oga-quote {
+  margin: 0 0 32px 0;
+  padding: 16px 0 16px 20px;
+  border-left: 1px solid var(--dourado-suave);
+  background: transparent;
+  max-width: 100%;
+}
+
+.oga-quote-text {
+  font-family: var(--fonte-titulo);
+  font-style: italic;
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--off-white);
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.oga-cite {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  font-style: normal;
+}
+
+.oga-author-name {
+  font-family: var(--fonte-titulo);
+  font-size: 1.05rem;
+  color: var(--dourado);
+  letter-spacing: 0.02em;
+}
+
+.oga-author-role {
+  font-family: var(--fonte-corpo);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--texto-secundario);
+}
+
 .section-padding {
   padding: 90px 0;
   background-color: var(--fundo-secundario);
