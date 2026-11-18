@@ -6,6 +6,11 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 18/11/2026 — Alinhamento Textual e Extensao do Card Equipe de Elite
+- Arquivos: `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Expandido o copywriting do card Equipe de Elite para 3 linhas completas ("Profissionais altamente treinados para entregar um serviço preciso, atencioso e impecável do início ao término do seu evento"), harmonizando a altura e o ritmo visual com os outros dois cards da secao.
+
 ### 17/11/2026 — Calibracao Total da Largura da Secao e Delimitacao Precisa no Hover
 - Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
