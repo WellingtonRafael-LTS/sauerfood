@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 18/11/2026 — Padronizacao Semantica Oficial da Secao de Avaliacoes
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Eliminadas todas as nomenclaturas temporarias (oga-exp, oga-wrap, oga-eyebrow), unificando a secao sob a convencao oficial do projeto: .avaliacoes-section, .avaliacoes-container e .avaliacoes-content.
+  - Integrado o container padrao de 1200px (.container) alinhado ao grid global, preservando a fotografia de fundo em parallax fixo (background-attachment: fixed) e a composicao editorial no terco esquerdo com linha divisoria dourada na citacao.
+
 ### 18/11/2026 — Refinamento Editorial Autentico e Imagem Fixa na Secao de Avaliacoes
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
