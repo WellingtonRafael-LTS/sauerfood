@@ -66,6 +66,10 @@ export default {
     btnBudget: 'SOLICITAR PRESUPUESTO',
     btnWhatsapp: 'HABLAR POR WHATSAPP',
   },
+  whatsapp: {
+    message: '¡Hola! Me gustaría solicitar un presupuesto con Sauer Food para mi evento.',
+    ctaMessage: 'Hola, me gustaría conversar sobre un evento con Sauer Food.',
+  },
   footer: {
     description: 'Gastronomía de alto nivel. Sabor, excelencia y experiencias creadas para transformar su evento.',
     navTitle: 'NAVEGACIÓN',

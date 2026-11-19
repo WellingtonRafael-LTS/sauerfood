@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Internacionalizacao Dinamica dos Links e Mensagens do WhatsApp
+- Arquivos: `src/i18n/*`, `src/components/whatsapp-button/WhatsAppButton.js`, `src/components/footer/Footer.js`, `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Adicionado suporte a traducao automatica de mensagens do WhatsApp via atributo data-i18n-whatsapp no motor i18n (translatePage).
+  - Vinculadas mensagens nativas em portugues, espanhol e ingles para o botao flutuante (.whatsapp-float), o botao de chamada para acao (.cta-actions .btn-outline) e o icone de rede social do rodape.
+
 ### 19/11/2026 — Implementacao do Sistema de Internacionalizacao (i18n)
 - Arquivos: `src/i18n/*`, `src/components/header/Header.js`, `src/components/footer/Footer.js`, `src/main.js`, `wireframes/inicio/index.html`, `BACKLOG.md`.
 - Resumo:

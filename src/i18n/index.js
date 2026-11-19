@@ -5,6 +5,7 @@ import en from './en.js';
 const DICTIONARIES = { pt, es, en };
 const STORAGE_KEY = 'sauer_lang';
 const DEFAULT_LANG = 'pt';
+const DEFAULT_PHONE = '554598225170';
 
 export function getCurrentLanguage() {
   const stored = localStorage.getItem(STORAGE_KEY);
@@ -41,6 +42,16 @@ export function translatePage(lang = getCurrentLanguage()) {
       } else {
         el.textContent = translation;
       }
+    }
+  });
+
+  const whatsappElements = document.querySelectorAll('[data-i18n-whatsapp]');
+  whatsappElements.forEach((el) => {
+    const key = el.getAttribute('data-i18n-whatsapp');
+    const message = getTranslation(key, lang);
+    if (message) {
+      const encoded = encodeURIComponent(message);
+      el.setAttribute('href', `https://wa.me/${DEFAULT_PHONE}?text=${encoded}`);
     }
   });
 

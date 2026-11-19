@@ -66,6 +66,10 @@ export default {
     btnBudget: 'REQUEST A QUOTE',
     btnWhatsapp: 'CHAT ON WHATSAPP',
   },
+  whatsapp: {
+    message: 'Hello! I would like to request a quote with Sauer Food for my event.',
+    ctaMessage: 'Hello, I would like to talk about an event with Sauer Food.',
+  },
   footer: {
     description: 'High-performance culinary artistry. Flavor, excellence, and experiences crafted to transform your event.',
     navTitle: 'NAVIGATION',

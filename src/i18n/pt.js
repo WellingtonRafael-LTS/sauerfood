@@ -66,6 +66,10 @@ export default {
     btnBudget: 'SOLICITAR ORÇAMENTO',
     btnWhatsapp: 'FALAR NO WHATSAPP',
   },
+  whatsapp: {
+    message: 'Olá! Gostaria de solicitar um orçamento com a Sauer Food para o meu evento.',
+    ctaMessage: 'Olá, gostaria de conversar sobre um evento com a Sauer Food.',
+  },
   footer: {
     description: 'Gastronomia de alta performance. Sabor, excelência e experiências criadas para transformar o seu evento.',
     navTitle: 'NAVEGAÇÃO',
