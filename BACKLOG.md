@@ -6,6 +6,11 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Remocao de Borda Dourada no Hover do Botao WhatsApp
+- Arquivos: `src/styles/footer-whatsapp.css`, `BACKLOG.md`.
+- Resumo:
+  - Eliminado o contorno dourado ao passar o cursor (.whatsapp-float:hover), mantendo a borda translucida neutra e o brilho verde oficial com elevacao suave.
+
 ### 19/11/2026 — Ajuste Visual no Botao Fechar dos Modais Legais
 - Arquivos: `src/styles/footer-whatsapp.css`, `BACKLOG.md`.
 - Resumo:
