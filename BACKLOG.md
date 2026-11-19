@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Sincronizacao de Caminhos com a Nomenclatura dos Assets
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/eventos/index.html`, `wireframes/servicos/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Sincronizadas todas as referencias de imagens do codigo com os novos arquivos padronizados em disco: equipe-01.jpeg, equipe-02.png, eventos-01.jpg, churrasco-07.jpg, coffee-break-01.jpg, finger-food-ex.jpg, churrasco-06.jpg e coffee-break-ex.jpg.
+  - Eliminados todos os links quebrados em todas as paginas com 100% de sucesso em build e lint.
+
 ### 19/11/2026 — Padronizacao Arquitetural e Reorganizacao dos Assets em Subpastas
 - Arquivos: `public/img/*`, `src/components/header/Header.js`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/servicos/index.html`, `wireframes/eventos/index.html`, `wireframes/cardapio/index.html`, `wireframes/sobre/index.html`, `wireframes/contato/index.html`, `BACKLOG.md`.
 - Resumo:
