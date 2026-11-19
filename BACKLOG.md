@@ -6,6 +6,11 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Ajuste Geometrico dos Cards de Experiencia sob Medida
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Alterado border-radius de 12px para 0 em .experiencia-card, alinhando a geometria dos cards com cantos retos sofisticados.
+
 ### 19/11/2026 — Componentizacao Modular do Footer com Modais Embutidos
 - Arquivos: `src/components/footer/Footer.js`, `src/components/footer/Footer.css`, `src/main.js`, `src/styles/global.css`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.js`, `BACKLOG.md`.
 - Resumo:

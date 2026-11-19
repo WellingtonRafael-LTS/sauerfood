@@ -907,7 +907,7 @@
   flex: 1;
   background: linear-gradient(180deg, rgba(33, 33, 38, 0.88) 0%, rgba(21, 21, 25, 0.96) 100%);
   border: 1px solid rgba(201, 162, 75, 0.16);
-  border-radius: 12px;
+  border-radius: 0px;
   padding: 44px 34px;
   overflow: hidden;
   display: flex;
