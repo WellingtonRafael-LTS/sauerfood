@@ -15,7 +15,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 26px 0;
+  padding: 14px 0;
   background-color: transparent;
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
@@ -63,13 +63,13 @@
 }
 
 .header-logo img {
-  height: 60px;
+  height: 80px;
   width: auto;
   transition: height var(--sf-transicao);
 }
 
 .site-header.scrolled .header-logo img {
-  height: 50px;
+  height: 60px;
 }
 
 .header-navbar {
@@ -92,7 +92,7 @@
   padding: 8px 0;
   color: var(--sf-texto-claro);
   font-family: inherit;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -281,6 +281,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .site-header,
   .site-header.scrolled,
   .header-logo img,

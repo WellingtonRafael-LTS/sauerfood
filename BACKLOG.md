@@ -6,6 +6,140 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Sincronizacao de Integracao com a Dev e Resolucao de Conflitos
+- Arquivos: `index.html`, `legado/style.css`, `BACKLOG.md`.
+- Resumo:
+  - Realizado o merge seguro da branch dev na branch de integracao feature/inicio-integracao.
+  - Resolvido o conflito em index.html mantendo o redirecionador oficial do projeto para /wireframes/inicio/index.html conforme a arquitetura modular v3.0 com 100% de sucesso em build e lint.
+
+### 19/11/2026 — Atualizacao da Especificacao da Pagina Inicio
+- Arquivos: `wireframes/inicio/README.md`, `BACKLOG.md`.
+- Resumo:
+  - Atualizada a documentacao tecnica da pagina inicial refletindo a arquitetura em Vanilla JS modular, internacionalizacao nativa, componentes globais (Header, Footer e WhatsAppButton) e detalhes tecnicos de desempenho.
+
+### 19/11/2026 — Polimento de Acessibilidade, Titulo Dinamico e Active Link no Header
+- Arquivos: `src/i18n/*`, `src/components/whatsapp-button/WhatsAppButton.js`, `src/components/header/Header.js`, `BACKLOG.md`.
+- Resumo:
+  - Adicionada traducao dinamica do document.title na alternancia de idioma no motor i18n.
+  - Sincronizados os atributos aria-label em links do WhatsApp com suporte multilíngue para acessibilidade por leitores de tela.
+  - Refinada a identificacao da pagina ativa na navbar para destacar consistentemente o link Inicio com a classe .active.
+
+### 19/11/2026 — Internacionalizacao Dinamica dos Links e Mensagens do WhatsApp
+- Arquivos: `src/i18n/*`, `src/components/whatsapp-button/WhatsAppButton.js`, `src/components/footer/Footer.js`, `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Adicionado suporte a traducao automatica de mensagens do WhatsApp via atributo data-i18n-whatsapp no motor i18n (translatePage).
+  - Vinculadas mensagens nativas em portugues, espanhol e ingles para o botao flutuante (.whatsapp-float), o botao de chamada para acao (.cta-actions .btn-outline) e o icone de rede social do rodape.
+
+### 19/11/2026 — Implementacao do Sistema de Internacionalizacao (i18n)
+- Arquivos: `src/i18n/*`, `src/components/header/Header.js`, `src/components/footer/Footer.js`, `src/main.js`, `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Criado motor nativo de i18n em src/i18n/ com suporte aos idiomas Portugues (pt), Espanhol (es) e Ingles (en), persistencia via localStorage e troca de idioma em tempo real sem recarregar a pagina.
+  - Integrado o seletor de idiomas do Header.js e mapeados todos os elementos textuais da Home e do Footer atraves de atributos semanticos data-i18n.
+
+### 19/11/2026 — Polimento Tecnico, SEO e Limpeza Semantica na Home
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/inicio/inicio.js`, `BACKLOG.md`.
+- Resumo:
+  - Adicionadas meta tags de descricao e titulo institucional para SEO e apresentacao academica no index.html.
+  - Eliminado span orfao do badge e propriedades duplicadas em .essencia-container no inicio.css.
+  - Adicionado reset suave das coordenadas CSS (--mouse-x e --mouse-y) para o centro no evento mouseleave dos cards em inicio.js.
+
+### 19/11/2026 — Sincronizacao de Caminhos com a Nomenclatura dos Assets
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/eventos/index.html`, `wireframes/servicos/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Sincronizadas todas as referencias de imagens do codigo com os novos arquivos padronizados em disco: equipe-01.jpeg, equipe-02.png, eventos-01.jpg, churrasco-07.jpg, coffee-break-01.jpg, finger-food-ex.jpg, churrasco-06.jpg e coffee-break-ex.jpg.
+  - Eliminados todos os links quebrados em todas as paginas com 100% de sucesso em build e lint.
+
+### 19/11/2026 — Padronizacao Arquitetural e Reorganizacao dos Assets em Subpastas
+- Arquivos: `public/img/*`, `src/components/header/Header.js`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/servicos/index.html`, `wireframes/eventos/index.html`, `wireframes/cardapio/index.html`, `wireframes/sobre/index.html`, `wireframes/contato/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Reorganizada toda a pasta de imagens estaticas (public/img/) na arquitetura profissional em subpastas semanticas: brand, icons, equipe, eventos e servicos (churrasco, finger-food, coffee-break).
+  - Renomeados todos os arquivos para convencao estrita kebab-case em letras minusculas, eliminando espacos, nomes de camera (WELL6413.JPG) e extensoes duplicadas (.png.png).
+  - Atualizadas todas as referencias de caminhos nos codigos HTML e CSS de todas as 6 paginas e componentes globais sem quebras.
+
+### 19/11/2026 — Otimizacao com requestAnimationFrame e Padronizacao Semantica
+- Arquivos: `wireframes/inicio/inicio.js`, `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Otimizado o efeito spotlight dos cards de experiencia sob medida com requestAnimationFrame e cancelAnimationFrame, evitando gargalos de recalculacao no evento mousemove.
+  - Padronizadas as taglines das secoes de servicos com <p class="linename"> e <span class="line" aria-hidden="true"></span> em conformidade semantica e de acessibilidade.
+
+### 19/11/2026 — Ajuste Geometrico dos Cards de Experiencia sob Medida
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Alterado border-radius de 12px para 0 em .experiencia-card, alinhando a geometria dos cards com cantos retos sofisticados.
+
+### 19/11/2026 — Componentizacao Modular do Footer com Modais Embutidos
+- Arquivos: `src/components/footer/Footer.js`, `src/components/footer/Footer.css`, `src/main.js`, `src/styles/global.css`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.js`, `BACKLOG.md`.
+- Resumo:
+  - Criado o componente isolado renderFooter encapsulando a marcacao estrutural das 4 colunas, navegacao, links de contato, redes sociais, creditos academicos e o gerenciamento interativo dos modais legais de Politica de Privacidade e Termos de Uso.
+  - Eliminado o arquivo legado src/styles/footer-whatsapp.css e reduzido em mais de 100 linhas o HTML estatico de wireframes/inicio/index.html atraves do ponto de montagem <div id="footer-root"></div> montado via src/main.js.
+
+### 19/11/2026 — Componentizacao Modular do Botao Flutuante do WhatsApp
+- Arquivos: `src/components/whatsapp-button/WhatsAppButton.js`, `src/components/whatsapp-button/WhatsAppButton.css`, `src/main.js`, `src/styles/footer-whatsapp.css`, `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Criado o componente nativo renderWhatsAppButton com estilos isolados e montagem global via src/main.js em todas as paginas da aplicacao.
+  - Removido o bloco HTML estatico repetido no wireframes/inicio/index.html e desacoplado o CSS de footer-whatsapp.css para o modulo do componente.
+
+### 19/11/2026 — Remocao de Borda Dourada no Hover do Botao WhatsApp
+- Arquivos: `src/styles/footer-whatsapp.css`, `BACKLOG.md`.
+- Resumo:
+  - Eliminado o contorno dourado ao passar o cursor (.whatsapp-float:hover), mantendo a borda translucida neutra e o brilho verde oficial com elevacao suave.
+
+### 19/11/2026 — Ajuste Visual no Botao Fechar dos Modais Legais
+- Arquivos: `src/styles/footer-whatsapp.css`, `BACKLOG.md`.
+- Resumo:
+  - Removido o circulo envolvente (.legal-modal-close), preservando o caractere de fechar limpo com transicao suave de cor para dourado e escala no hover.
+
+### 19/11/2026 — Creditos Academicos e Modais Legais no Rodape
+- Arquivos: `wireframes/inicio/index.html`, `src/styles/footer-whatsapp.css`, `wireframes/inicio/inicio.js`, `BACKLOG.md`.
+- Resumo:
+  - Adicionado credito institucional academico (Projeto Integrador · UniAmerica 2026) conectado ao repositorio GitHub oficial do projeto no centro do rodape inferior.
+  - Implementado componente dialog nativo com modais editoriais escuros e borda dourada para Politica de Privacidade e Termos de Uso com suporte a fechamento por clique externo, tecla Esc ou botao dedicado.
+  - Atualizada linha divisoria do rodape com degradê suave em dourado etereo.
+
+### 19/11/2026 — Refinamento de Usabilidade e Semantica no Rodape
+- Arquivos: `wireframes/inicio/index.html`, `src/styles/footer-whatsapp.css`, `BACKLOG.md`.
+- Resumo:
+  - Transformados os dados de contato do rodape em links interativos nativos (tel: e mailto:).
+  - Substituido icone generico de Facebook por atalho direto oficial do WhatsApp ao lado do Instagram da Sauer Food.
+  - Eliminada tag de quebra forcada (br) e aplicado layout flexbox limpo com gap modular em .footer-col-action.
+
+### 19/11/2026 — Redesign Editorial e Conversao Estrategica no CTA Final
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Refatorada a secao final (.cta-section) com tagline institucional (Reserva & Orcamento), titulo com destaque em italico dourado e iluminacao radial suave de alta gastronomia ao centro.
+  - Otimizada a conversao separando os destinos dos dois botoes de acao: formulario completo de orcamento (.btn-gold) e contato direto no WhatsApp com mensagem personalizada (.btn-outline).
+
+### 19/11/2026 — Fixacao de Largura Estatica do Texto dos Cards para Eliminar Reflow
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Definida largura rigida de 380px com flex-shrink: 0 em .card-description e delay de 0.35s na animacao de hover, assegurando que o texto do terceiro card (Logistica) mantenha a mesma quebra de linhas durante todo o ciclo de expansao.
+
+### 19/11/2026 — Estabilizacao de Layout e Reflow do Texto no Card de Logistica
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Definida largura estavel (width: 440px com max-width: 100%) em .card-description para evitar quebra dinamica de linhas (reflow) durante a expansao dos cards, garantindo que o texto do terceiro card surja diretamente na sua posicao final com transicao continua.
+
+### 19/11/2026 — Calibragem de Transicoes Lentas em Experiencia sob Medida
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Estendidos os tempos de transicao dos cards (expansao de 1.4s e elevacao de 0.9s), icone (1.1s com delay de 0.25s), linha dourada (0.8s) e texto descritivo (1.3s com delay de 0.25s), aplicando a curva suave cubic-bezier(0.16, 1, 0.3, 1) para um efeito editorial calmo e contemplativo.
+
+### 19/11/2026 — Animacao de Revelacao do Texto nos Cards de Experiencia sob Medida
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Configurado o texto de descricao dos cards (.card-description) oculto por padrao com max-height zero, opacidade nula e deslocamento vertical.
+  - Implementada a transicao suave de surgimento ao passar o mouse (:hover), revelando a descricao com curva natural e mantendo a exibicao completa estatica em telas mobile.
+
+### 19/11/2026 — Fotografia de Fundo Fixa na Secao de Avaliacoes
+- Arquivos: `wireframes/inicio/inicio.css`, `public/img/WELL6413.JPG`, `BACKLOG.md`.
+- Resumo:
+  - Vinculada a fotografia oficial do evento (`/img/WELL6413.JPG`) como fundo com degradê direcional escuro e fixacao de viewport na secao de avaliacoes.
+
+### 18/11/2026 — Correcao de Marcacao e Ajuste Limpo na Secao de Avaliacoes
+- Arquivos: `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Removido erro de marcacao e eliminada a introducao duplicada, conectando o titulo diretamente a citacao editorial com alinhamento visual limpo.
+
 ### 18/11/2026 — Intensificacao da Visibilidade dos Cards do Cardapio
 - Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
 - Resumo:
@@ -24,6 +158,208 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
   - Resolvidos os conflitos do merge entre a branch `feature/cardapio` e o conteudo integrado da `dev`.
   - Preservadas as implementacoes do cardapio, do Header, dos efeitos dourados e dos ajustes de tipografia e hero.
   - Removidos todos os marcadores de conflito e preparados os arquivos para a etapa final de validacao.
+
+### 18/11/2026 — Padronizacao Semantica Oficial da Secao de Avaliacoes
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Eliminadas todas as nomenclaturas temporarias (oga-exp, oga-wrap, oga-eyebrow), unificando a secao sob a convencao oficial do projeto: .avaliacoes-section, .avaliacoes-container e .avaliacoes-content.
+  - Integrado o container padrao de 1200px (.container) alinhado ao grid global, preservando a fotografia de fundo em parallax fixo (background-attachment: fixed) e a composicao editorial no terco esquerdo com linha divisoria dourada na citacao.
+
+### 18/11/2026 — Refinamento Editorial Autentico e Imagem Fixa na Secao de Avaliacoes
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Adicionado background-attachment: fixed na secao .oga-exp, travando a fotografia no viewport para o efeito de janela fisica real durante o scroll.
+  - Substituido o texto generico por copywriting autentico de avaliacao e confianca institucional da Sauer Food ("O que dizem sobre nós").
+  - Removido o botao de WhatsApp da secao, preservando o foco exclusivo no depoimento e na prova social do cliente.
+
+### 18/11/2026 — Redesign Editorial da Secao de Avaliacoes Inspirado em OGA Experience
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Aplicada a composicao cinematografica e assimetrica do OGA: fotografia rústica texturizada ao fundo com gradiente direcional escuro a esquerda e revelacao da textura a direita.
+  - Alinhado todo o bloco de conteudo no terco esquerdo (.oga-content-col com max-width de 520px), com eyebrow sutil, titulo "Um momento para recordar" em Cormorant Garamond 400 (line-height 1.05), paragrafo de atmosfera sensorial com entrelinha 1.85 e citacao delimitada por linha dourada fina.
+  - Integrado botao retangular de alta conversao para WhatsApp (.btn-oga-whatsapp) em bronze/dourado com icone oficial.
+
+### 18/11/2026 — Implementacao Estrutural Exata da Secao OGA Experience em Avaliacoes
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Aplicada a arquitetura estrutural geometrica documentada de .oga-exp com .oga-exp__inner (width 100%, z-index 2, padding inferior de 92px e zero padding superior/lateral).
+  - Configurado o container de conteudo .oga-wrap com max-width de 1240px, margin horizontal automatica e padding lateral de 40px em box-sizing: border-box.
+  - Implementado o identificador .oga-eyebrow (inline-flex, gap 14px, margin-bottom 20px) e titulo principal .oga-exp h2 com font-size clamp(30px, 4.2vw, 56px), peso 400, line-height 1.05 e max-width de 15ch.
+
+### 18/11/2026 — Remocao da Secao Momentos Registrados da Home
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Removida a secao #cardapio (Momentos Registrados) e seus placeholders de imagens da pagina Inicio, evitando duplicacao de portfolio com a pagina de Eventos e otimizando o fluxo de rolagem para conversao.
+  - Eliminadas as regras CSS orfas .gallery-grid e .gallery-placeholder, incluindo suas variantes de media queries.
+
+### 18/11/2026 — Alinhamento Vertical do Header de Experiencia com a Tagline do Hero
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Ajustado .experiencia-header para alinhamento a esquerda (align-items: flex-start e text-align: left), posicionando a tagline Experiencia sob Medida na mesma coordenada vertical exata da tagline Muito alem do sabor do Hero.
+  - Alinhado o divisor linear dourado a esquerda com degradê direcional para continuidade visual.
+
+### 18/11/2026 — Remocao de Box e Animacao de Surgimento nos Icones SVG dos Cards
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Eliminado o container de moldura .card-icon-box em todos os cards de experiencia, mantendo apenas o vetor SVG puro (.card-icon).
+  - Implementada animacao de surgimento suave no foco (opacity: 0 e scale: 0.6 em repouso transicionando para opacity: 1 e scale: 1 com delay de 0.12s no hover), fazendo com que o icone apareca organicamente apenas quando o card se expande.
+
+### 18/11/2026 — Alinhamento Textual e Extensao do Card Equipe de Elite
+- Arquivos: `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Expandido o copywriting do card Equipe de Elite para 3 linhas completas ("Profissionais altamente treinados para entregar um serviço preciso, atencioso e impecável do início ao término do seu evento"), harmonizando a altura e o ritmo visual com os outros dois cards da secao.
+
+### 17/11/2026 — Calibracao Total da Largura da Secao e Delimitacao Precisa no Hover
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Restaurada a distribuicao proporcional total dos 3 cards ocupando 100% da largura da section (flex: 1 no repouso), eliminando o agrupamento a esquerda.
+  - Ajustada a largura real do texto descritivo para 440px estaticos, fazendo com que no hover (flex: 1.6) o card abra exatamente ate o fim do texto, sem sobras de espaco vazio.
+  - Mantida a compensacao fluida dos cards vizinhos (flex: 0.7) para assegurar o preenchimento total do grid.
+
+### 17/11/2026 — Implementacao do Efeito Cortina Lateral com Texto Estatico Travado
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Definida largura real fixa estatica de 460px para .card-description (flex-shrink: 0), mantendo o texto fixo e sem quebras indesejadas.
+  - Configurada a largura inicial dos cards em flex: 0 0 220px com overflow: hidden no repouso, deixando o texto fisicamente cortado e escondido para fora da div na lateral direita quando sem foco.
+  - Implementada abertura elastica para a direita no hover (flex: 1 0 540px), desmascarando suavemente a totalidade do texto estatico apenas no foco.
+
+### 17/11/2026 — Restauracao do Layout Equilibrado dos Cards de Experiencia
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Revertidas as larguras forcadas e o corte lateral estatico de .card-description, restaurando a tipografia e o fluxo natural do texto.
+  - Reestabelecida a proporcao harmoniosa flex: 1 no estado de repouso, com expansao dinamica fluida flex: 1.35 e elevacao no foco de cada pilar, preservando o efeito spotlight reativo.
+
+### 17/11/2026 — Ajuste de Corte Lateral Estatico no Texto dos Cards de Experiencia
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Definida largura fixa estatica de 320px com flex-shrink: 0 para o texto descritivo (.card-description), mantendo a tipografia inalterada.
+  - Ajustada a proporcao inicial dos cards para flex: 0.48 com overflow: hidden, garantindo que o texto fique cortado para fora da div no estado de repouso (sem foco).
+  - Configurada a expansao para a direita em flex: 1.8 no hover, revelando o texto completo apenas quando o card recebe o foco do cursor.
+
+### 17/11/2026 — Redesign Interativo Editorial da Secao Experiencia sob Medida
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/inicio/inicio.js`, `BACKLOG.md`.
+- Resumo:
+  - Reestruturada a secao com header editorial de luxo: tagline dourada, titulo em Cormorant Garamond com destaque italico e divisor linear.
+  - Implementada galeria interativa de pilares com efeito acordeao flex (`flex: 1.35` no foco vs `flex: 0.85` nos vizinhos) e elevacao suave.
+  - Criado efeito spotlight de iluminacao dinamica em tempo real via JavaScript modular Vanilla com variaveis CSS locais (`--mouse-x`, `--mouse-y`), reagindo com halo dourado ao movimento do cursor do usuario.
+  - Adicionadas numeracoes ordinais serifadas em dourado translucido (`01`, `02`, `03`) e caixas de icones estilizadas com inclinacao e brilho dourado no hover.
+
+### 17/11/2026 — Alinhamento Simetrico Global da Secao Essencia com Servicos
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Removido o limitador restrito .container da secao Essencia, adotando a mesma estrutura de grid de tela cheia do Churrasco e Finger Food.
+  - Alinhado o inicio do bloco de texto da Essencia (.essencia-content com padding e justify-self: center) exatamente na linha vertical guia do conteudo do Festival de Churrasco.
+  - Alinhada a extremidade direita da moldura do chef (.essencia-portrait-wrapper com flex-end e justify-self: center) exatamente na linha vertical guia final do conteudo de Finger Food, mantendo simetria perfeita entre as secoes da Home.
+
+### 17/11/2026 — Ajuste Proporcional Aureo no Header
+- Arquivos: `src/components/header/Header.css`, `BACKLOG.md`.
+- Resumo:
+  - Reduzido o padding vertical do cabecalho no topo para 14px e ampliada a altura da logo para 80px (60px no scroll), trazendo imponencia a marca.
+  - Refinada a tipografia dos links do menu para 0.75rem em caixa alta com espacamento entre letras, consolidando a hierarquia visual e contraste proporcional.
+
+### 17/11/2026 — Migracao da Secao A Jornada do Sabor da Home para Eventos
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/eventos/index.html`, `wireframes/eventos/eventos.css`, `BACKLOG.md`.
+- Resumo:
+  - Removida a secao .section-padding-Sabor (A Jornada do Sabor) e todas as suas classes CSS nao utilizadas de `wireframes/inicio/`, eliminando sobrecarga de rolagem e focando a Home na conversao direta para WhatsApp e na experiencia sob medida.
+  - Transferida a secao e seus estilos de layout/responsividade para `wireframes/eventos/` para organizacao da equipe.
+
+### 17/11/2026 — Redesign Editorial da Secao Coffee Break
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Reestruturado o Coffee Break no padrao editorial de alto luxo com fundo claro (--off-white) e imagem a esquerda, consolidando o ritmo de alternancia (zig-zag) com Finger Food e Churrasco.
+  - Adicionada tagline "Corporativo & Social", titulo em Cormorant Garamond com destaque italico, divisor dourado linear e lead sensorial.
+  - Alinhado o container de texto com justify-self: center e configurado o zoom frontal suave na imagem delimitado ao hover do box .coffe.
+
+### 17/11/2026 — Redesign Editorial em Alternancia da Secao Festival de Churrasco
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Implementado layout editorial em alternancia (zig-zag): texto posicionado a esquerda e fotografia de churrasco sangrada encostada a margem direita da tela.
+  - Alinhada a hierarquia visual ao padrao de luxo do site: inclusao da tagline oficial "Festival & Brasa Viva", titulo em Cormorant Garamond com destaque italico dourado, divisor linear e paragrafo lead de impacto.
+  - Aplicado fundo preto refinado (--preto: #0d0d0d) com degradê termico ambar sutil e botao de acao estilizado com borda e brilho dourado (.btn-service-churrasco).
+  - Configurado efeito de zoom frontal suave (scale 1.08) com elevacao de camada delimitado ao hover da caixa do churrasco (.body-churrasco .churrasco:hover).
+
+### 17/11/2026 — Delimitacao do Gatilho de Zoom para o Box Finger Food
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Ajustado o gatilho de hover do zoom da imagem (.body-finger .finger-food:hover .finger-food-imagem img): o efeito agora e ativado exclusivamente dentro dos limites do box .finger-food (altura e largura do container de conteudo e imagem), sem disparar nos espacos de padding superior e inferior da secao.
+
+### 16/11/2026 — Gradiente Lateral Grafite e Zoom Frontal na Imagem de Finger Food
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Adicionado degradê grafite suave com linear-gradient da margem direita em direcao ao centro na secao `.body-finger`, proporcionando contraste e eliminando o fundo monocromatico claro.
+  - Implementado efeito de expansao pura para frente (scale 1.08 com transform-origin central) e elevacao de camada (z-index) no hover da imagem, gerando profundidade sem deslocamento lateral.
+
+### 16/11/2026 — Refinamento de Copywriting na Secao Finger Food
+- Arquivos: `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Atualizada a tagline da secao para `Eventos & Recepções`.
+  - Reestruturado o titulo principal para `Finger Food & Celebração`, eliminando o termo generico "Gourmet".
+  - Refinado o texto editorial com foco em grandiosas experiencias gastronomicas para ocasioes especiais e celebracoes.
+
+### 16/11/2026 — Refinamento Editorial e Tipografico da Secao Finger Food
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Alinhada a tipografia da secao Finger Food ao padrao de design editorial do Hero e da secao Essencia.
+  - Adicionada a tagline oficial com linha guia dourada (`Cardápio Volante`).
+  - Reestruturado o titulo em Cormorant Garamond com destaque italico (`Finger Food Gourmet`) e divisor dourado sutil.
+  - Criado paragrafo lead de destaque com tipografia editorial e ajustada a hierarquia do corpo de texto e transicoes do botao de acao.
+
+### 16/11/2026 — Ajuste Proporcional do Finger Food e Nova Fotografia
+- Arquivos: `public/img/finger_food_mesa.jpg`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `.agents/GEMINI.md`, `BACKLOG.md`.
+- Resumo:
+  - Substituida a imagem anterior de Finger Food pela nova fotografia real da mesa gourmet de Finger Food (`/img/finger_food_mesa.jpg`).
+  - Ajustado o espacamento da secao `.body-finger` adicionando respiro vertical (`padding: 80px 0`) com o fundo claro (`--off-white`), evitando que a imagem se estenda desproporcionalmente de cima a baixo.
+  - A imagem foi mantida encostada na margem esquerda da tela, com cantos retos (sem borda arredondada), altura controlada de 480px e sombra sutil.
+
+### 16/11/2026 — Intensificacao do Fade Termico Dourado Atras do Chef e Remocao da Chama
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Removido experimento de marca d'agua de chama no fundo da secao Essencia, mantendo layout limpo e direto.
+  - Intensificado o glow/fade dourado ambiente diretamente atras da moldura da foto do Chef (.portrait-ambient-glow com expansao para -28%, opacidade aumentada para 32%, blur de 48px e animacao @keyframes portraitGlowPulse).
+  - Alinhado degradê radial da secao para 75% 42% no quadrante do Chef, destacando a fotografia autoral.
+
+### 16/11/2026 — Padronizacao de Formato de Commit sem Escopo
+- Arquivos: `.agents/GEMINI.md`, `BACKLOG.md`.
+- Resumo:
+  - Atualizada a regra 5 do projeto no contexto do agente (.agents/GEMINI.md versao 3.3) definindo sugestoes de mensagens de commit estritamente sem escopo entre parenteses (ex.: `feat: ...`, `fix: ...`).
+
+### 16/11/2026 — Sincronizacao do Gatilho da Citacao com Visibilidade Total do Botao de Acao
+- Arquivos: `wireframes/inicio/inicio.js`, `BACKLOG.md`.
+- Resumo:
+  - Ajustado o alvo do IntersectionObserver no modulo `wireframes/inicio/inicio.js`: o observador agora monitora o botao de acao (.essencia-actions .btn) com threshold 1.0 (100% visivel na tela).
+  - Garante que mesmo em rolagem lenta a animacao da linha e do texto da citacao so dispare quando todo o bloco da secao Essencia, incluindo o botao inferior, estiver visivel no campo de visao do usuario.
+
+### 13/11/2026 — Gatilho de Animacao com IntersectionObserver na Secao Essencia
+- Arquivos: `wireframes/inicio/inicio.js`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Criado modulo JavaScript `wireframes/inicio/inicio.js` implementando `IntersectionObserver` na secao `.essencia-section`.
+  - Configurado estado inicial oculto dos elementos da citacao (.quote-line com transform scaleY(0) e opacity 0; .quote-body com clip-path e translacao negativa).
+  - A animacao de emergencia da linha e do texto passa a ser engatilhada exclusivamente quando a secao entra no campo de visao do usuario via adicao da classe `.animate`.
+  - O observador e desconectado apos o disparo unico, garantindo que o texto e a linha permaneçam fixos e visiveis sem recalculos adicionais.
+
+### 12/11/2026 — Padronizacao de Assinatura do Chef Alisson Sauer e Efeito de Emergencia na Linha
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Adicionada tipografia de assinatura "Alisson Sauer" em Cormorant Garamond italico dourado no badge do retrato e na citacao oficial, substituindo o texto generico SAUER FOOD.
+  - Implementado comportamento interativo no badge do retrato: a funcao "CHEF DA SAUER FOOD" surge em transicao fluida ao passar o mouse sobre o frame da imagem.
+  - Adicionadas aspas tipograficas a citacao e refinada a animacao @keyframes quoteEmergingFromLine, fazendo o texto emergir diretamente da linha vertical dourada com deslocamento horizontal e abertura por mascara de recorte.
+
+### 12/11/2026 — Refinamento Editorial da Secao Essencia e Animacao da Citacao
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Eliminados dados artificiais e imprecisos da secao (removido bloco de estatisticas nao confirmadas pelo cliente e simplificado o badge do retrato para "CHEF DA SAUER FOOD").
+  - Adicionado fundo atmosferico profundo com gradiente grafite aquecido (#121316 a #17181c), sutil overlay com malha radial e marca d'agua monumental "SAUER".
+  - Reestruturada a tipografia do lead editorial com frase de destaque com alto contraste seguida pelo texto detalhado.
+  - Implementada a animacao Gold Line Wipe Reveal na citacao oficial: crescimento vertical da linha guia dourada (@keyframes quoteLineGrow) sincronizado com abertura suave horizontal do texto (@keyframes quoteWipeReveal com clip-path).
+  - Incluida regra de acessibilidade em prefers-reduced-motion para neutralizar a animacao da citacao quando solicitado pelo usuario.
+
+### 12/11/2026 — Redesign Editorial da Secao Essencia com Retrato do Chef
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Substituida a colagem de placeholders por uma composicao editorial de alto padrao destacando a fotografia vertical do Chef (/img/chef.jpeg).
+  - Adicionada moldura geometrica dourada reativa, badge em glassmorphism translucido ("Chef & Fundador") e glow ambiente sutil.
+  - Reestruturado o lado esquerdo com tipografia integrada ao Hero (Cormorant Garamond com destaque italico dourado), manifesto sensorial, metricas de prestigio minimalistas conectadas por divisor em ouro escovado e citacao com aspas decorativas.
+  - Totalmente responsivo com adaptacao fluida para tablets e dispositivos moveis.
 
 ### 12/11/2026 — Correcao de Vazamento de Background de Imagem no Cardapio
 - Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
@@ -167,6 +503,7 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 - [x] Configuracao do `.gitignore` para blindagem de IA e IDEs
 
 ### Em Aberto (Equipe)
+- [ ] Implementar efeito de janela estatica com background-attachment: fixed e overlay fume na secao de Depoimentos/Avaliacoes
 - [ ] Evoluir o conteudo interno de cada pagina em `wireframes/<pagina>/index.html` e seus respectivos `.css` conforme divisao do Trello
 - [ ] Implementar a calculadora de orcamento na pagina `cardapio` apos recebimento da tabela do cliente
 

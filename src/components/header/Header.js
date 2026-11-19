@@ -1,12 +1,13 @@
 import './Header.css';
+import { getCurrentLanguage, setLanguage } from '../../i18n/index.js';
 
 const NAV_LINKS = [
-  { id: 'inicio', label: 'Início', href: '/wireframes/inicio/index.html' },
-  { id: 'servicos', label: 'Serviços', href: '/wireframes/servicos/index.html' },
-  { id: 'eventos', label: 'Eventos', href: '/wireframes/eventos/index.html' },
-  { id: 'cardapio', label: 'Cardápio', href: '/wireframes/cardapio/index.html' },
-  { id: 'sobre', label: 'Sobre', href: '/wireframes/sobre/index.html' },
-  { id: 'contato', label: 'Contato', href: '/wireframes/contato/index.html' },
+  { id: 'inicio', label: 'Início', href: '/wireframes/inicio/index.html', i18nKey: 'nav.inicio' },
+  { id: 'servicos', label: 'Serviços', href: '/wireframes/servicos/index.html', i18nKey: 'nav.servicos' },
+  { id: 'eventos', label: 'Eventos', href: '/wireframes/eventos/index.html', i18nKey: 'nav.eventos' },
+  { id: 'cardapio', label: 'Cardápio', href: '/wireframes/cardapio/index.html', i18nKey: 'nav.cardapio' },
+  { id: 'sobre', label: 'Sobre', href: '/wireframes/sobre/index.html', i18nKey: 'nav.sobre' },
+  { id: 'contato', label: 'Contato', href: '/wireframes/contato/index.html', i18nKey: 'nav.contato' },
 ];
 
 const LANGUAGES = ['pt', 'es', 'en'];
@@ -18,6 +19,7 @@ function getActivePage() {
   if (path.includes('/cardapio')) return 'cardapio';
   if (path.includes('/sobre')) return 'sobre';
   if (path.includes('/contato')) return 'contato';
+  if (path.includes('/inicio') || path === '/' || path.endsWith('/index.html')) return 'inicio';
   return 'inicio';
 }
 
@@ -25,14 +27,14 @@ export function renderHeader(container) {
   if (!container) return;
 
   const activePage = getActivePage();
-  let activeLang = 'pt';
+  let activeLang = getCurrentLanguage();
   let isMobileOpen = false;
 
   const navItemsMarkup = NAV_LINKS.map((link) => {
     const isActive = activePage === link.id;
     const activeClass = isActive ? ' class="active"' : '';
     const ariaCurrent = isActive ? ' aria-current="page"' : '';
-    return `<li class="header-menu-item"><a href="${link.href}"${activeClass}${ariaCurrent}>${link.label}</a></li>`;
+    return `<li class="header-menu-item"><a href="${link.href}"${activeClass}${ariaCurrent} data-i18n="${link.i18nKey}">${link.label}</a></li>`;
   }).join('');
 
   const langItemsMarkup = LANGUAGES.map((lang) => {
@@ -46,7 +48,7 @@ export function renderHeader(container) {
     <header class="site-header">
       <div class="header-container">
         <a href="/wireframes/inicio/index.html" class="header-logo" aria-label="Sauer Food - Ir para a página inicial">
-          <img src="/img/logo_sem_fundo_256_256px.png.png" alt="Logomarca Sauer Food" />
+          <img src="/img/brand/logo-sauer.png" alt="Logomarca Sauer Food" />
         </a>
 
         <button type="button" class="mobile-menu-button" aria-expanded="false" aria-label="Abrir menu de navegação" aria-controls="main-navbar">
@@ -108,25 +110,33 @@ export function renderHeader(container) {
     });
   });
 
+  function syncActiveLanguage(lang) {
+    activeLang = lang;
+    langLinks.forEach((item) => {
+      const isCurrent = item.dataset.lang === activeLang;
+      item.classList.toggle('active', isCurrent);
+      if (isCurrent) {
+        item.setAttribute('aria-current', 'true');
+      } else {
+        item.removeAttribute('aria-current');
+      }
+    });
+  }
+
   langLinks.forEach((link) => {
     link.addEventListener('click', (event) => {
       event.preventDefault();
       const selectedLang = link.dataset.lang;
       if (!selectedLang) return;
-      activeLang = selectedLang;
-
-      langLinks.forEach((item) => {
-        const isCurrent = item.dataset.lang === activeLang;
-        item.classList.toggle('active', isCurrent);
-        if (isCurrent) {
-          item.setAttribute('aria-current', 'true');
-        } else {
-          item.removeAttribute('aria-current');
-        }
-      });
-
+      setLanguage(selectedLang);
       setMobileMenu(false);
     });
+  });
+
+  window.addEventListener('languageChanged', (event) => {
+    if (event.detail && event.detail.lang) {
+      syncActiveLanguage(event.detail.lang);
+    }
   });
 
   window.addEventListener('keydown', (event) => {
