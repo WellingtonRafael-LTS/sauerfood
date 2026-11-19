@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Otimizacao com requestAnimationFrame e Padronizacao Semantica
+- Arquivos: `wireframes/inicio/inicio.js`, `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Otimizado o efeito spotlight dos cards de experiencia sob medida com requestAnimationFrame e cancelAnimationFrame, evitando gargalos de recalculacao no evento mousemove.
+  - Padronizadas as taglines das secoes de servicos com <p class="linename"> e <span class="line" aria-hidden="true"></span> em conformidade semantica e de acessibilidade.
+
 ### 19/11/2026 — Ajuste Geometrico dos Cards de Experiencia sob Medida
 - Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
