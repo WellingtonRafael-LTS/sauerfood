@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Refinamento de Usabilidade e Semantica no Rodape
+- Arquivos: `wireframes/inicio/index.html`, `src/styles/footer-whatsapp.css`, `BACKLOG.md`.
+- Resumo:
+  - Transformados os dados de contato do rodape em links interativos nativos (tel: e mailto:).
+  - Substituido icone generico de Facebook por atalho direto oficial do WhatsApp ao lado do Instagram da Sauer Food.
+  - Eliminada tag de quebra forcada (br) e aplicado layout flexbox limpo com gap modular em .footer-col-action.
+
 ### 19/11/2026 — Redesign Editorial e Conversao Estrategica no CTA Final
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:

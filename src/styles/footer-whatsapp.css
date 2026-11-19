@@ -55,6 +55,18 @@ footer {
   color: var(--preto);
   padding: 12px 20px;
   font-size: 0.8rem;
+  align-self: flex-start;
+}
+
+.footer-col-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.footer-col-action h3 {
+  margin-bottom: 0;
 }
 
 .footer-col .btn-gold:hover {
