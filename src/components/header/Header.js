@@ -46,7 +46,7 @@ export function renderHeader(container) {
     <header class="site-header">
       <div class="header-container">
         <a href="/wireframes/inicio/index.html" class="header-logo" aria-label="Sauer Food - Ir para a página inicial">
-          <img src="/img/logo_sem_fundo_256_256px.png.png" alt="Logomarca Sauer Food" />
+          <img src="/img/brand/logo-sauer.png" alt="Logomarca Sauer Food" />
         </a>
 
         <button type="button" class="mobile-menu-button" aria-expanded="false" aria-label="Abrir menu de navegação" aria-controls="main-navbar">

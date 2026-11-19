@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Padronizacao Arquitetural e Reorganizacao dos Assets em Subpastas
+- Arquivos: `public/img/*`, `src/components/header/Header.js`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/servicos/index.html`, `wireframes/eventos/index.html`, `wireframes/cardapio/index.html`, `wireframes/sobre/index.html`, `wireframes/contato/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Reorganizada toda a pasta de imagens estaticas (public/img/) na arquitetura profissional em subpastas semanticas: brand, icons, equipe, eventos e servicos (churrasco, finger-food, coffee-break).
+  - Renomeados todos os arquivos para convencao estrita kebab-case em letras minusculas, eliminando espacos, nomes de camera (WELL6413.JPG) e extensoes duplicadas (.png.png).
+  - Atualizadas todas as referencias de caminhos nos codigos HTML e CSS de todas as 6 paginas e componentes globais sem quebras.
+
 ### 19/11/2026 — Otimizacao com requestAnimationFrame e Padronizacao Semantica
 - Arquivos: `wireframes/inicio/inicio.js`, `wireframes/inicio/index.html`, `BACKLOG.md`.
 - Resumo:
