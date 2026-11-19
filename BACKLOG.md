@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Componentizacao Modular do Footer com Modais Embutidos
+- Arquivos: `src/components/footer/Footer.js`, `src/components/footer/Footer.css`, `src/main.js`, `src/styles/global.css`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.js`, `BACKLOG.md`.
+- Resumo:
+  - Criado o componente isolado renderFooter encapsulando a marcacao estrutural das 4 colunas, navegacao, links de contato, redes sociais, creditos academicos e o gerenciamento interativo dos modais legais de Politica de Privacidade e Termos de Uso.
+  - Eliminado o arquivo legado src/styles/footer-whatsapp.css e reduzido em mais de 100 linhas o HTML estatico de wireframes/inicio/index.html atraves do ponto de montagem <div id="footer-root"></div> montado via src/main.js.
+
 ### 19/11/2026 — Componentizacao Modular do Botao Flutuante do WhatsApp
 - Arquivos: `src/components/whatsapp-button/WhatsAppButton.js`, `src/components/whatsapp-button/WhatsAppButton.css`, `src/main.js`, `src/styles/footer-whatsapp.css`, `wireframes/inicio/index.html`, `BACKLOG.md`.
 - Resumo:

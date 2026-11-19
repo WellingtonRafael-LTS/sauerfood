@@ -244,38 +244,15 @@ footer hr {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .footer-bottom {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .whatsapp-float {
-    bottom: 20px;
-    right: 20px;
-    width: 54px;
-    height: 54px;
+    align-items: flex-start;
+    gap: 14px;
   }
 }
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  .whatsapp-pulse {
-    animation: none;
-  }
-
-  .btn,
-  .footer-col a,
-  .social-icons a,
-  .whatsapp-float {
-    transition: none;
-  }
-}
-
