@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sauer Food — Cardápioo</title>
-    <link rel="icon" type="image/png" href="/img/brand/logo-sauer.png">
+    <title>Sauer Food — Cardápio</title>
+    <link rel="icon" type="image/png" href="/img/logo_sem_fundo_256_256px.png.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,10 +13,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./cardapio.css">
 </head>
-
+ 
 <body>
     <div id="header-root"></div>
-
+ 
     <main>
         <section class="page-hero">
             <div class="container">
@@ -29,7 +29,7 @@
                     alimentares.</p>
             </div>
         </section>
-
+ 
         <section class="page-section" id="cardapio">
             <div class="container">
                 <div class="section-header">
@@ -38,8 +38,8 @@
                         evento.</p>
                 </div>
                 <div class="cards-grid-3">
-                    <article class="info-card">
-                        <h3>Festival de Churrasco</h3>
+                    <article class="info-card gold-card" id="festival-churrasco">
+                        <h3>Festival de <span>Churrasco</span></h3>
                         <p>Costela fogo de chão, cortes especiais na parrilla, hambúrguer artesanal, choripan,
                             linguiças artesanais, carnes defumadas, estações de sanduíches, acompanhamentos
                             personalizados e sobremesas.</p>
@@ -48,9 +48,10 @@
                             <span class="tag-item">Cortes Especiais</span>
                             <span class="tag-item">Defumados</span>
                         </div>
+                        <a href="#gastro-fire" class="card-link">Ver menu Gastro Fire</a>
                     </article>
-                    <article class="info-card">
-                        <h3>Finger Food</h3>
+                    <article class="info-card gold-card" id="finger-food">
+                        <h3>Finger <span>Food</span></h3>
                         <p>Mini sanduíches artesanais, canapés, bruschettas, mini hambúrgueres, mini pastéis,
                             espetinhos, mini porções quentes, entradas volantes e sobremesas individuais.</p>
                         <div class="tag-list">
@@ -59,8 +60,8 @@
                             <span class="tag-item">Volantes</span>
                         </div>
                     </article>
-                    <article class="info-card">
-                        <h3>Coffee Break</h3>
+                    <article class="info-card gold-card" id="coffee-break">
+                        <h3>Coffee <span>Break</span></h3>
                         <p>Mini sanduíches, pães e folhados, salgados assados, mini cachorro-quente, bolos e doces,
                             frutas, sobremesas individuais e opções personalizadas.</p>
                         <div class="tag-list">
@@ -71,15 +72,166 @@
                 </div>
             </div>
         </section>
-
-        <section class="page-section-alt">
+ 
+        <!-- ===== GASTRO FIRE ===== -->
+        <section class="page-section-alt gastro-fire" id="gastro-fire">
+            <div class="container">
+                <div class="fire-banner gold-card">
+                    <div class="fire-banner-text">
+                        <div class="tagline">
+                            <span class="line" aria-hidden="true"></span>
+                            <p class="linename">by Sauer Food</p>
+                        </div>
+                        <h2>Gastro Fire</h2>
+                        <p class="fire-sub">Brasa, defumação e sabores incríveis.</p>
+                        <p class="fire-slogan">Mais que um churrasco, uma experiência.</p>
+                    </div>
+                    <div class="img-placeholder img-banner" role="img" aria-label="Foto: carnes defumadas na brasa">Foto — carnes na brasa (banner)</div>
+                </div>
+ 
+                <nav class="fire-steps" aria-label="Como montar o menu">
+                    <span class="tag-item">Entradas: até 5 opções</span>
+                    <span class="tag-item">Proteínas: 1 tipo + 1 acompanhamento</span>
+                    <span class="tag-item">Sobremesas: 1 opção</span>
+                </nav>
+ 
+                <!-- Entradas -->
+                <div class="menu-block" id="entradas">
+                    <div class="section-header">
+                        <h2>Entradas</h2>
+                        <p>Escolha até 5 opções.</p>
+                    </div>
+                    <div class="entradas-layout">
+                        <ol class="menu-list menu-list-detailed menu-two-cols">
+                        <li><strong>Choripán com vinagrete de hortelã</strong><span>Mini pão artesanal com linguiça grelhada na brasa e vinagrete fresco de hortelã.</span></li>
+                        <li><strong>Arayes de cafta</strong><span>Pão árabe recheado com cafta temperada, tostado na grelha até ficar crocante.</span></li>
+                        <li><strong>Arayes de queijo com manjericão</strong><span>Pão árabe tostado, queijo derretido e manjericão fresco.</span></li>
+                        <li><strong>Linguicinha com chimichurri</strong><span>Linguiça dourada na brasa, servida em pequenas porções com chimichurri artesanal.</span></li>
+                        <li><strong>Pão de alho artesanal</strong><span>Pão tostado na grelha com creme de alho, manteiga e ervas.</span></li>
+                        <li><strong>Asinhas de frango na mostarda</strong><span>Asinhas douradas na brasa, com molho de mostarda e toque de mel.</span></li>
+                        <li><strong>Snacks de frango frito</strong><span>Cubos de frango empanados e crocantes, acompanhados de molho da casa.</span></li>
+                        <li><strong>Batata frita</strong><span>Batatas crocantes, finalizadas com sal e páprica defumada.</span></li>
+                        <li><strong>Croquete de brisket</strong><span>Croquete dourado com carne bovina desfiada e temperada, servido com barbecue artesanal.</span></li>
+                        <li><strong>Bolinho de costela</strong><span>Costela desfiada, temperos da casa e casquinha crocante, com maionese de ervas.</span></li>
+                        <li><strong>Provolone na brasa com mel picante</strong><span>Queijo tostado, finalizado com mel levemente picante.</span></li>
+                        <li><strong>Espetinho de queijo coalho com melaço</strong><span>Queijo dourado na grelha, com finalização agridoce.</span></li>
+                        <li><strong>Cubos de panceta caramelizada</strong><span>Panceta dourada, com glaze de barbecue e especiarias.</span></li>
+                        <li><strong>Mini slider de brisket</strong><span>Pão brioche, brisket desfiado, barbecue artesanal e picles.</span></li>
+                        <li><strong>Drumetes de frango defumados</strong><span>Pequenas coxinhas da asa defumadas e finalizadas com molho barbecue.</span></li>
+                        <li><strong>Bruschetta de tomate confit</strong><span>Pão tostado, tomate confit, alho e manjericão.</span></li>
+                        <li><strong>Cogumelos na manteiga de alho</strong><span>Cogumelos salteados com manteiga, alho e tomilho.</span></li>
+                        <li><strong>Dadinho de tapioca</strong><span>Cubinhos crocantes de tapioca e queijo coalho, com geleia de pimenta.</span></li>
+                        <li><strong>Mini empanada de carne</strong><span>Massa dourada com recheio de carne bem temperada.</span></li>
+                        <li><strong>Mini batatas defumadas</strong><span>Batatinhas tostadas, páprica defumada e creme de ervas.</span></li>
+                        </ol>
+                        <aside class="info-card burger-card gold-card">
+                            <div class="img-placeholder img-entradas" role="img" aria-label="Foto: hambúrguer"></div>
+                            <h3>Hambúrguer opcional</h3>
+                            <p>Pão, carne de hambúrguer, queijo e creme defumado.</p>
+                            <p class="fire-slogan">Mais sabor para o seu evento!</p>
+                        </aside>
+                    </div>
+                </div>
+ 
+                <!-- Proteínas -->
+                <div class="menu-block" id="proteinas">
+                    <div class="section-header">
+                        <h2>Proteínas</h2>
+                        <p>Escolha 1 tipo de proteína e 1 tipo de acompanhamento.</p>
+                    </div>
+                    <div class="cards-grid-4">
+                    <article class="info-card protein-card gold-card">
+                        <div class="img-placeholder img-proteinas1" role="img" aria-label="Foto: Costela Bovina">Foto — Costela Bovina</div>
+                        <h3>Costela Bovina</h3>
+                        <p>Sabor intenso, fibras macias e gordura entremeada. Ideal para acompanhamentos cremosos, ácidos ou crocantes.</p>
+                        <h4 class="list-label">Acompanhamentos</h4>
+                        <ol class="menu-list menu-list-compact">
+                                <li>Mousseline de mandioca com manteiga de ervas</li>
+                                <li>Batatas rústicas com páprica defumada e alecrim</li>
+                                <li>Farofa crocante de bacon e cebola caramelizada</li>
+                        </ol>
+                    </article>
+                    <article class="info-card protein-card gold-card">
+                        <div class="img-placeholder img-proteinas2" role="img" aria-label="Foto: Brisket">Foto — Brisket</div>
+                        <h3>Brisket</h3>
+                        <p>Peito bovino defumado, com crosta temperada e sabor profundo. Combina com purês, molhos e preparações de influência americana.</p>
+                        <h4 class="list-label">Acompanhamentos</h4>
+                        <ol class="menu-list menu-list-compact">
+                                <li>Purê de batata com provolone e raspas de limão</li>
+                                <li>Mac and cheese cremoso com crosta de parmesão</li>
+                                <li>Salada coleslaw com molho levemente ácido</li>
+                        </ol>
+                    </article>
+                    <article class="info-card protein-card gold-card">
+                        <div class="img-placeholder img-proteinas3" role="img" aria-label="Foto: Cupim">Foto — Cupim</div>
+                        <h3>Cupim</h3>
+                        <p>Carne rica em gordura, sabor marcante e textura amanteigada quando bem preparada. Fica excelente com raízes, farofas e molhos cítricos.</p>
+                        <h4 class="list-label">Acompanhamentos</h4>
+                        <ol class="menu-list menu-list-compact">
+                                <li>Polenta cremosa com parmesão</li>
+                                <li>Arroz cremoso de alho assado e ervas</li>
+                                <li>Farofa de banana-da-terra com manteiga de garrafa</li>
+                        </ol>
+                    </article>
+                    <article class="info-card protein-card gold-card">
+                        <div class="img-placeholder img-proteinas4" role="img" aria-label="Foto: Panceta em Rolo com Erva-doce">Foto — Panceta em Rolo com Erva-doce</div>
+                        <h3>Panceta em Rolo com Erva-doce</h3>
+                        <p>Carne suína enrolada, temperada com erva-doce e ervas aromáticas, com exterior dourado e crocante.</p>
+                        <h4 class="list-label">Acompanhamentos</h4>
+                        <ol class="menu-list menu-list-compact">
+                                <li>Polenta cremosa com parmesão</li>
+                                <li>Repolho roxo agridoce com maçã</li>
+                                <li>Batatas ao murro com alho confitado e alecrim</li>
+                        </ol>
+                    </article>
+                    </div>
+                </div>
+ 
+                <!-- Sobremesas -->
+                <div class="menu-block" id="sobremesas">
+                    <div class="section-header">
+                        <h2>Sobremesas</h2>
+                        <p>Escolha 1 opção.</p>
+                    </div>
+                    <div class="sobremesas-layout">
+                        <div class="info-card gold-card">
+                            <h3>Com identidade de fogo</h3>
+                            <ol class="menu-list">
+                            <li>Abacaxi na brasa com açúcar, canela e raspas de limão</li>
+                            <li>Banana na brasa com doce de leite</li>
+                            <li>Maçã assada com crumble crocante</li>
+                            <li>Banana caramelizada com farofa de castanhas</li>
+                            <li>Marshmallow tostado com chocolate</li>
+                            </ol>
+                        </div>
+                        <div class="info-card gold-card">
+                            <h3>Clássicas</h3>
+                            <ol class="menu-list">
+                            <li>Brownie de chocolate com sorvete de creme</li>
+                            <li>Churros mexicano com creme de chocolate</li>
+                            <li>Mousse de limão com farofa crocante de Bis</li>
+                            <li>Cheesecake com calda de frutas vermelhas</li>
+                            <li>Pudim de leite condensado com caramelo</li>
+                            <li>Panna cotta de baunilha com calda de frutas</li>
+                            <li>Petit gâteau com sorvete</li>
+                            </ol>
+                        </div>
+                        <div class="img-placeholder img-tall" role="img" aria-label="Foto: abacaxi na brasa com sorvete">Foto — sobremesa na brasa</div>
+                    </div>
+                </div>
+ 
+                <p class="fire-closing">Sabores que fazem história</p>
+            </div>
+        </section>
+ 
+        <section class="page-section">
             <div class="container">
                 <div class="section-header">
                     <h2>Montagem do Orçamento por Convidado</h2>
                     <p>Como estruturamos a composição personalizada do seu cardápio para o evento.</p>
                 </div>
                 <div class="cards-grid-2">
-                    <article class="info-card">
+                    <article class="info-card gold-card">
                         <h3>Etapas da Escolha</h3>
                         <p>Você seleciona a entrada, o prato principal e a sobremesa ideais para o perfil dos
                             convidados, informando restrições alimentares e duração prevista.</p>
@@ -89,7 +241,7 @@
                             <span class="tag-item">Sobremesa</span>
                         </div>
                     </article>
-                    <article class="info-card">
+                    <article class="info-card gold-card">
                         <h3>Estimativa Personalizada (Em Evolução)</h3>
                         <p>Em breve você poderá simular quantidades de convidados, equipe de atendimento e serviços
                             opcionais como o Espelho Mágico diretamente nesta página.</p>
@@ -102,7 +254,7 @@
                 </div>
             </div>
         </section>
-
+ 
         <section class="section-padding cta-bottom">
             <div class="container">
                 <h2>Quer montar o cardápio do seu evento?</h2>
@@ -114,7 +266,7 @@
             </div>
         </section>
     </main>
-
+ 
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -198,7 +350,7 @@
             </div>
         </div>
     </footer>
-
+ 
     <a href="https://wa.me/554598225170?text=Ol%C3%A1!+Gostaria+de+solicitar+um+or%C3%A7amento+com+a+Sauer+Food+para+o+meu+evento."
         class="whatsapp-float" target="_blank" rel="noopener noreferrer"
         aria-label="Falar com a Sauer Food pelo WhatsApp">
@@ -208,8 +360,8 @@
                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
         </svg>
     </a>
-
+ 
     <script type="module" src="/src/main.js"></script>
 </body>
-
+ 
 </html>
