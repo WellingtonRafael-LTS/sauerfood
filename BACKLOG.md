@@ -6,6 +6,11 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Atualizacao da Especificacao da Pagina Inicio
+- Arquivos: `wireframes/inicio/README.md`, `BACKLOG.md`.
+- Resumo:
+  - Atualizada a documentacao tecnica da pagina inicial refletindo a arquitetura em Vanilla JS modular, internacionalizacao nativa, componentes globais (Header, Footer e WhatsAppButton) e detalhes tecnicos de desempenho.
+
 ### 19/11/2026 — Polimento de Acessibilidade, Titulo Dinamico e Active Link no Header
 - Arquivos: `src/i18n/*`, `src/components/whatsapp-button/WhatsAppButton.js`, `src/components/header/Header.js`, `BACKLOG.md`.
 - Resumo:
