@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Implementacao do Sistema de Internacionalizacao (i18n)
+- Arquivos: `src/i18n/*`, `src/components/header/Header.js`, `src/components/footer/Footer.js`, `src/main.js`, `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Criado motor nativo de i18n em src/i18n/ com suporte aos idiomas Portugues (pt), Espanhol (es) e Ingles (en), persistencia via localStorage e troca de idioma em tempo real sem recarregar a pagina.
+  - Integrado o seletor de idiomas do Header.js e mapeados todos os elementos textuais da Home e do Footer atraves de atributos semanticos data-i18n.
+
 ### 19/11/2026 — Polimento Tecnico, SEO e Limpeza Semantica na Home
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/inicio/inicio.js`, `BACKLOG.md`.
 - Resumo:

@@ -1,23 +1,26 @@
 import './Footer.css';
+import { getTranslation } from '../../i18n/index.js';
 
-const LEGAL_CONTENT = {
-  privacidade: {
-    title: 'Política de Privacidade',
-    html: `
-      <p>A Sauer Food valoriza a privacidade e a segurança dos dados de seus clientes e parceiros. Esta política resume como tratamos informações em nossas interações digitais.</p>
-      <p><strong>Coleta de Dados:</strong> As informações fornecidas em nossos formulários e canais de contato (como nome, telefone, data e preferências de evento) são utilizadas estritamente para a elaboração de orçamentos personalizados e atendimento via WhatsApp.</p>
-      <p><strong>Uso e Proteção:</strong> Não compartilhamos seus dados com terceiros para fins publicitários. Mantemos práticas seguras para garantir a integridade das suas informações.</p>
-    `,
-  },
-  termos: {
-    title: 'Termos de Uso',
-    html: `
-      <p>Bem-vindo ao site institucional da Sauer Food. Ao navegar por esta plataforma, você concorda com as seguintes diretrizes:</p>
-      <p><strong>Serviços e Propostas:</strong> As informações e imagens apresentadas possuem caráter de demonstração de serviços gastronômicos e experiências para eventos. Orçamentos finais estão sujeitos à disponibilidade de datas e confirmação formal.</p>
-      <p><strong>Propriedade Intelectual:</strong> Marcas, logotipos, fotografias e textos presentes neste site são de titularidade da Sauer Food ou devidamente autorizados para uso institucional.</p>
-    `,
-  },
-};
+function getLegalContent() {
+  return {
+    privacidade: {
+      title: getTranslation('footer.privacyModalTitle'),
+      html: `
+        <p>${getTranslation('footer.privacyModalText1')}</p>
+        <p>${getTranslation('footer.privacyModalText2')}</p>
+        <p>${getTranslation('footer.privacyModalText3')}</p>
+      `,
+    },
+    termos: {
+      title: getTranslation('footer.termsModalTitle'),
+      html: `
+        <p>${getTranslation('footer.termsModalText1')}</p>
+        <p>${getTranslation('footer.termsModalText2')}</p>
+        <p>${getTranslation('footer.termsModalText3')}</p>
+      `,
+    },
+  };
+}
 
 function setupLegalModal(footerElement) {
   const modal = footerElement.querySelector('#legal-modal');
@@ -31,7 +34,8 @@ function setupLegalModal(footerElement) {
   }
 
   function openModal(type) {
-    const data = LEGAL_CONTENT[type];
+    const legalContent = getLegalContent();
+    const data = legalContent[type];
     if (!data) return;
     title.textContent = data.title;
     body.innerHTML = data.html;
@@ -72,21 +76,21 @@ export function renderFooter(container) {
         <div class="footer-grid">
           <div class="footer-col">
             <h3>SAUER FOOD</h3>
-            <p>Gastronomia de alta performance. Sabor, excelência e experiências criadas para transformar o seu evento.</p>
+            <p data-i18n="footer.description">Gastronomia de alta performance. Sabor, excelência e experiências criadas para transformar o seu evento.</p>
           </div>
           <div class="footer-col">
-            <h3>NAVEGAÇÃO</h3>
+            <h3 data-i18n="footer.navTitle">NAVEGAÇÃO</h3>
             <ul>
-              <li><a href="/wireframes/inicio/index.html">Início</a></li>
-              <li><a href="/wireframes/servicos/index.html">Serviços</a></li>
-              <li><a href="/wireframes/eventos/index.html">Eventos</a></li>
-              <li><a href="/wireframes/cardapio/index.html">Cardápio</a></li>
-              <li><a href="/wireframes/sobre/index.html">Sobre</a></li>
-              <li><a href="/wireframes/contato/index.html">Contato</a></li>
+              <li><a href="/wireframes/inicio/index.html" data-i18n="nav.inicio">Início</a></li>
+              <li><a href="/wireframes/servicos/index.html" data-i18n="nav.servicos">Serviços</a></li>
+              <li><a href="/wireframes/eventos/index.html" data-i18n="nav.eventos">Eventos</a></li>
+              <li><a href="/wireframes/cardapio/index.html" data-i18n="nav.cardapio">Cardápio</a></li>
+              <li><a href="/wireframes/sobre/index.html" data-i18n="nav.sobre">Sobre</a></li>
+              <li><a href="/wireframes/contato/index.html" data-i18n="nav.contato">Contato</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h3>CONTATO</h3>
+            <h3 data-i18n="footer.contactTitle">CONTATO</h3>
             <ul>
               <li>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -106,12 +110,12 @@ export function renderFooter(container) {
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                   <circle cx="12" cy="10" r="3" />
                 </svg>
-                <span>Foz do Iguaçu, Paraná</span>
+                <span data-i18n="footer.city">Foz do Iguaçu, Paraná</span>
               </li>
             </ul>
           </div>
           <div class="footer-col footer-col-action">
-            <h3>SOCIAL</h3>
+            <h3 data-i18n="footer.socialTitle">SOCIAL</h3>
             <div class="social-icons">
               <a href="https://www.instagram.com/sauerfoodfoz" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Sauer Food">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -126,21 +130,21 @@ export function renderFooter(container) {
                 </svg>
               </a>
             </div>
-            <a href="/wireframes/contato/index.html" class="btn btn-gold">Solicitar Orçamento &rarr;</a>
+            <a href="/wireframes/contato/index.html" class="btn btn-gold" data-i18n="footer.btnBudget">Solicitar Orçamento &rarr;</a>
           </div>
         </div>
         <hr>
         <div class="footer-bottom">
           <div class="copyright">
-            <p>&copy; 2026 Sauer Food. Todos os direitos reservados.</p>
+            <p data-i18n="footer.copyright">&copy; 2026 Sauer Food. Todos os direitos reservados.</p>
           </div>
           <div class="footer-credit-box">
-            <a href="https://github.com/WellingtonRafael-LTS/sauerfood" target="_blank" rel="noopener noreferrer" class="footer-credit">Projeto Integrador &bull; UniAmérica 2026</a>
+            <a href="https://github.com/WellingtonRafael-LTS/sauerfood" target="_blank" rel="noopener noreferrer" class="footer-credit" data-i18n="footer.academicCredit">Projeto Integrador &bull; UniAmérica 2026</a>
           </div>
           <div class="legal-links">
-            <button type="button" class="legal-link-btn" data-modal-target="privacidade">Política de Privacidade</button>
+            <button type="button" class="legal-link-btn" data-modal-target="privacidade" data-i18n="footer.privacy">Política de Privacidade</button>
             <span class="legal-divider" aria-hidden="true">&bull;</span>
-            <button type="button" class="legal-link-btn" data-modal-target="termos">Termos de Uso</button>
+            <button type="button" class="legal-link-btn" data-modal-target="termos" data-i18n="footer.terms">Termos de Uso</button>
           </div>
         </div>
       </div>

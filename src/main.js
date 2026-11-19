@@ -2,6 +2,7 @@ import './styles/global.css';
 import { renderHeader } from './components/header/Header.js';
 import { renderWhatsAppButton } from './components/whatsapp-button/WhatsAppButton.js';
 import { renderFooter } from './components/footer/Footer.js';
+import { initI18n } from './i18n/index.js';
 
 function mountGlobalComponents() {
   const headerRoot = document.getElementById('header-root');
@@ -13,6 +14,7 @@ function mountGlobalComponents() {
   }
 
   renderWhatsAppButton();
+  initI18n();
 }
 
 if (document.readyState === 'loading') {
