@@ -6,6 +6,11 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Calibragem de Transicoes Lentas em Experiencia sob Medida
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Estendidos os tempos de transicao dos cards (expansao de 1.4s e elevacao de 0.9s), icone (1.1s com delay de 0.25s), linha dourada (0.8s) e texto descritivo (1.3s com delay de 0.25s), aplicando a curva suave cubic-bezier(0.16, 1, 0.3, 1) para um efeito editorial calmo e contemplativo.
+
 ### 19/11/2026 — Animacao de Revelacao do Texto nos Cards de Experiencia sob Medida
 - Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
