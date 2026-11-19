@@ -6,6 +6,16 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Fixacao de Largura Estatica do Texto dos Cards para Eliminar Reflow
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Definida largura rigida de 380px com flex-shrink: 0 em .card-description e delay de 0.35s na animacao de hover, assegurando que o texto do terceiro card (Logistica) mantenha a mesma quebra de linhas durante todo o ciclo de expansao.
+
+### 19/11/2026 — Estabilizacao de Layout e Reflow do Texto no Card de Logistica
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Definida largura estavel (width: 440px com max-width: 100%) em .card-description para evitar quebra dinamica de linhas (reflow) durante a expansao dos cards, garantindo que o texto do terceiro card surja diretamente na sua posicao final com transicao continua.
+
 ### 19/11/2026 — Calibragem de Transicoes Lentas em Experiencia sob Medida
 - Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
