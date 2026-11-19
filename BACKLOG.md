@@ -6,6 +6,11 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Ajuste Visual no Botao Fechar dos Modais Legais
+- Arquivos: `src/styles/footer-whatsapp.css`, `BACKLOG.md`.
+- Resumo:
+  - Removido o circulo envolvente (.legal-modal-close), preservando o caractere de fechar limpo com transicao suave de cor para dourado e escala no hover.
+
 ### 19/11/2026 — Creditos Academicos e Modais Legais no Rodape
 - Arquivos: `wireframes/inicio/index.html`, `src/styles/footer-whatsapp.css`, `wireframes/inicio/inicio.js`, `BACKLOG.md`.
 - Resumo:

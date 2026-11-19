@@ -205,29 +205,27 @@ footer hr {
 
 .legal-modal-close {
   background: transparent;
-  border: 1px solid var(--borda-sutil);
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  border: none;
+  padding: 0;
   color: var(--texto-secundario);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: border-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .legal-modal-close:hover {
-  border-color: var(--dourado);
   color: var(--dourado);
-  transform: scale(1.08);
+  transform: scale(1.12);
 }
 
 .legal-modal-close:focus-visible {
   outline: 2px solid var(--dourado);
-  outline-offset: 2px;
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 
 .legal-modal-body {
