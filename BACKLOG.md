@@ -6,6 +6,11 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Fotografia de Fundo Fixa na Secao de Avaliacoes
+- Arquivos: `wireframes/inicio/inicio.css`, `public/img/WELL6413.JPG`, `BACKLOG.md`.
+- Resumo:
+  - Vinculada a fotografia oficial do evento (`/img/WELL6413.JPG`) como fundo com degradê direcional escuro e fixacao de viewport na secao de avaliacoes.
+
 ### 18/11/2026 — Correcao de Marcacao e Ajuste Limpo na Secao de Avaliacoes
 - Arquivos: `wireframes/inicio/index.html`, `BACKLOG.md`.
 - Resumo:
