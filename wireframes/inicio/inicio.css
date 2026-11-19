@@ -1034,15 +1034,19 @@
   line-height: 1.75;
   color: rgba(240, 240, 242, 0.78);
   margin: 0;
-  width: 440px;
-  min-width: 440px;
-  max-width: 440px;
-  flex-shrink: 0;
-  transition: color 0.3s ease;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(14px);
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.35s ease, transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), color 0.3s ease;
 }
 
 .experiencia-card:hover .card-description {
+  max-height: 200px;
+  opacity: 1;
+  transform: translateY(0);
   color: var(--texto-claro);
+  transition: max-height 0.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.45s ease 0.1s, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.1s, color 0.3s ease;
 }
 
 @media (max-width: 992px) {
@@ -1052,9 +1056,10 @@
   }
 
   .card-description {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
+    max-height: none;
+    opacity: 1;
+    transform: none;
+    overflow: visible;
   }
 
   .experiencia-card,

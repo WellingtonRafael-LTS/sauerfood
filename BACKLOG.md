@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Animacao de Revelacao do Texto nos Cards de Experiencia sob Medida
+- Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Configurado o texto de descricao dos cards (.card-description) oculto por padrao com max-height zero, opacidade nula e deslocamento vertical.
+  - Implementada a transicao suave de surgimento ao passar o mouse (:hover), revelando a descricao com curva natural e mantendo a exibicao completa estatica em telas mobile.
+
 ### 19/11/2026 — Fotografia de Fundo Fixa na Secao de Avaliacoes
 - Arquivos: `wireframes/inicio/inicio.css`, `public/img/WELL6413.JPG`, `BACKLOG.md`.
 - Resumo:
