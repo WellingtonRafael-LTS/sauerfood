@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Redesign Editorial e Conversao Estrategica no CTA Final
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
+- Resumo:
+  - Refatorada a secao final (.cta-section) com tagline institucional (Reserva & Orcamento), titulo com destaque em italico dourado e iluminacao radial suave de alta gastronomia ao centro.
+  - Otimizada a conversao separando os destinos dos dois botoes de acao: formulario completo de orcamento (.btn-gold) e contato direto no WhatsApp com mensagem personalizada (.btn-outline).
+
 ### 19/11/2026 — Fixacao de Largura Estatica do Texto dos Cards para Eliminar Reflow
 - Arquivos: `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
