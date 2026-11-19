@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Polimento Tecnico, SEO e Limpeza Semantica na Home
+- Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/inicio/inicio.js`, `BACKLOG.md`.
+- Resumo:
+  - Adicionadas meta tags de descricao e titulo institucional para SEO e apresentacao academica no index.html.
+  - Eliminado span orfao do badge e propriedades duplicadas em .essencia-container no inicio.css.
+  - Adicionado reset suave das coordenadas CSS (--mouse-x e --mouse-y) para o centro no evento mouseleave dos cards em inicio.js.
+
 ### 19/11/2026 — Sincronizacao de Caminhos com a Nomenclatura dos Assets
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `wireframes/eventos/index.html`, `wireframes/servicos/index.html`, `BACKLOG.md`.
 - Resumo:

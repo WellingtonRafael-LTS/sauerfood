@@ -50,6 +50,8 @@ export function initSpotlightCards() {
       if (rafId) {
         cancelAnimationFrame(rafId);
       }
+      card.style.setProperty('--mouse-x', '50%');
+      card.style.setProperty('--mouse-y', '50%');
     });
   });
 }
