@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Creditos Academicos e Modais Legais no Rodape
+- Arquivos: `wireframes/inicio/index.html`, `src/styles/footer-whatsapp.css`, `wireframes/inicio/inicio.js`, `BACKLOG.md`.
+- Resumo:
+  - Adicionado credito institucional academico (Projeto Integrador · UniAmerica 2026) conectado ao repositorio GitHub oficial do projeto no centro do rodape inferior.
+  - Implementado componente dialog nativo com modais editoriais escuros e borda dourada para Politica de Privacidade e Termos de Uso com suporte a fechamento por clique externo, tecla Esc ou botao dedicado.
+  - Atualizada linha divisoria do rodape com degradê suave em dourado etereo.
+
 ### 19/11/2026 — Refinamento de Usabilidade e Semantica no Rodape
 - Arquivos: `wireframes/inicio/index.html`, `src/styles/footer-whatsapp.css`, `BACKLOG.md`.
 - Resumo:
