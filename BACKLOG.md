@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Polimento de Acessibilidade, Titulo Dinamico e Active Link no Header
+- Arquivos: `src/i18n/*`, `src/components/whatsapp-button/WhatsAppButton.js`, `src/components/header/Header.js`, `BACKLOG.md`.
+- Resumo:
+  - Adicionada traducao dinamica do document.title na alternancia de idioma no motor i18n.
+  - Sincronizados os atributos aria-label em links do WhatsApp com suporte multilíngue para acessibilidade por leitores de tela.
+  - Refinada a identificacao da pagina ativa na navbar para destacar consistentemente o link Inicio com a classe .active.
+
 ### 19/11/2026 — Internacionalizacao Dinamica dos Links e Mensagens do WhatsApp
 - Arquivos: `src/i18n/*`, `src/components/whatsapp-button/WhatsAppButton.js`, `src/components/footer/Footer.js`, `wireframes/inicio/index.html`, `BACKLOG.md`.
 - Resumo:

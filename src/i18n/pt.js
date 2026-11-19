@@ -1,4 +1,5 @@
 export default {
+  pageTitle: 'Sauer Food',
   nav: {
     inicio: 'Início',
     servicos: 'Serviços',
@@ -69,6 +70,7 @@ export default {
   whatsapp: {
     message: 'Olá! Gostaria de solicitar um orçamento com a Sauer Food para o meu evento.',
     ctaMessage: 'Olá, gostaria de conversar sobre um evento com a Sauer Food.',
+    ariaLabel: 'Falar com a Sauer Food pelo WhatsApp',
   },
   footer: {
     description: 'Gastronomia de alta performance. Sabor, excelência e experiências criadas para transformar o seu evento.',

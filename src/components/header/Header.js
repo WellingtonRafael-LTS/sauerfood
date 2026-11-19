@@ -19,6 +19,7 @@ function getActivePage() {
   if (path.includes('/cardapio')) return 'cardapio';
   if (path.includes('/sobre')) return 'sobre';
   if (path.includes('/contato')) return 'contato';
+  if (path.includes('/inicio') || path === '/' || path.endsWith('/index.html')) return 'inicio';
   return 'inicio';
 }
 

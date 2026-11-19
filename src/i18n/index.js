@@ -53,7 +53,16 @@ export function translatePage(lang = getCurrentLanguage()) {
       const encoded = encodeURIComponent(message);
       el.setAttribute('href', `https://wa.me/${DEFAULT_PHONE}?text=${encoded}`);
     }
+    const ariaLabel = getTranslation('whatsapp.ariaLabel', lang);
+    if (ariaLabel && typeof ariaLabel === 'string') {
+      el.setAttribute('aria-label', ariaLabel);
+    }
   });
+
+  const pageTitle = getTranslation('pageTitle', lang);
+  if (pageTitle && typeof pageTitle === 'string') {
+    document.title = pageTitle;
+  }
 
   const htmlElement = document.documentElement;
   if (lang === 'pt') {

@@ -1,4 +1,5 @@
 export default {
+  pageTitle: 'Sauer Food',
   nav: {
     inicio: 'Home',
     servicos: 'Services',
@@ -69,6 +70,7 @@ export default {
   whatsapp: {
     message: 'Hello! I would like to request a quote with Sauer Food for my event.',
     ctaMessage: 'Hello, I would like to talk about an event with Sauer Food.',
+    ariaLabel: 'Chat with Sauer Food on WhatsApp',
   },
   footer: {
     description: 'High-performance culinary artistry. Flavor, excellence, and experiences crafted to transform your event.',

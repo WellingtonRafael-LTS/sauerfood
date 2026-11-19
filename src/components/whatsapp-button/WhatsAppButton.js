@@ -7,6 +7,10 @@ function updateButtonLink(link, lang = getCurrentLanguage()) {
   const message = getTranslation('whatsapp.message', lang);
   const encodedMessage = encodeURIComponent(message);
   link.href = `https://wa.me/${DEFAULT_PHONE}?text=${encodedMessage}`;
+  const ariaLabel = getTranslation('whatsapp.ariaLabel', lang);
+  if (ariaLabel && typeof ariaLabel === 'string') {
+    link.setAttribute('aria-label', ariaLabel);
+  }
 }
 
 export function renderWhatsAppButton(container = document.body) {
