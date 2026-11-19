@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Componentizacao Modular do Botao Flutuante do WhatsApp
+- Arquivos: `src/components/whatsapp-button/WhatsAppButton.js`, `src/components/whatsapp-button/WhatsAppButton.css`, `src/main.js`, `src/styles/footer-whatsapp.css`, `wireframes/inicio/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Criado o componente nativo renderWhatsAppButton com estilos isolados e montagem global via src/main.js em todas as paginas da aplicacao.
+  - Removido o bloco HTML estatico repetido no wireframes/inicio/index.html e desacoplado o CSS de footer-whatsapp.css para o modulo do componente.
+
 ### 19/11/2026 — Remocao de Borda Dourada no Hover do Botao WhatsApp
 - Arquivos: `src/styles/footer-whatsapp.css`, `BACKLOG.md`.
 - Resumo:
