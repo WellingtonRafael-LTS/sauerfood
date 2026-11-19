@@ -11,6 +11,7 @@ if (document.readyState === 'loading') {
 } else {
   mountHeader();
 }
+
 function initGoldCards() {
     const cards = document.querySelectorAll(".gold-card");
 

@@ -1,30 +1,46 @@
 @import '../../src/styles/global.css';
 
+:root {
+  --laranja-fogo: #e8641b;
+}
+
 h3 span {
   display: inline;
   color: var(--dourado-suave);
 }
 
+#festival-churrasco {
+  background: linear-gradient(to bottom, rgba(10, 10, 12, 0.95) 30%, rgba(10, 10, 12, 0.15)),
+  url('../../img/festival-churrasco.jpeg') center/cover;
+}
 
-/* ===== Cardápio — Gastro Fire (estilos específicos da página) ===== */
-.gastro-fire {
-  --laranja-fogo: #e8641b;
+#finger-food {
+  background: linear-gradient(to bottom, rgba(10, 10, 12, 0.95) 30%, rgba(10, 10, 12, 0.15)),
+  url('../../img/finger-food.jpg') center/cover;
+}
+
+#coffee-break {
+  background: linear-gradient(to bottom, rgba(10, 10, 12, 0.95) 30%, rgba(10, 10, 12, 0.15)),
+  url('../../img/coffee-break.jpeg') center/cover;
 }
  
 .card-link {
+  width: fit-content;
+  height: fit-content;
   margin-top: 18px;
   color: var(--dourado);
   font-size: 0.85rem;
   font-weight: 600;
+  background:   linear-gradient(
+    to bottom,
+    rgba(10, 10, 12, 0.30) 0%,
+    rgba(10, 10, 12, 0.95) 50%,
+    rgba(10, 10, 12, 0.30) 100%
+  ),;
   text-decoration: none;
 }
  
-.card-link:hover { text-decoration: underline; }
- 
-.card-link:focus-visible {
-  outline: 2px solid var(--dourado);
-  outline-offset: 4px;
-}
+.card-link:hover { font-weight: 700; }
 
 .gold-card {
     position: relative;

@@ -10,10 +10,11 @@ h6 {
 }
 
 p {
+  text-align: justify;
   color: var(--texto-secundario);
 }
 
-span {
+.destaque {
   display: block;
   font-family: var(--fonte-titulo);
   font-style: italic;

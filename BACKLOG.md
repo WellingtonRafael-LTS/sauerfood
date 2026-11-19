@@ -6,6 +6,25 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 18/11/2026 — Intensificacao da Visibilidade dos Cards do Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Escurecido o gradiente inferior dos três cards iniciais para reforçar o contraste sem alterar tamanhos ou adicionar bordas.
+  - Reforçadas as sombras dos títulos e parágrafos com duas camadas pretas suaves.
+
+### 18/11/2026 — Contraste dos Cards Iniciais do Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Removido o seletor incorreto `#festival-churrasco h3 p`.
+  - Aplicada sombra legível aos títulos e textos dos três cards iniciais e aumentado o contraste dos parágrafos.
+
+### 18/11/2026 — Resolucao dos Conflitos da Integracao feature/cardapio
+- Arquivos: `BACKLOG.md`, `src/main.js`, `src/styles/typography.css`, `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/index.html`, `wireframes/eventos/README.md`, `wireframes/eventos/eventos.css`, `wireframes/eventos/index.html`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`.
+- Resumo:
+  - Resolvidos os conflitos do merge entre a branch `feature/cardapio` e o conteudo integrado da `dev`.
+  - Preservadas as implementacoes do cardapio, do Header, dos efeitos dourados e dos ajustes de tipografia e hero.
+  - Removidos todos os marcadores de conflito e preparados os arquivos para a etapa final de validacao.
+
 ### 12/11/2026 — Correcao de Vazamento de Background de Imagem no Cardapio
 - Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
 - Resumo:
