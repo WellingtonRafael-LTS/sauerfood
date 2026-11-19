@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 19/11/2026 — Sincronizacao de Integracao com a Dev e Resolucao de Conflitos
+- Arquivos: `index.html`, `legado/style.css`, `BACKLOG.md`.
+- Resumo:
+  - Realizado o merge seguro da branch dev na branch de integracao feature/inicio-integracao.
+  - Resolvido o conflito em index.html mantendo o redirecionador oficial do projeto para /wireframes/inicio/index.html conforme a arquitetura modular v3.0 com 100% de sucesso em build e lint.
+
 ### 19/11/2026 — Atualizacao da Especificacao da Pagina Inicio
 - Arquivos: `wireframes/inicio/README.md`, `BACKLOG.md`.
 - Resumo:
