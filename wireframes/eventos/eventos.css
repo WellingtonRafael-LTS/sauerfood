@@ -25,7 +25,6 @@ footer h3 {
   line-height: 1.1;
 }
 
-main h1 { font-size: 64px; }
 main h2 { font-size: 42px; }
 main h3 { font-size: 26px; }
 
@@ -84,18 +83,18 @@ main .btn-outline:hover {
 
 
 /* TOPO DA PAGINA*/
-.page-hero {
+.page-hero2 {
   position: relative;           
-  background: var(--fundo-preto);
-  padding: 100px 80px;
+  background: linear-gradient(180deg, #0d0d0d 0%, #1a1b1f 100%);
+  padding: 100px 0;
   min-height: 500px;
   overflow: hidden;
-  border: none;
+  border-bottom: 1px solid var(--borda-dourada);
 }
 /**/
 
 /*  foto  direita */
-.page-hero::after {
+.page-hero2::after {
   content: "";
   position: absolute;
   top: 0;
@@ -112,14 +111,33 @@ main .btn-outline:hover {
 }
 
 /* O texto em cima da foto */
-.page-hero .container {
+.page-hero2 .container {
+  
   position: relative;
   z-index: 1;
-  max-width: 500px;
-  margin: 0;
+  max-width: 1200px;   
+  margin: 70px auto;      
 }
 
-.page-hero h1 { margin-bottom: 24px; }
+
+.page-hero2 .container > * {
+  max-width: 480px;
+}
+
+.page-hero2 .paragrafo{
+  display: flex;
+  max-width: 480px;
+  color: var(--texto-secundario);
+   font-size: clamp(0.98rem, 1.2vw, 1.1rem);
+}
+
+
+.page-hero2 h1 { margin-bottom: 24px;
+    font-family: var(--fonte-titulo);
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 500;
+    color: var(--off-white);
+    margin-bottom: 16px; }
 
 /* Linha dourada*/
 .tagline {
@@ -129,25 +147,25 @@ main .btn-outline:hover {
   margin-bottom: 24px;
 }
 
+.page-hero2 .container .tagline {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+
+
 .tagline .line {
   width: 40px;
   height: 1px;
   background: var(--dourado);
 }
 
-.linename {
-  color: var(--dourado);
-  font-size: 11px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-
-
 /*espaçamento e fundo*/
 .page-section,
 .page-section-alt,
 .section-padding {
-  padding: 100px 80px;
+  padding: 100px 0px;
 }
 
 .page-section     { background: var(--fundo-principal); }
@@ -448,8 +466,8 @@ footer hr {
 }
 
 
-/* CELULAR E TABLET (telas menores que 900px) */
-@media (max-width: 900px) {
+
+@media (max-width: 1240px) {
 
   /* Menos espaço nas laterais */
   .page-hero,
@@ -462,8 +480,7 @@ footer hr {
     padding-right: 20px;
   }
 
-  .page-hero::after { width: 100%; opacity: 0.35; }
-  main h1 { font-size: 42px; }
+  .page-hero2::after { width: 100%; opacity: 0.35; }
   main h2 { font-size: 32px; }
   .cta-bottom h2 { font-size: 36px; }
 
