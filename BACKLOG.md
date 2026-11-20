@@ -140,6 +140,25 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 - Resumo:
   - Removido erro de marcacao e eliminada a introducao duplicada, conectando o titulo diretamente a citacao editorial com alinhamento visual limpo.
 
+### 18/11/2026 — Intensificacao da Visibilidade dos Cards do Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Escurecido o gradiente inferior dos três cards iniciais para reforçar o contraste sem alterar tamanhos ou adicionar bordas.
+  - Reforçadas as sombras dos títulos e parágrafos com duas camadas pretas suaves.
+
+### 18/11/2026 — Contraste dos Cards Iniciais do Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Removido o seletor incorreto `#festival-churrasco h3 p`.
+  - Aplicada sombra legível aos títulos e textos dos três cards iniciais e aumentado o contraste dos parágrafos.
+
+### 18/11/2026 — Resolucao dos Conflitos da Integracao feature/cardapio
+- Arquivos: `BACKLOG.md`, `src/main.js`, `src/styles/typography.css`, `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/index.html`, `wireframes/eventos/README.md`, `wireframes/eventos/eventos.css`, `wireframes/eventos/index.html`, `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`.
+- Resumo:
+  - Resolvidos os conflitos do merge entre a branch `feature/cardapio` e o conteudo integrado da `dev`.
+  - Preservadas as implementacoes do cardapio, do Header, dos efeitos dourados e dos ajustes de tipografia e hero.
+  - Removidos todos os marcadores de conflito e preparados os arquivos para a etapa final de validacao.
+
 ### 18/11/2026 — Padronizacao Semantica Oficial da Secao de Avaliacoes
 - Arquivos: `wireframes/inicio/index.html`, `wireframes/inicio/inicio.css`, `BACKLOG.md`.
 - Resumo:
@@ -341,6 +360,25 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
   - Adicionada moldura geometrica dourada reativa, badge em glassmorphism translucido ("Chef & Fundador") e glow ambiente sutil.
   - Reestruturado o lado esquerdo com tipografia integrada ao Hero (Cormorant Garamond com destaque italico dourado), manifesto sensorial, metricas de prestigio minimalistas conectadas por divisor em ouro escovado e citacao com aspas decorativas.
   - Totalmente responsivo com adaptacao fluida para tablets e dispositivos moveis.
+
+### 12/11/2026 — Correcao de Vazamento de Background de Imagem no Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Removido o background de imagem do seletor geral `.img-placeholder`, que estava sendo aplicado a todos os blocos de placeholder da pagina.
+  - Mantida a imagem apenas nos elementos especificos de destaque (`.img-banner` e `.img-tall`), evitando vazamento visual para os demais espacos.
+
+### 12/11/2026 — Resolucao de Conflitos Conforme feature/inicio
+- Arquivos: `index.html`, `wireframes/contato/contato.css`, `wireframes/sobre/sobre.css`, `public/img/Background fogueira.jpg`, `public/img/background lanche.png`, `BACKLOG.md`.
+- Resumo:
+  - Restauradas as versoes de `index.html` e dos estilos de Contato e Sobre iguais a `origin/feature/inicio`.
+  - Removidas as imagens em conflito ausentes de `origin/feature/inicio`.
+  - Marcados os cinco caminhos em conflito como resolvidos.
+
+### 12/11/2026 — Preparacao do Ambiente Vite e Remocao de CSS Obsoleto
+- Arquivos: `style-standard.css`, `BACKLOG.md`.
+- Resumo:
+  - Instaladas as dependencias declaradas no lockfile, incluindo Vite 8.3.3, compativel com Node.js 24.
+  - Removido `style-standard.css`, sem referencias no projeto e fora da arquitetura atual de estilos.
 
 ### 12/11/2026 — Sincronizacao Git e Correcao de Import em Eventos
 - Arquivos: `wireframes/eventos/eventos.css`, `BACKLOG.md`.
