@@ -1,1 +1,261 @@
-@import '../../src/styles/global.css';
+@import "../../src/styles/global.css";
+
+
+
+.servicos-hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 150px clamp(20px, 10vw, 160px) 80px;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(13, 13, 13, 0.92) 0%,
+      rgba(13, 13, 13, 0.55) 45%,
+      rgba(13, 13, 13, 0.1) 100%
+    ),
+    url("Capa.png") center / cover no-repeat;
+}
+
+.servicos-hero-conteudo {
+  max-width: 640px;
+  text-align: left;
+}
+
+
+.servicos-hero .tagline {
+  justify-content: flex-start;
+  gap: 16px; 
+  margin-bottom: 28px;
+}
+
+.servicos-hero .line {
+  width: 45px;
+}
+
+.servicos-hero .linename {
+  padding: 8px 16px;
+  border: 1px solid var(--dourado-suave);
+}
+
+
+.servicos-hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.servicos-hero h1 .span {
+  display: inline;
+}
+
+
+.servicos-hero p {
+  max-width: 560px;
+  margin: 0 0 40px;
+  text-align: left;
+  line-height: 1.7;
+  color: var(--texto-claro);
+}
+
+.servicos-hero .hero-buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .servicos-hero {
+    min-height: auto;
+    padding: 120px 20px 60px;
+  }
+}
+
+
+
+.finger-food {
+  position: relative;
+  justify-content: space-between;
+}
+
+
+
+.finger-food-conteudo {
+  max-width: 430px;
+}
+
+.finger-food-subtitulo {
+  display: block;
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 42px;
+
+  font-family: var(--fonte-corpo);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--dourado-suave);
+}
+
+.finger-food-subtitulo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 18px;
+  height: 1px;
+  background-color: var(--dourado);
+}
+
+.finger-food-titulo {
+  color: var(--texto-escuro);
+  margin-bottom: 30px;
+}
+
+.finger-food-texto {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.finger-food-descricao {
+  max-width: 350px;
+  margin-top: 90px;
+
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--dourado-suave);
+}
+
+
+.coffe-imagem {
+  position: relative;
+  max-width: 400px;
+  padding: 15px 25px 25px 15px;
+}
+
+.coffe-imagem img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 305px;
+  aspect-ratio: 305 / 405;
+  height: auto;
+  box-shadow: 15px 18px 25px rgba(0, 0, 0, 0.12);
+}
+
+.churrasco-imagem {
+  position: relative;
+  max-width: 400px;
+  padding: 15px 25px 25px 15px;
+}
+
+.churrasco-imagem img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 305px;
+  aspect-ratio: 305 / 405;
+  height: auto;
+  box-shadow: 15px 18px 25px rgba(0, 0, 0, 0.12);
+}
+
+.finger-food-imagem {
+  position: relative;
+  max-width: 400px;
+  padding: 15px 25px 25px 15px;
+}
+
+.finger-food-imagem img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 305px;
+  aspect-ratio: 305 / 405;
+  height: auto;
+  box-shadow: 15px 18px 25px rgba(0, 0, 0, 0.12);
+}
+
+.finger-food-linha-superior,
+.finger-food-linha-inferior {
+  position: absolute;
+  z-index: 1;
+  width: 130px;
+  height: 130px;
+}
+
+.finger-food-linha-superior {
+  top: 0;
+  right: 10px;
+  border-top: 1px solid var(--borda-dourada);
+  border-right: 1px solid var(--borda-dourada);
+}
+
+.finger-food-linha-inferior {
+  bottom: 0;
+  right: 0;
+  border-right: 1px solid var(--borda-dourada);
+  border-bottom: 1px solid var(--borda-dourada);
+}
+
+
+.page-espelho {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 150px clamp(20px, 10vw, 160px) 80px;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(13, 13, 13, 0.92) 0%,
+      rgba(13, 13, 13, 0.55) 45%,
+      rgba(13, 13, 13, 0.1) 100%
+    ),
+    url("espelho.png") center / cover no-repeat;
+}
+
+
+
+.espelho-conteudo {
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-espelho .tagline {
+  justify-content: flex-start;
+  margin-bottom: 22px;
+}
+
+
+
+.page-espelho .section-header {
+  width: 100%;
+  text-align: left;
+}
+
+.page-espelho .section-header h2 {
+  margin-bottom: 18px;
+}
+
+.page-espelho .section-header p {
+  max-width: 450px;
+  text-align: left;
+  line-height: 1.7;
+}
+
+
+@media (max-width: 992px) {
+  .finger-food-descricao {
+    margin-top: 40px;
+  }
+
+  .finger-food-imagem {
+    max-width: 100%;
+  }
+}
