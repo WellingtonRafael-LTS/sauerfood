@@ -6,6 +6,20 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 24/11/2026 — Adicao de Selecao Multipla de Servicos no Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `wireframes/contato/contato.js`, `BACKLOG.md`.
+- Resumo:
+  - Implementada selecao multipla de servicos com checkboxes customizados em grid na pagina de contato (permitindo marcar churrasco, finger food, coffee break e espelho magico simultaneamente).
+  - Atualizado contato.js para formatar todos os servicos selecionados na mensagem enviada ao WhatsApp.
+  - Calibrado contato.css com as propriedades solicitadas de .form-control e select.form-control integradas a paleta dourada e fundo escuro.
+
+### 24/11/2026 — Padronizacao Visual e Tipografica da Pagina de Contato
+- Arquivos: `wireframes/contato/contato.css`, `wireframes/contato/index.html`, `wireframes/contato/contato.js`, `BACKLOG.md`.
+- Resumo:
+  - Reestruturado o contato.css aplicando a mesma identidade tipografica da Home (Cormorant Garamond com clamp, Montserrat no corpo, taglines em dourado e botoes padronizados).
+  - Implementado design escuro e refinado para o formulario de orcamento (inputs sem bordas arredondadas, foco dourado e select customizado).
+  - Isolado o envio para WhatsApp em modulo JS dedicado (contato.js) e integrado o ponto de montagem global <div id="footer-root"></div> eliminando rodape e whatsapp duplicados.
+
 ### 19/11/2026 — Sincronizacao de Integracao com a Dev e Resolucao de Conflitos
 - Arquivos: `index.html`, `legado/style.css`, `BACKLOG.md`.
 - Resumo:
