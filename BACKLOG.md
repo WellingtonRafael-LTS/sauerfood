@@ -6,6 +6,108 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 24/11/2026 — Padrao de Cabecalho nas Secoes do Cardapio
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Aplicado o padrao de linha dourada, divisor em gradiente, chamada em negrito e descricao nas secoes Gastro Fire, Entradas, Proteinas e Sobremesas.
+
+### 24/11/2026 — Recuo do Texto de Gastro Fire
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Igualado ao Festival de Churrasco da Home o recuo do texto no desktop e ajustado o espaçamento mobile.
+
+### 24/11/2026 — Imagem de Gastro Fire Ate a Borda Direita
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Removido o limite lateral da seção e estendida a imagem até a borda direita, mantendo o texto alinhado ao conteúdo.
+
+### 24/11/2026 — Proporcao e Animacao de Gastro Fire
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Alinhados a altura da imagem e o efeito de ampliacao ao estilo da secao Festival de Churrasco da Home.
+
+### 24/11/2026 — Layout de Gastro Fire em Duas Colunas
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Organizado o texto, a linha divisoria e as tags à esquerda, com imagem ampliada à direita e adaptação para telas menores.
+
+### 24/11/2026 — Correcao da Imagem de Gastro Fire
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Corrigida a imagem de Gastro Fire para `churrasco-06.jpg`.
+
+### 24/11/2026 — Correcao da Imagem do Hamburguer em Entradas
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Corrigida a imagem do hamburguer para `finger-food-11.jpg`.
+
+### 24/11/2026 — Imagem de Gastro Fire
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Atualizada a imagem de Gastro Fire para a foto de carne na brasa indicada pelo PO.
+
+### 24/11/2026 — Imagem de Hamburguer em Entradas
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Substituida a imagem da opcao de hamburguer em Entradas pela foto correspondente de Finger Food.
+
+### 24/11/2026 — Imagens Reais nas Secoes do Cardapio
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Aplicadas imagens existentes de churrasco e Coffee Break aos espaços visuais de Gastro Fire, hambúrguer opcional, proteínas e sobremesas.
+  - Corrigidos os caminhos dos fundos para usar a raiz publica `/img/` e removidos textos de placeholder, mantendo os aria-labels.
+
+### 24/11/2026 — Duas Colunas para o Orcamento por Convidado
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Substituidos os cards por duas colunas abertas: passo a passo de escolha do menu e lista de recursos previstos para etapas futuras.
+
+### 24/11/2026 — Borda Lateral e Tags nos Cards de Orcamento
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Restaurada a borda dourada na lateral esquerda dos cards de Orcamento e o estilo visual das tags, mantendo o fundo escuro da secao.
+
+### 24/11/2026 — Restauracao dos Cards de Orcamento
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Restaurado o fundo, espacamento e sombra dos cards de Orcamento por Convidado, mantendo o fundo escuro da secao sem bordas douradas.
+
+### 24/11/2026 — Separacao do Cardapio em Secoes com Fundos Alternados
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Separadas Gastro Fire, Entradas, Proteinas e Sobremesas em secoes independentes com fundos escuros e claros alternados.
+  - Removido o tratamento visual de cards individuais dos itens e reunidos Orcamento e CTA na secao escura final.
+
+### 24/11/2026 — Reducao de Bordas Douradas no Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Substituidas bordas decorativas douradas por contornos neutros nas secoes de Gastro Fire, mantendo o dourado em poucos destaques visuais.
+
+### 24/11/2026 — Redesign das Secoes do Cardapio a Partir de Gastro Fire
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Atualizada a identidade visual de Gastro Fire, entradas, proteínas, sobremesas, orçamento e CTA com painéis escuros, detalhes dourados e layouts responsivos inspirados na Home.
+
+### 24/11/2026 — Gradiente Horizontal e Barra Dourada nos Titulos
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Aplicado gradiente escuro da esquerda para a direita nos h3 e adicionada barra dourada na lateral esquerda.
+
+### 24/11/2026 — Transicao Radial Suave nos Titulos do Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Ajustado o fundo dos h3 para um gradiente radial com transicao gradual do centro para todas as direcoes.
+
+### 24/11/2026 — Fundo em Gradiente nos Titulos dos Cards
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Substituido o fundo radial dos h3 por um gradiente linear horizontal mais escuro a esquerda e transparente a direita.
+
+### 24/11/2026 — Sombra nos Titulos dos Cards do Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Aplicada sombra escura aos elementos h3 da pagina de Cardapio para melhorar a legibilidade sobre fundos variados.
+
 ### 19/11/2026 — Sincronizacao de Integracao com a Dev e Resolucao de Conflitos
 - Arquivos: `index.html`, `legado/style.css`, `BACKLOG.md`.
 - Resumo:

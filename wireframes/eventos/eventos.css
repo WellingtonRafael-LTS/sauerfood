@@ -200,10 +200,10 @@ main .btn-outline:hover {
 
 
 .cards-grid-3 .info-card {
-  min-height: 430px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;     
+  justify-content: space-between;
+  height: 380px;     
   background-size: cover;
   background-position: center;
   border: none;

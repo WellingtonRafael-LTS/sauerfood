@@ -15,7 +15,7 @@
 </head>
  
 <body>
-    <div id="header-root"></div>
+    <header id="header-root"></header>
  
     <main>
         <section class="page-hero">
@@ -43,66 +43,56 @@
                         <p>Costela fogo de chão, cortes especiais na parrilla, hambúrguer artesanal, choripan,
                             linguiças artesanais, carnes defumadas, estações de sanduíches, acompanhamentos
                             personalizados e sobremesas.</p>
-                        <div class="tag-list">
-                            <span class="tag-item">Fogo de Chão</span>
-                            <span class="tag-item">Cortes Especiais</span>
-                            <span class="tag-item">Defumados</span>
-                        </div>
-                        <a href="#gastro-fire" class="card-link">Ver menu Gastro Fire</a>
                     </article>
                     <article class="info-card gold-card" id="finger-food">
                         <h3>Finger <span>Food</span></h3>
                         <p>Mini sanduíches artesanais, canapés, bruschettas, mini hambúrgueres, mini pastéis,
                             espetinhos, mini porções quentes, entradas volantes e sobremesas individuais.</p>
-                        <div class="tag-list">
-                            <span class="tag-item">Canapés & Bruschettas</span>
-                            <span class="tag-item">Porções Quentes</span>
-                            <span class="tag-item">Volantes</span>
-                        </div>
                     </article>
                     <article class="info-card gold-card" id="coffee-break">
                         <h3>Coffee <span>Break</span></h3>
                         <p>Mini sanduíches, pães e folhados, salgados assados, mini cachorro-quente, bolos e doces,
                             frutas, sobremesas individuais e opções personalizadas.</p>
-                        <div class="tag-list">
-                            <span class="tag-item">Leve / Tradicional / Reforçado</span>
-                            <span class="tag-item">Corporativo</span>
-                        </div>
                     </article>
                 </div>
             </div>
         </section>
  
-        <!-- ===== GASTRO FIRE ===== -->
-        <section class="page-section-alt gastro-fire" id="gastro-fire">
-            <div class="container">
-                <div class="fire-banner gold-card">
-                    <div class="fire-banner-text">
-                        <div class="tagline">
-                            <span class="line" aria-hidden="true"></span>
-                            <p class="linename">by Sauer Food</p>
-                        </div>
-                        <h2>Gastro Fire</h2>
-                        <p class="fire-sub">Brasa, defumação e sabores incríveis.</p>
-                        <p class="fire-slogan">Mais que um churrasco, uma experiência.</p>
+        <section class="menu-section menu-section-dark gastro-fire" id="gastro-fire">
+            <div class="fire-banner">
+                <div class="fire-banner-text">
+                    <div class="tagline">
+                        <span class="line" aria-hidden="true"></span>
+                        <p class="linename">by Sauer Food</p>
                     </div>
-                    <div class="img-placeholder img-banner" role="img" aria-label="Foto: carnes defumadas na brasa">Foto — carnes na brasa (banner)</div>
+                    <h2>Gastro Fire</h2>
+                    <span class="menu-section-divider" aria-hidden="true"></span>
+                    <p class="fire-sub">Brasa, defumação e sabores incríveis.</p>
+                    <p class="fire-slogan">Mais que um churrasco, uma experiência.</p>
+                    <nav class="fire-steps" aria-label="Como montar o menu">
+                        <span>Entradas: até 5 opções</span>
+                        <span>Proteínas: 1 tipo + 1 acompanhamento</span>
+                        <span>Sobremesas: 1 opção</span>
+                    </nav>
                 </div>
- 
-                <nav class="fire-steps" aria-label="Como montar o menu">
-                    <span class="tag-item">Entradas: até 5 opções</span>
-                    <span class="tag-item">Proteínas: 1 tipo + 1 acompanhamento</span>
-                    <span class="tag-item">Sobremesas: 1 opção</span>
-                </nav>
- 
-                <!-- Entradas -->
-                <div class="menu-block" id="entradas">
-                    <div class="section-header">
-                        <h2>Entradas</h2>
-                        <p>Escolha até 5 opções.</p>
+                <div class="img-placeholder img-banner" role="img" aria-label="Foto: carnes defumadas na brasa"></div>
+            </div>
+        </section>
+
+        <section class="menu-section menu-section-light" id="entradas">
+            <div class="container">
+                <div class="section-header menu-section-header">
+                    <div class="tagline">
+                        <span class="line" aria-hidden="true"></span>
+                        <p class="linename">Para começar</p>
                     </div>
-                    <div class="entradas-layout">
-                        <ol class="menu-list menu-list-detailed menu-two-cols">
+                    <h2>Entradas</h2>
+                    <span class="menu-section-divider" aria-hidden="true"></span>
+                    <p class="menu-section-lead">Escolha até 5 opções.</p>
+                    <p>Reúna preparações quentes, crocantes e artesanais para abrir o cardápio.</p>
+                </div>
+                <div class="entradas-layout">
+                    <ol class="menu-list menu-list-detailed menu-two-cols">
                         <li><strong>Choripán com vinagrete de hortelã</strong><span>Mini pão artesanal com linguiça grelhada na brasa e vinagrete fresco de hortelã.</span></li>
                         <li><strong>Arayes de cafta</strong><span>Pão árabe recheado com cafta temperada, tostado na grelha até ficar crocante.</span></li>
                         <li><strong>Arayes de queijo com manjericão</strong><span>Pão árabe tostado, queijo derretido e manjericão fresco.</span></li>
@@ -123,90 +113,104 @@
                         <li><strong>Dadinho de tapioca</strong><span>Cubinhos crocantes de tapioca e queijo coalho, com geleia de pimenta.</span></li>
                         <li><strong>Mini empanada de carne</strong><span>Massa dourada com recheio de carne bem temperada.</span></li>
                         <li><strong>Mini batatas defumadas</strong><span>Batatinhas tostadas, páprica defumada e creme de ervas.</span></li>
-                        </ol>
-                        <aside class="info-card burger-card gold-card">
-                            <div class="img-placeholder img-entradas" role="img" aria-label="Foto: hambúrguer"></div>
-                            <h3>Hambúrguer opcional</h3>
-                            <p>Pão, carne de hambúrguer, queijo e creme defumado.</p>
-                            <p class="fire-slogan">Mais sabor para o seu evento!</p>
-                        </aside>
-                    </div>
+                    </ol>
+                    <aside class="burger-feature">
+                        <div class="img-placeholder img-entradas" role="img" aria-label="Foto: hambúrguer"></div>
+                        <h3>Hambúrguer opcional</h3>
+                        <p>Pão, carne de hambúrguer, queijo e creme defumado.</p>
+                        <p class="fire-slogan">Mais sabor para o seu evento!</p>
+                    </aside>
                 </div>
- 
-                <!-- Proteínas -->
-                <div class="menu-block" id="proteinas">
-                    <div class="section-header">
-                        <h2>Proteínas</h2>
-                        <p>Escolha 1 tipo de proteína e 1 tipo de acompanhamento.</p>
+            </div>
+        </section>
+
+        <section class="menu-section menu-section-dark" id="proteinas">
+            <div class="container">
+                <div class="section-header menu-section-header">
+                    <div class="tagline">
+                        <span class="line" aria-hidden="true"></span>
+                        <p class="linename">Sabores da brasa</p>
                     </div>
-                    <div class="cards-grid-4">
-                    <article class="info-card protein-card gold-card">
-                        <div class="img-placeholder img-proteinas1" role="img" aria-label="Foto: Costela Bovina">Foto — Costela Bovina</div>
+                    <h2>Proteínas</h2>
+                    <span class="menu-section-divider" aria-hidden="true"></span>
+                    <p class="menu-section-lead">Escolha 1 tipo de proteína e 1 tipo de acompanhamento.</p>
+                    <p>Explore as opções de carnes e seus acompanhamentos para compor o menu.</p>
+                </div>
+                <div class="proteins-layout">
+                    <article class="protein-entry">
+                        <div class="img-placeholder img-proteinas1" role="img" aria-label="Foto: Costela Bovina"></div>
                         <h3>Costela Bovina</h3>
                         <p>Sabor intenso, fibras macias e gordura entremeada. Ideal para acompanhamentos cremosos, ácidos ou crocantes.</p>
                         <h4 class="list-label">Acompanhamentos</h4>
                         <ol class="menu-list menu-list-compact">
-                                <li>Mousseline de mandioca com manteiga de ervas</li>
-                                <li>Batatas rústicas com páprica defumada e alecrim</li>
-                                <li>Farofa crocante de bacon e cebola caramelizada</li>
+                            <li>Mousseline de mandioca com manteiga de ervas</li>
+                            <li>Batatas rústicas com páprica defumada e alecrim</li>
+                            <li>Farofa crocante de bacon e cebola caramelizada</li>
                         </ol>
                     </article>
-                    <article class="info-card protein-card gold-card">
-                        <div class="img-placeholder img-proteinas2" role="img" aria-label="Foto: Brisket">Foto — Brisket</div>
+                    <article class="protein-entry">
+                        <div class="img-placeholder img-proteinas2" role="img" aria-label="Foto: Brisket"></div>
                         <h3>Brisket</h3>
                         <p>Peito bovino defumado, com crosta temperada e sabor profundo. Combina com purês, molhos e preparações de influência americana.</p>
                         <h4 class="list-label">Acompanhamentos</h4>
                         <ol class="menu-list menu-list-compact">
-                                <li>Purê de batata com provolone e raspas de limão</li>
-                                <li>Mac and cheese cremoso com crosta de parmesão</li>
-                                <li>Salada coleslaw com molho levemente ácido</li>
+                            <li>Purê de batata com provolone e raspas de limão</li>
+                            <li>Mac and cheese cremoso com crosta de parmesão</li>
+                            <li>Salada coleslaw com molho levemente ácido</li>
                         </ol>
                     </article>
-                    <article class="info-card protein-card gold-card">
-                        <div class="img-placeholder img-proteinas3" role="img" aria-label="Foto: Cupim">Foto — Cupim</div>
+                    <article class="protein-entry">
+                        <div class="img-placeholder img-proteinas3" role="img" aria-label="Foto: Cupim"></div>
                         <h3>Cupim</h3>
                         <p>Carne rica em gordura, sabor marcante e textura amanteigada quando bem preparada. Fica excelente com raízes, farofas e molhos cítricos.</p>
                         <h4 class="list-label">Acompanhamentos</h4>
                         <ol class="menu-list menu-list-compact">
-                                <li>Polenta cremosa com parmesão</li>
-                                <li>Arroz cremoso de alho assado e ervas</li>
-                                <li>Farofa de banana-da-terra com manteiga de garrafa</li>
+                            <li>Polenta cremosa com parmesão</li>
+                            <li>Arroz cremoso de alho assado e ervas</li>
+                            <li>Farofa de banana-da-terra com manteiga de garrafa</li>
                         </ol>
                     </article>
-                    <article class="info-card protein-card gold-card">
-                        <div class="img-placeholder img-proteinas4" role="img" aria-label="Foto: Panceta em Rolo com Erva-doce">Foto — Panceta em Rolo com Erva-doce</div>
+                    <article class="protein-entry">
+                        <div class="img-placeholder img-proteinas4" role="img" aria-label="Foto: Panceta em Rolo com Erva-doce"></div>
                         <h3>Panceta em Rolo com Erva-doce</h3>
                         <p>Carne suína enrolada, temperada com erva-doce e ervas aromáticas, com exterior dourado e crocante.</p>
                         <h4 class="list-label">Acompanhamentos</h4>
                         <ol class="menu-list menu-list-compact">
-                                <li>Polenta cremosa com parmesão</li>
-                                <li>Repolho roxo agridoce com maçã</li>
-                                <li>Batatas ao murro com alho confitado e alecrim</li>
+                            <li>Polenta cremosa com parmesão</li>
+                            <li>Repolho roxo agridoce com maçã</li>
+                            <li>Batatas ao murro com alho confitado e alecrim</li>
                         </ol>
                     </article>
-                    </div>
                 </div>
- 
-                <!-- Sobremesas -->
-                <div class="menu-block" id="sobremesas">
-                    <div class="section-header">
-                        <h2>Sobremesas</h2>
-                        <p>Escolha 1 opção.</p>
+            </div>
+        </section>
+
+        <section class="menu-section menu-section-light" id="sobremesas">
+            <div class="container">
+                <div class="section-header menu-section-header">
+                    <div class="tagline">
+                        <span class="line" aria-hidden="true"></span>
+                        <p class="linename">Para encerrar</p>
                     </div>
-                    <div class="sobremesas-layout">
-                        <div class="info-card gold-card">
-                            <h3>Com identidade de fogo</h3>
-                            <ol class="menu-list">
+                    <h2>Sobremesas</h2>
+                    <span class="menu-section-divider" aria-hidden="true"></span>
+                    <p class="menu-section-lead">Escolha 1 opção.</p>
+                    <p>Escolha entre sobremesas com identidade de fogo e alternativas clássicas.</p>
+                </div>
+                <div class="desserts-layout">
+                    <div class="dessert-group">
+                        <h3>Com identidade de fogo</h3>
+                        <ol class="menu-list">
                             <li>Abacaxi na brasa com açúcar, canela e raspas de limão</li>
                             <li>Banana na brasa com doce de leite</li>
                             <li>Maçã assada com crumble crocante</li>
                             <li>Banana caramelizada com farofa de castanhas</li>
                             <li>Marshmallow tostado com chocolate</li>
-                            </ol>
-                        </div>
-                        <div class="info-card gold-card">
-                            <h3>Clássicas</h3>
-                            <ol class="menu-list">
+                        </ol>
+                    </div>
+                    <div class="dessert-group">
+                        <h3>Clássicas</h3>
+                        <ol class="menu-list">
                             <li>Brownie de chocolate com sorvete de creme</li>
                             <li>Churros mexicano com creme de chocolate</li>
                             <li>Mousse de limão com farofa crocante de Bis</li>
@@ -214,142 +218,62 @@
                             <li>Pudim de leite condensado com caramelo</li>
                             <li>Panna cotta de baunilha com calda de frutas</li>
                             <li>Petit gâteau com sorvete</li>
-                            </ol>
-                        </div>
-                        <div class="img-placeholder img-tall" role="img" aria-label="Foto: abacaxi na brasa com sorvete">Foto — sobremesa na brasa</div>
+                        </ol>
                     </div>
+                    <div class="img-placeholder img-tall" role="img" aria-label="Foto: sobremesas do Coffee Break Sauer Food"></div>
                 </div>
- 
                 <p class="fire-closing">Sabores que fazem história</p>
             </div>
         </section>
- 
-        <section class="page-section">
+
+        <section class="menu-section menu-section-dark budget-section" id="orcamento">
             <div class="container">
                 <div class="section-header">
                     <h2>Montagem do Orçamento por Convidado</h2>
                     <p>Como estruturamos a composição personalizada do seu cardápio para o evento.</p>
                 </div>
-                <div class="cards-grid-2">
-                    <article class="info-card gold-card">
-                        <h3>Etapas da Escolha</h3>
-                        <p>Você seleciona a entrada, o prato principal e a sobremesa ideais para o perfil dos
-                            convidados, informando restrições alimentares e duração prevista.</p>
-                        <div class="tag-list">
-                            <span class="tag-item">Entrada</span>
-                            <span class="tag-item">Prato Principal</span>
-                            <span class="tag-item">Sobremesa</span>
-                        </div>
-                    </article>
-                    <article class="info-card gold-card">
-                        <h3>Estimativa Personalizada (Em Evolução)</h3>
-                        <p>Em breve você poderá simular quantidades de convidados, equipe de atendimento e serviços
-                            opcionais como o Espelho Mágico diretamente nesta página.</p>
-                        <div class="tag-list">
-                            <span class="tag-item">Qtd. Convidados</span>
-                            <span class="tag-item">Espelho Mágico Opcional</span>
-                            <span class="tag-item">Envio para WhatsApp</span>
-                        </div>
-                    </article>
+                <div class="budget-layout">
+                    <div class="budget-column">
+                        <h3>Passo a passo para montar o cardápio</h3>
+                        <ol class="budget-steps-list">
+                            <li>
+                                <strong>Escolha as entradas</strong>
+                                <span>Selecione até 5 opções.</span>
+                            </li>
+                            <li>
+                                <strong>Defina a proteína</strong>
+                                <span>Escolha 1 tipo de proteína e 1 acompanhamento.</span>
+                            </li>
+                            <li>
+                                <strong>Finalize com a sobremesa</strong>
+                                <span>Escolha 1 opção.</span>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="budget-column">
+                        <h3>Recursos previstos para a próxima etapa</h3>
+                        <p>Em breve, a página poderá incluir recursos para:</p>
+                        <ul class="budget-future-list">
+                            <li>Simular a quantidade de convidados.</li>
+                            <li>Considerar a equipe de atendimento.</li>
+                            <li>Adicionar serviços opcionais, como o Espelho Mágico.</li>
+                            <li>Enviar a estimativa pelo WhatsApp.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
- 
-        <section class="section-padding cta-bottom">
-            <div class="container">
-                <h2>Quer montar o cardápio do seu evento?</h2>
-                <p>Converse diretamente com a nossa equipe para receber sugestões de combinações.</p>
-                <div class="hero-buttons">
-                    <a href="/wireframes/contato/index.html" class="btn btn-gold">SOLICITAR ORÇAMENTO PERSONALIZADO</a>
-                    <a href="/wireframes/servicos/index.html" class="btn btn-outline">CONHECER SERVIÇOS</a>
+                <div class="menu-cta">
+                    <h2>Quer montar o cardápio do seu evento?</h2>
+                    <p>Converse diretamente com a nossa equipe para receber sugestões de combinações.</p>
+                    <div class="hero-buttons">
+                        <a href="/wireframes/contato/index.html" class="btn btn-gold">SOLICITAR ORÇAMENTO PERSONALIZADO</a>
+                        <a href="/wireframes/servicos/index.html" class="btn btn-outline">CONHECER SERVIÇOS</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
  
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h3>SAUER FOOD</h3>
-                    <p>Gastronomia de alta performance. Sabor, excelência e experiências criadas para transformar o seu
-                        evento.</p>
-                </div>
-                <div class="footer-col">
-                    <h3>NAVEGAÇÃO</h3>
-                    <ul>
-                        <li><a href="/wireframes/inicio/index.html">Início</a></li>
-                        <li><a href="/wireframes/servicos/index.html">Serviços</a></li>
-                        <li><a href="/wireframes/eventos/index.html">Eventos</a></li>
-                        <li><a href="/wireframes/cardapio/index.html">Cardápio</a></li>
-                        <li><a href="/wireframes/sobre/index.html">Sobre</a></li>
-                        <li><a href="/wireframes/contato/index.html">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>CONTATO</h3>
-                    <ul>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                            </svg>
-                            <span>+55 45 9822-5170</span>
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                <polyline points="22,6 12,13 2,6" />
-                            </svg>
-                            <span>contato@sauerfood.com</span>
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                <circle cx="12" cy="10" r="3" />
-                            </svg>
-                            <span>Foz do Iguaçu, Paraná</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h3>SOCIAL</h3>
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/sauerfoodfoz" target="_blank" rel="noopener noreferrer"
-                            aria-label="Instagram da Sauer Food">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                            </svg>
-                        </a>
-                        <a href="/wireframes/contato/index.html" aria-label="Contato da Sauer Food">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <br>
-                    <a href="/wireframes/contato/index.html" class="btn btn-gold">Solicitar Orçamento &rarr;</a>
-                </div>
-            </div>
-            <hr>
-            <div class="footer-bottom">
-                <div class="copyright">
-                    <p>&copy; 2026 Sauer Food. Todos os direitos reservados.</p>
-                </div>
-                <div class="legal-links">
-                    <a href="/wireframes/contato/index.html">Política de Privacidade</a>
-                    <a href="/wireframes/contato/index.html">Termos de Uso</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer id="footer-root"></footer>
  
     <a href="https://wa.me/554598225170?text=Ol%C3%A1!+Gostaria+de+solicitar+um+or%C3%A7amento+com+a+Sauer+Food+para+o+meu+evento."
         class="whatsapp-float" target="_blank" rel="noopener noreferrer"
