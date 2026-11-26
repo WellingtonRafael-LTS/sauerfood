@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 26/11/2026 — Desacoplamento de Opcoes de Evento e Data Customizada no Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `wireframes/contato/contato.html`, `BACKLOG.md`.
+- Resumo:
+  - Deletado o arquivo legado e orfao contato.html, mantendo apenas index.html na pasta contato.
+  - Desagrupadas as opcoes de Tipo de Evento no select, removendo as conjuncoes e adicionando opcao de selecao neutra.
+  - Implementado seletor de data estilizado com placeholder em portugues (Selecione a data prevista), icone de calendario dourado em SVG e abertura sob demanda do picker nativo.
+
 ### 26/11/2026 — Ajuste de Fluidez no Titulo e Tipografia do Hero de Contato
 - Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `BACKLOG.md`.
 - Resumo:

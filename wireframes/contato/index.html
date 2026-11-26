@@ -51,16 +51,30 @@
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="tipo">Tipo de Evento</label>
-                                <select class="form-control" id="tipo">
+                                <select class="form-control" id="tipo" required>
+                                    <option value="" disabled selected>Selecione o tipo de evento</option>
                                     <option value="Evento Corporativo">Evento Corporativo</option>
-                                    <option value="Casamento ou Recepção">Casamento ou Recepção</option>
-                                    <option value="Formatura ou Confraternização">Formatura ou Confraternização</option>
-                                    <option value="Aniversário ou Festa Privada">Aniversário ou Festa Privada</option>
+                                    <option value="Casamento">Casamento</option>
+                                    <option value="Recepção">Recepção</option>
+                                    <option value="Formatura">Formatura</option>
+                                    <option value="Confraternização">Confraternização</option>
+                                    <option value="Aniversário">Aniversário</option>
+                                    <option value="Festa Privada">Festa Privada</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="data">Data Prevista</label>
-                                <input class="form-control" type="date" id="data">
+                                <div class="date-input-wrapper">
+                                    <input class="form-control custom-date-input" type="text" id="data" placeholder="Selecione a data prevista" onfocus="this.type='date'; this.showPicker?.()" onblur="if(!this.value) this.type='text'">
+                                    <span class="date-icon" aria-hidden="true">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                    </span>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="local">Local do Evento</label>

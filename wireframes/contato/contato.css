@@ -282,6 +282,47 @@ select.form-control option {
   color: var(--texto-claro);
 }
 
+.date-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.date-input-wrapper .form-control {
+  padding-right: 46px;
+  cursor: pointer;
+}
+
+.date-input-wrapper .date-icon {
+  position: absolute;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dourado);
+  pointer-events: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.date-input-wrapper:hover .date-icon {
+  color: var(--off-white);
+  transform: scale(1.08);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .servicos-selection-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
