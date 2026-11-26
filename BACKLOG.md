@@ -6,6 +6,11 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 26/11/2026 — Remocao do Efeito de Brilho no Foco de Observacoes
+- Arquivos: `wireframes/contato/contato.css`, `BACKLOG.md`.
+- Resumo:
+  - Anulado o efeito de brilho/box-shadow amarelo nas laterais no foco estritamente da caixa de observacoes (textarea), mantendo um foco limpo e neutro.
+
 ### 26/11/2026 — Auto-expansao Dinamica do Campo de Observacoes no Contato
 - Arquivos: `wireframes/contato/contato.css`, `wireframes/contato/contato.js`, `BACKLOG.md`.
 - Resumo:

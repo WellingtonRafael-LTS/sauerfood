@@ -402,7 +402,12 @@ textarea.form-control {
   resize: none;
   min-height: 96px;
   overflow-y: hidden;
-  transition: height 0.15s ease;
+  transition: height 0.15s ease, background-color 0.3s ease;
+}
+
+textarea.form-control:focus {
+  box-shadow: none;
+  outline: none;
 }
 
 #whatsapp-budget-form .btn-gold {
