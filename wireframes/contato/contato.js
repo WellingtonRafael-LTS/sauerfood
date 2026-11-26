@@ -57,9 +57,24 @@ export function initStepperButtons() {
   });
 }
 
+export function initAutoResizeTextarea() {
+  const textarea = document.getElementById('observacoes');
+  if (!textarea) {
+    return;
+  }
+
+  const adjustHeight = () => {
+    textarea.style.height = 'auto';
+    textarea.style.height = `${Math.max(96, textarea.scrollHeight)}px`;
+  };
+
+  textarea.addEventListener('input', adjustHeight);
+}
+
 function initPage() {
   initContatoForm();
   initStepperButtons();
+  initAutoResizeTextarea();
 }
 
 if (document.readyState === 'loading') {

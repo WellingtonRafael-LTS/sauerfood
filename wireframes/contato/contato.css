@@ -399,8 +399,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 textarea.form-control {
-  resize: vertical;
+  resize: none;
   min-height: 96px;
+  overflow-y: hidden;
+  transition: height 0.15s ease;
 }
 
 #whatsapp-budget-form .btn-gold {

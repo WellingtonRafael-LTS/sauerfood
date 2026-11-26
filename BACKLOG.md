@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 26/11/2026 — Auto-expansao Dinamica do Campo de Observacoes no Contato
+- Arquivos: `wireframes/contato/contato.css`, `wireframes/contato/contato.js`, `BACKLOG.md`.
+- Resumo:
+  - Desativado o redimensionamento manual infinito (resize: none) na caixa de observacoes.
+  - Implementada auto-expansao dinamica suave que preserva a altura minima inicial de 96px e se ajusta automaticamente conforme o volume de texto digitado via contato.js.
+
 ### 26/11/2026 — Desacoplamento de Opcoes de Evento e Data Customizada no Contato
 - Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `wireframes/contato/contato.html`, `BACKLOG.md`.
 - Resumo:
