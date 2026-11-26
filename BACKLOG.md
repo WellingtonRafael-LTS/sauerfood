@@ -6,6 +6,13 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 26/11/2026 — Refinamento de Campos e Controles no Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `wireframes/contato/contato.js`, `BACKLOG.md`.
+- Resumo:
+  - Removido o canal de e-mail ficticio em Canais Oficiais, mantendo apenas WhatsApp, Localizacao e Instagram.
+  - Simplificado o label de identificacao para apenas Nome e removido o placeholder de fundo do campo Observacoes.
+  - Criado controle estilizador customizado para Quantidade de Convidados com setas douradas em SVG integradas a paleta do site e manipulacao via contato.js.
+
 ### 24/11/2026 — Adicao de Selecao Multipla de Servicos no Contato
 - Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `wireframes/contato/contato.js`, `BACKLOG.md`.
 - Resumo:

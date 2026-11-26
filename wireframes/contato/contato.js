@@ -17,7 +17,7 @@ export function initContatoForm() {
 
     const partes = [
       'Olá, Sauer Food! Gostaria de solicitar um orçamento.',
-      nome ? `Nome/Empresa: ${nome}` : '',
+      nome ? `Nome: ${nome}` : '',
       `Tipo de evento: ${tipo}`,
       data ? `Data prevista: ${data}` : '',
       local ? `Local: ${local}` : '',
@@ -31,8 +31,35 @@ export function initContatoForm() {
   });
 }
 
+export function initStepperButtons() {
+  const upBtn = document.querySelector('.stepper-up');
+  const downBtn = document.querySelector('.stepper-down');
+  const input = document.getElementById('convidados');
+
+  if (!input || !upBtn || !downBtn) {
+    return;
+  }
+
+  upBtn.addEventListener('click', () => {
+    const current = parseInt(input.value, 10) || 0;
+    input.value = current + 1;
+    input.dispatchEvent(new Event('input'));
+  });
+
+  downBtn.addEventListener('click', () => {
+    const current = parseInt(input.value, 10) || 0;
+    if (current > 1) {
+      input.value = current - 1;
+      input.dispatchEvent(new Event('input'));
+    } else {
+      input.value = '';
+    }
+  });
+}
+
 function initPage() {
   initContatoForm();
+  initStepperButtons();
 }
 
 if (document.readyState === 'loading') {

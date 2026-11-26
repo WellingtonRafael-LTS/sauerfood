@@ -37,7 +37,7 @@
                         <p>Preencha os dados abaixo para iniciar a conversa com o resumo completo do seu evento.</p>
                         <form id="whatsapp-budget-form">
                             <div class="form-group">
-                                <label class="form-label" for="nome">Nome ou Empresa</label>
+                                <label class="form-label" for="nome">Nome</label>
                                 <input class="form-control" type="text" id="nome" placeholder="Digite seu nome"
                                     required>
                             </div>
@@ -61,7 +61,21 @@
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="convidados">Quantidade de Convidados</label>
-                                <input class="form-control" type="number" id="convidados" min="1" placeholder="Ex: 80">
+                                <div class="number-input-wrapper">
+                                    <input class="form-control" type="number" id="convidados" min="1" placeholder="Ex: 80">
+                                    <div class="number-stepper" aria-hidden="true">
+                                        <button type="button" class="stepper-btn stepper-up" tabindex="-1" aria-label="Aumentar quantidade">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                                <polyline points="18 15 12 9 6 15"></polyline>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="stepper-btn stepper-down" tabindex="-1" aria-label="Diminuir quantidade">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Serviços de Interesse (selecione um ou mais)</label>
@@ -95,8 +109,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="observacoes">Observações</label>
-                                <textarea class="form-control" id="observacoes" rows="3"
-                                    placeholder="Restrições alimentares, horário ou serviço extra (Espelho Mágico)..."></textarea>
+                                <textarea class="form-control" id="observacoes" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn btn-gold">ENVIAR PELO WHATSAPP</button>
                         </form>
@@ -108,10 +121,6 @@
                         <div class="canal-item">
                             <span class="form-label">WhatsApp</span>
                             <span class="canal-dado">+55 45 9822-5170</span>
-                        </div>
-                        <div class="canal-item">
-                            <span class="form-label">E-mail</span>
-                            <span class="canal-dado">contato@sauerfood.com</span>
                         </div>
                         <div class="canal-item">
                             <span class="form-label">Localização</span>
