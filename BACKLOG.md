@@ -6,6 +6,30 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 26/11/2026 — Ajuste de Fluidez no Titulo e Tipografia do Hero de Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `BACKLOG.md`.
+- Resumo:
+  - Tornada a frase Fale com a Sauer Food continua na mesma linha sem quebra forcada (display: inline).
+  - Igualada a tipografia da frase Atendimento sob medida para o seu evento com o paragrafo de detalhes, aplicando o mesmo peso, fonte e entrelinha uniforme.
+
+### 26/11/2026 — Correcao do Alinhamento e Mascara Escura no Hero de Contato
+- Arquivos: `wireframes/contato/contato.css`, `BACKLOG.md`.
+- Resumo:
+  - Blindado o alinhamento estrito a esquerda no hero de Contato, anulando a heranca centralizada legada do global.css.
+  - Alinhados verticalmente tagline, titulo com destaque, divisor dourado e caixa de texto em coluna harmônica identica a secao Essencia da Home.
+  - Calibrada a mascara escura com gradiente horizontal a 90 graus para criar cortina solida na area do texto e deslocar a visibilidade da equipe para a direita com 100% de nitidez e contraste.
+
+### 26/11/2026 — Padronizacao Estrutural e Editorial do Hero de Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `BACKLOG.md`.
+- Resumo:
+  - Harmonizada a hierarquia tipografica do hero de Contato com base na secao Essencia da Home (tagline, titulo com destaque dourado em linha própria, divisor gradiente dourado e lead-box com dois niveis de leitura).
+
+### 26/11/2026 — Redesign Atmosferico do Hero da Pagina de Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `BACKLOG.md`.
+- Resumo:
+  - Aplicada composicao cinematografica no hero de Contato com imagem de fundo, vinheta escura multicamadas e animacao heroZoom continua.
+  - Implementado destaque tipografico dourado (.destaque) com italico e sombra ambar no titulo Fale com a Sauer Food.
+
 ### 26/11/2026 — Refinamento de Campos e Controles no Contato
 - Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `wireframes/contato/contato.js`, `BACKLOG.md`.
 - Resumo:
