@@ -6,242 +6,68 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
-### 26/11/2026 — Alinhamento do Hero do Cardapio
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+### 26/11/2026 — Remocao do Efeito de Brilho no Foco de Observacoes
+- Arquivos: `wireframes/contato/contato.css`, `BACKLOG.md`.
 - Resumo:
-  - Igualada a distancia lateral do texto do hero do Cardapio ao hero dos Eventos sem alterar a imagem de fundo.
+  - Anulado o efeito de brilho/box-shadow amarelo nas laterais no foco estritamente da caixa de observacoes (textarea), mantendo um foco limpo e neutro.
 
-### 26/11/2026 — Remocao dos Espacos Vazios dos Cards de Proteinas
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+### 26/11/2026 — Auto-expansao Dinamica do Campo de Observacoes no Contato
+- Arquivos: `wireframes/contato/contato.css`, `wireframes/contato/contato.js`, `BACKLOG.md`.
 - Resumo:
-  - Removida a linha inferior e reduzido o preenchimento vazio dos cards de proteinas.
+  - Desativado o redimensionamento manual infinito (resize: none) na caixa de observacoes.
+  - Implementada auto-expansao dinamica suave que preserva a altura minima inicial de 96px e se ajusta automaticamente conforme o volume de texto digitado via contato.js.
 
-### 25/11/2026 — Efeitos de Sombra nas Imagens do Cardapio
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+### 26/11/2026 — Desacoplamento de Opcoes de Evento e Data Customizada no Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `wireframes/contato/contato.html`, `BACKLOG.md`.
 - Resumo:
-  - Unificados os efeitos de sombra e ampliacao no hover das imagens de conteudo e dos cards de modalidade.
+  - Deletado o arquivo legado e orfao contato.html, mantendo apenas index.html na pasta contato.
+  - Desagrupadas as opcoes de Tipo de Evento no select, removendo as conjuncoes e adicionando opcao de selecao neutra.
+  - Implementado seletor de data estilizado com placeholder em portugues (Selecione a data prevista), icone de calendario dourado em SVG e abertura sob demanda do picker nativo.
 
-### 25/11/2026 — Espacamento do Bloco do Hamburguer
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+### 26/11/2026 — Ajuste de Fluidez no Titulo e Tipografia do Hero de Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `BACKLOG.md`.
 - Resumo:
-  - Adicionado um pequeno espaco entre o texto e a imagem do hamburguer.
+  - Tornada a frase Fale com a Sauer Food continua na mesma linha sem quebra forcada (display: inline).
+  - Igualada a tipografia da frase Atendimento sob medida para o seu evento com o paragrafo de detalhes, aplicando o mesmo peso, fonte e entrelinha uniforme.
 
-### 25/11/2026 — Reforco do Alinhamento do Texto
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+### 26/11/2026 — Correcao do Alinhamento e Mascara Escura no Hero de Contato
+- Arquivos: `wireframes/contato/contato.css`, `BACKLOG.md`.
 - Resumo:
-  - Sobreposta a regra global de texto justificado para alinhar a descricao do hamburguer a direita.
+  - Blindado o alinhamento estrito a esquerda no hero de Contato, anulando a heranca centralizada legada do global.css.
+  - Alinhados verticalmente tagline, titulo com destaque, divisor dourado e caixa de texto em coluna harmônica identica a secao Essencia da Home.
+  - Calibrada a mascara escura com gradiente horizontal a 90 graus para criar cortina solida na area do texto e deslocar a visibilidade da equipe para a direita com 100% de nitidez e contraste.
 
-### 25/11/2026 — Alinhamento do Texto do Hamburguer
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+### 26/11/2026 — Padronizacao Estrutural e Editorial do Hero de Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `BACKLOG.md`.
 - Resumo:
-  - Quebrada a descricao em duas linhas e alinhado o bloco do hamburguer a direita, junto a base da imagem.
+  - Harmonizada a hierarquia tipografica do hero de Contato com base na secao Essencia da Home (tagline, titulo com destaque dourado em linha própria, divisor gradiente dourado e lead-box com dois niveis de leitura).
 
-### 25/11/2026 — Ampliacao do Bloco do Hamburguer
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+### 26/11/2026 — Redesign Atmosferico do Hero da Pagina de Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `BACKLOG.md`.
 - Resumo:
-  - Redistribuido o espaco da introducao para alargar o texto do hamburguer e manter o titulo em uma linha no desktop.
+  - Aplicada composicao cinematografica no hero de Contato com imagem de fundo, vinheta escura multicamadas e animacao heroZoom continua.
+  - Implementado destaque tipografico dourado (.destaque) com italico e sombra ambar no titulo Fale com a Sauer Food.
 
-### 25/11/2026 — Correcao do Posicionamento do Bloco de Hamburguer
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+### 26/11/2026 — Refinamento de Campos e Controles no Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `wireframes/contato/contato.js`, `BACKLOG.md`.
 - Resumo:
-  - Fixada a imagem e a descricao na mesma linha da grade, evitando que a descricao caia abaixo da imagem.
+  - Removido o canal de e-mail ficticio em Canais Oficiais, mantendo apenas WhatsApp, Localizacao e Instagram.
+  - Simplificado o label de identificacao para apenas Nome e removido o placeholder de fundo do campo Observacoes.
+  - Criado controle estilizador customizado para Quantidade de Convidados com setas douradas em SVG integradas a paleta do site e manipulacao via contato.js.
 
-### 25/11/2026 — Layout Lado a Lado em Telas Menores
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+### 24/11/2026 — Adicao de Selecao Multipla de Servicos no Contato
+- Arquivos: `wireframes/contato/index.html`, `wireframes/contato/contato.css`, `wireframes/contato/contato.js`, `BACKLOG.md`.
 - Resumo:
-  - Mantidos o texto do hamburguer e a imagem lado a lado no breakpoint mobile.
+  - Implementada selecao multipla de servicos com checkboxes customizados em grid na pagina de contato (permitindo marcar churrasco, finger food, coffee break e espelho magico simultaneamente).
+  - Atualizado contato.js para formatar todos os servicos selecionados na mensagem enviada ao WhatsApp.
+  - Calibrado contato.css com as propriedades solicitadas de .form-control e select.form-control integradas a paleta dourada e fundo escuro.
 
-### 25/11/2026 — Correcao da Imagem e Introducao de Entradas
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+### 24/11/2026 — Padronizacao Visual e Tipografica da Pagina de Contato
+- Arquivos: `wireframes/contato/contato.css`, `wireframes/contato/index.html`, `wireframes/contato/contato.js`, `BACKLOG.md`.
 - Resumo:
-  - Restaurada uma altura minima para a imagem e limitado o paragrafo para acomodar o bloco do hamburguer ao lado.
-
-### 25/11/2026 — Ajuste de Proporcao da Introducao de Entradas
-- Arquivos: `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/README.md`, `BACKLOG.md`.
-- Resumo:
-  - Reduzida a imagem para acompanhar a altura da introducao e posicionado o texto do hamburguer a esquerda dela.
-
-### 25/11/2026 — Cor dos Rótulos das Secoes do Cardapio
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Corrigida a sobrescrita de cor para manter dourados os textos de apoio acima dos títulos de Entradas, Proteínas e Sobremesas.
-
-### 25/11/2026 — Frase de Fechamento das Entradas
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Movida a frase de destaque para abaixo da lista de entradas e igualada sua tipografia e tamanho ao fechamento das sobremesas.
-
-### 25/11/2026 — Ajuste da Opcao de Hamburguer
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/README.md`, `BACKLOG.md`.
-- Resumo:
-  - Posicionada a opcao de hamburguer abaixo da imagem da introducao de Entradas.
-
-### 25/11/2026 — Reorganizacao da Secao de Entradas
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/README.md`, `BACKLOG.md`.
-- Resumo:
-  - Posicionados titulo e imagem lado a lado, com as entradas distribuidas em tres colunas e o hambúrguer opcional em um bloco separado abaixo.
-
-### 25/11/2026 — Reposicionamento Central da Imagem de Fundo
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Reduzido pela metade o posicionamento vertical da imagem, de 100% para 50%.
-
-### 25/11/2026 — Posicionamento Inferior da Imagem de Fundo
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Alinhada a imagem de fundo ao limite inferior da secao em desktop e mobile.
-
-### 25/11/2026 — Novo Ajuste da Posicao da Imagem de Fundo
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Duplicado o deslocamento vertical da imagem de fundo da secao de experiencia.
-
-### 25/11/2026 — Ajuste da Posicao da Imagem de Fundo
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Deslocada levemente para cima a imagem de fundo da secao de experiencia.
-
-### 25/11/2026 — Restauracao do Efeito de Fundo Original
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Restaurado o fundo fixo no desktop, mantendo a imagem cobrindo toda a seção.
-
-### 25/11/2026 — Imagem de Fundo Preenchendo a Secao de Experiencia
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Ajustado o fundo para preencher toda a seção, recortando as partes superior e inferior da imagem.
-
-### 25/11/2026 — Ajuste da Escala da Imagem de Fundo do Cardapio
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Reduzido o recorte da imagem `equipe-02.png` no banner para mostrar mais da foto.
-
-### 25/11/2026 — Correcao da Imagem de Fundo da Secao de Experiencia
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Atualizada a imagem de fundo da secao para `equipe-02.png`, conforme solicitado.
-
-### 25/11/2026 — Secao de Experiencia com Imagem da Equipe no Cardapio
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/README.md`, `BACKLOG.md`.
-- Resumo:
-  - Substituida a lista de recursos futuros por uma secao de transicao com imagem de fundo da equipe, texto institucional e CTA final preservado.
-
-### 25/11/2026 — Reorganizacao da Secao de Sobremesas
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Posicionada a imagem ao lado do titulo e da descricao, com os dois grupos de sobremesas abaixo ocupando toda a largura disponivel.
-
-### 25/11/2026 — Ajuste da Apresentacao Textual de Gastro Fire
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Mantido Gastro Fire como titulo unico, com frase de destaque em negrito e explicacao breve antes do passo a passo.
-
-### 25/11/2026 — Orientacoes de Orcamento Antes do Cardapio Gastro Fire
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/README.md`, `BACKLOG.md`.
-- Resumo:
-  - Movidas as orientacoes de montagem do orcamento para Gastro Fire, substituindo as tags e mantendo os recursos futuros e o CTA na secao final.
-
-### 24/11/2026 — Padrao de Cabecalho nas Secoes do Cardapio
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Aplicado o padrao de linha dourada, divisor em gradiente, chamada em negrito e descricao nas secoes Gastro Fire, Entradas, Proteinas e Sobremesas.
-
-### 24/11/2026 — Recuo do Texto de Gastro Fire
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Igualado ao Festival de Churrasco da Home o recuo do texto no desktop e ajustado o espaçamento mobile.
-
-### 24/11/2026 — Imagem de Gastro Fire Ate a Borda Direita
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Removido o limite lateral da seção e estendida a imagem até a borda direita, mantendo o texto alinhado ao conteúdo.
-
-### 24/11/2026 — Proporcao e Animacao de Gastro Fire
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Alinhados a altura da imagem e o efeito de ampliacao ao estilo da secao Festival de Churrasco da Home.
-
-### 24/11/2026 — Layout de Gastro Fire em Duas Colunas
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Organizado o texto, a linha divisoria e as tags à esquerda, com imagem ampliada à direita e adaptação para telas menores.
-
-### 24/11/2026 — Correcao da Imagem de Gastro Fire
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Corrigida a imagem de Gastro Fire para `churrasco-06.jpg`.
-
-### 24/11/2026 — Correcao da Imagem do Hamburguer em Entradas
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Corrigida a imagem do hamburguer para `finger-food-11.jpg`.
-
-### 24/11/2026 — Imagem de Gastro Fire
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Atualizada a imagem de Gastro Fire para a foto de carne na brasa indicada pelo PO.
-
-### 24/11/2026 — Imagem de Hamburguer em Entradas
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Substituida a imagem da opcao de hamburguer em Entradas pela foto correspondente de Finger Food.
-
-### 24/11/2026 — Imagens Reais nas Secoes do Cardapio
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Aplicadas imagens existentes de churrasco e Coffee Break aos espaços visuais de Gastro Fire, hambúrguer opcional, proteínas e sobremesas.
-  - Corrigidos os caminhos dos fundos para usar a raiz publica `/img/` e removidos textos de placeholder, mantendo os aria-labels.
-
-### 24/11/2026 — Duas Colunas para o Orcamento por Convidado
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Substituidos os cards por duas colunas abertas: passo a passo de escolha do menu e lista de recursos previstos para etapas futuras.
-
-### 24/11/2026 — Borda Lateral e Tags nos Cards de Orcamento
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Restaurada a borda dourada na lateral esquerda dos cards de Orcamento e o estilo visual das tags, mantendo o fundo escuro da secao.
-
-### 24/11/2026 — Restauracao dos Cards de Orcamento
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Restaurado o fundo, espacamento e sombra dos cards de Orcamento por Convidado, mantendo o fundo escuro da secao sem bordas douradas.
-
-### 24/11/2026 — Separacao do Cardapio em Secoes com Fundos Alternados
-- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Separadas Gastro Fire, Entradas, Proteinas e Sobremesas em secoes independentes com fundos escuros e claros alternados.
-  - Removido o tratamento visual de cards individuais dos itens e reunidos Orcamento e CTA na secao escura final.
-
-### 24/11/2026 — Reducao de Bordas Douradas no Cardapio
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Substituidas bordas decorativas douradas por contornos neutros nas secoes de Gastro Fire, mantendo o dourado em poucos destaques visuais.
-
-### 24/11/2026 — Redesign das Secoes do Cardapio a Partir de Gastro Fire
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Atualizada a identidade visual de Gastro Fire, entradas, proteínas, sobremesas, orçamento e CTA com painéis escuros, detalhes dourados e layouts responsivos inspirados na Home.
-
-### 24/11/2026 — Gradiente Horizontal e Barra Dourada nos Titulos
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Aplicado gradiente escuro da esquerda para a direita nos h3 e adicionada barra dourada na lateral esquerda.
-
-### 24/11/2026 — Transicao Radial Suave nos Titulos do Cardapio
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Ajustado o fundo dos h3 para um gradiente radial com transicao gradual do centro para todas as direcoes.
-
-### 24/11/2026 — Fundo em Gradiente nos Titulos dos Cards
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Substituido o fundo radial dos h3 por um gradiente linear horizontal mais escuro a esquerda e transparente a direita.
-
-### 24/11/2026 — Sombra nos Titulos dos Cards do Cardapio
-- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
-- Resumo:
-  - Aplicada sombra escura aos elementos h3 da pagina de Cardapio para melhorar a legibilidade sobre fundos variados.
+  - Reestruturado o contato.css aplicando a mesma identidade tipografica da Home (Cormorant Garamond com clamp, Montserrat no corpo, taglines em dourado e botoes padronizados).
+  - Implementado design escuro e refinado para o formulario de orcamento (inputs sem bordas arredondadas, foco dourado e select customizado).
+  - Isolado o envio para WhatsApp em modulo JS dedicado (contato.js) e integrado o ponto de montagem global <div id="footer-root"></div> eliminando rodape e whatsapp duplicados.
 
 ### 19/11/2026 — Sincronizacao de Integracao com a Dev e Resolucao de Conflitos
 - Arquivos: `index.html`, `legado/style.css`, `BACKLOG.md`.

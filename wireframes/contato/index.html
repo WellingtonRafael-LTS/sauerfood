@@ -24,35 +24,57 @@
                     <span class="line" aria-hidden="true"></span>
                     <p class="linename">Canal Direto</p>
                 </div>
-                <h1>Fale com a Sauer Food</h1>
-                <p>Informe os detalhes do seu evento e receba um atendimento personalizado pelo nosso WhatsApp.</p>
+                <h1>
+                    Fale com a <span class="destaque">Sauer Food</span>
+                </h1>
+                <span class="contato-divider" aria-hidden="true"></span>
+                <div class="contato-lead-box">
+                    <p class="contato-lead-detail">
+                        Atendimento sob medida para o seu evento. Informe os detalhes da sua celebração e receba uma
+                        proposta personalizada diretamente com a nossa equipe pelo WhatsApp.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section class="page-section" id="contato">
+        <section class="contato-section" id="contato">
             <div class="container">
                 <div class="cards-grid-2">
-                    <article class="info-card">
+                    <article class="contato-card">
                         <h3>Solicitar Orçamento</h3>
                         <p>Preencha os dados abaixo para iniciar a conversa com o resumo completo do seu evento.</p>
                         <form id="whatsapp-budget-form">
                             <div class="form-group">
-                                <label class="form-label" for="nome">Nome ou Empresa</label>
+                                <label class="form-label" for="nome">Nome</label>
                                 <input class="form-control" type="text" id="nome" placeholder="Digite seu nome"
                                     required>
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="tipo">Tipo de Evento</label>
-                                <select class="form-control" id="tipo">
+                                <select class="form-control" id="tipo" required>
+                                    <option value="" disabled selected>Selecione o tipo de evento</option>
                                     <option value="Evento Corporativo">Evento Corporativo</option>
-                                    <option value="Casamento ou Recepção">Casamento ou Recepção</option>
-                                    <option value="Formatura ou Confraternização">Formatura ou Confraternização</option>
-                                    <option value="Aniversário ou Festa Privada">Aniversário ou Festa Privada</option>
+                                    <option value="Casamento">Casamento</option>
+                                    <option value="Recepção">Recepção</option>
+                                    <option value="Formatura">Formatura</option>
+                                    <option value="Confraternização">Confraternização</option>
+                                    <option value="Aniversário">Aniversário</option>
+                                    <option value="Festa Privada">Festa Privada</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="data">Data Prevista</label>
-                                <input class="form-control" type="date" id="data">
+                                <div class="date-input-wrapper">
+                                    <input class="form-control custom-date-input" type="text" id="data" placeholder="Selecione a data prevista" onfocus="this.type='date'; this.showPicker?.()" onblur="if(!this.value) this.type='text'">
+                                    <span class="date-icon" aria-hidden="true">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                    </span>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="local">Local do Evento</label>
@@ -61,42 +83,77 @@
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="convidados">Quantidade de Convidados</label>
-                                <input class="form-control" type="number" id="convidados" min="1" placeholder="Ex: 80">
+                                <div class="number-input-wrapper">
+                                    <input class="form-control" type="number" id="convidados" min="1"
+                                        placeholder="Ex: 80">
+                                    <div class="number-stepper" aria-hidden="true">
+                                        <button type="button" class="stepper-btn stepper-up" tabindex="-1"
+                                            aria-label="Aumentar quantidade">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <polyline points="18 15 12 9 6 15"></polyline>
+                                            </svg>
+                                        </button>
+                                        <button type="button" class="stepper-btn stepper-down" tabindex="-1"
+                                            aria-label="Diminuir quantidade">
+                                            <svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <label class="form-label" for="servico">Serviço de Interesse</label>
-                                <select class="form-control" id="servico">
-                                    <option value="Festival de Churrasco">Festival de Churrasco</option>
-                                    <option value="Finger Food Gourmet">Finger Food Gourmet</option>
-                                    <option value="Coffee Break">Coffee Break</option>
-                                    <option value="Cardápio Personalizado">Cardápio Personalizado</option>
-                                </select>
+                                <label class="form-label">Serviços de Interesse (selecione um ou mais)</label>
+                                <div class="servicos-selection-grid">
+                                    <label class="servico-check-card">
+                                        <input type="checkbox" name="servicos" value="Festival de Churrasco">
+                                        <span class="servico-check-custom" aria-hidden="true"></span>
+                                        <span class="servico-check-label">Festival de Churrasco</span>
+                                    </label>
+                                    <label class="servico-check-card">
+                                        <input type="checkbox" name="servicos" value="Finger Food Gourmet">
+                                        <span class="servico-check-custom" aria-hidden="true"></span>
+                                        <span class="servico-check-label">Finger Food Gourmet</span>
+                                    </label>
+                                    <label class="servico-check-card">
+                                        <input type="checkbox" name="servicos" value="Coffee Break">
+                                        <span class="servico-check-custom" aria-hidden="true"></span>
+                                        <span class="servico-check-label">Coffee Break</span>
+                                    </label>
+                                    <label class="servico-check-card">
+                                        <input type="checkbox" name="servicos" value="Cardápio Personalizado">
+                                        <span class="servico-check-custom" aria-hidden="true"></span>
+                                        <span class="servico-check-label">Cardápio Personalizado</span>
+                                    </label>
+                                    <label class="servico-check-card">
+                                        <input type="checkbox" name="servicos" value="Espelho Mágico (Totem de Fotos)">
+                                        <span class="servico-check-custom" aria-hidden="true"></span>
+                                        <span class="servico-check-label">Espelho Mágico (Totem de Fotos)</span>
+                                    </label>
+                                </div>
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="observacoes">Observações</label>
-                                <textarea class="form-control" id="observacoes" rows="3"
-                                    placeholder="Restrições alimentares, horário ou serviço extra (Espelho Mágico)..."></textarea>
+                                <textarea class="form-control" id="observacoes" rows="3"></textarea>
                             </div>
                             <button type="submit" class="btn btn-gold">ENVIAR PELO WHATSAPP</button>
                         </form>
                     </article>
 
-                    <article class="info-card">
+                    <article class="contato-card">
                         <h3>Canais Oficiais</h3>
                         <p>Atendimento direto para eventos em Foz do Iguaçu e região.</p>
-                        <div class="form-group">
+                        <div class="canal-item">
                             <span class="form-label">WhatsApp</span>
-                            <span>+55 45 9822-5170</span>
+                            <span class="canal-dado">+55 45 9822-5170</span>
                         </div>
-                        <div class="form-group">
-                            <span class="form-label">E-mail</span>
-                            <span>contato@sauerfood.com</span>
-                        </div>
-                        <div class="form-group">
+                        <div class="canal-item">
                             <span class="form-label">Localização</span>
-                            <span>Foz do Iguaçu, Paraná</span>
+                            <span class="canal-dado">Foz do Iguaçu, Paraná</span>
                         </div>
-                        <div class="form-group">
+                        <div class="canal-item">
                             <span class="form-label">Instagram</span>
                             <a href="https://www.instagram.com/sauerfoodfoz" target="_blank" rel="noopener noreferrer"
                                 class="btn btn-outline">@sauerfoodfoz</a>
@@ -106,26 +163,27 @@
             </div>
         </section>
 
-        <section class="page-section-alt">
+        <section class="faq-section">
             <div class="container">
                 <div class="section-header">
                     <h2>Dúvidas Frequentes</h2>
                     <p>Informações importantes antes de solicitar a sua proposta.</p>
                 </div>
                 <div class="cards-grid-3">
-                    <article class="info-card">
+                    <article class="faq-card">
                         <h3>Atendimento Sob Medida</h3>
                         <p>Todos os cardápios são adaptados conforme o número de convidados, duração e estilo do
                             evento.</p>
                     </article>
-                    <article class="info-card">
+                    <article class="faq-card">
                         <h3>Restrições Alimentares</h3>
                         <p>Informe no contato opções específicas para seus convidados e alinharemos alternativas no
                             menu.</p>
                     </article>
-                    <article class="info-card">
+                    <article class="faq-card">
                         <h3>Orçamento Personalizado</h3>
-                        <p>Após receber seu resumo no WhatsApp, nossa equipe valida disponibilidade da data e retorna com
+                        <p>Após receber seu resumo no WhatsApp, nossa equipe valida disponibilidade da data e retorna
+                            com
                             a proposta.</p>
                     </article>
                 </div>
@@ -169,11 +227,7 @@
                     observacoes ? `Observações: ${observacoes}` : ''
                 ].filter(Boolean);
 
-                const url = `https://wa.me/554598225170?text=${encodeURIComponent(partes.join('\n'))}`;
-                window.open(url, '_blank', 'noopener,noreferrer');
-            });
-        }
-    </script>
+    <script type="module" src="./contato.js"></script>
     <script type="module" src="/src/main.js"></script>
 </body>
 
