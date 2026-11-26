@@ -71,7 +71,7 @@ export function renderFooter(container) {
   if (!container) return;
 
   container.innerHTML = `
-    <footer class="site-footer">
+    <div class="site-footer">
       <div class="container">
         <div class="footer-grid">
           <div class="footer-col">
@@ -148,7 +148,7 @@ export function renderFooter(container) {
           </div>
         </div>
       </div>
-    </footer>
+    </div>
 
     <dialog id="legal-modal" class="legal-modal">
       <div class="legal-modal-card">
