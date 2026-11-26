@@ -1,117 +1,163 @@
 @import '../../src/styles/global.css';
 
 :root {
-  --laranja-fogo: #e8641b;
+  --laranja-fogo: rgb(232, 100, 27);
 }
 
-h3 span {
+.page-hero {
+  position: relative;           
+  background: var(--fundo-preto);
+  padding: 100px 80px;
+  min-height: 500px;
+  overflow: hidden;
+  border: none;
+}
+
+/*foto direita*/
+.page-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60%;
+  background:
+    linear-gradient(100deg, var(--fundo-preto), transparent),
+    url("/img/servicos/churrasco/churrasco-02.jpg") center/cover no-repeat;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 70%);
+  mask-image: linear-gradient(to right, transparent 0%, black 70%);
+}
+
+/* O texto em cima da foto */
+.page-hero .container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-hero .container > * {
+  max-width: 600px;
+}
+
+.page-hero .container p {
+  margin: 0;
+}
+.page-hero .container .tagline {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cards-grid-3 article {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  height: 380px;
+  padding: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+main h3 {
+  height: fit-content;
+  padding: 4px 12px;
+  border-left: 3px solid var(--dourado);
+  background: linear-gradient(
+    to right,
+    rgba(10, 10, 12, 1) 0%,
+    rgba(10, 10, 12, 0.75) 25%,
+    rgba(10, 10, 12, 0.5) 50%,
+    transparent 75%
+  );
+}
+
+main h3 span {
   display: inline;
   color: var(--dourado-suave);
 }
 
-#festival-churrasco {
-  background: linear-gradient(to bottom, rgba(10, 10, 12, 0.95) 30%, rgba(10, 10, 12, 0.15)),
-  url('../../img/festival-churrasco.jpeg') center/cover;
-}
-
-#finger-food {
-  background: linear-gradient(to bottom, rgba(10, 10, 12, 0.95) 30%, rgba(10, 10, 12, 0.15)),
-  url('../../img/finger-food.jpg') center/cover;
-}
-
+#festival-churrasco,
+#finger-food,
 #coffee-break {
-  background: linear-gradient(to bottom, rgba(10, 10, 12, 0.95) 30%, rgba(10, 10, 12, 0.15)),
-  url('../../img/coffee-break.jpeg') center/cover;
-}
- 
-.card-link {
-  width: fit-content;
-  height: fit-content;
-  margin-top: 18px;
-  color: var(--dourado);
-  font-size: 0.85rem;
-  font-weight: 600;
-  background:   linear-gradient(
-    to bottom,
-    rgba(10, 10, 12, 0.30) 0%,
-    rgba(10, 10, 12, 0.95) 50%,
-    rgba(10, 10, 12, 0.30) 100%
-  ),;
-  text-decoration: none;
-}
- 
-.card-link:hover { font-weight: 700; }
-
-.gold-card {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  isolation: isolate;
+  background-color: transparent;
 }
 
-.gold-shine {
-    position: absolute;
-
-    top: -50%;
-    left: -80%;
-
-    width: 200%;
-    height: 200%;
-
-    background: linear-gradient(
-    115deg,
-    transparent 0%,
-    rgba(255, 215, 100, 0.01) 20%,
-    rgba(255, 215, 100, 0.04) 30%,
-    rgba(255, 215, 100, 0.12) 40%,
-    rgba(255, 225, 130, 0.30) 46%,
-    rgba(255, 240, 190, 0.55) 50%,
-    rgba(255, 225, 130, 0.30) 54%,
-    rgba(255, 215, 100, 0.12) 60%,
-    rgba(255, 215, 100, 0.04) 70%,
-    rgba(255, 215, 100, 0.01) 80%,
-    transparent 100%
-    );
-
-    transform: translateX(-100%) skewX(-20deg);
-
-    pointer-events: none;
-    z-index: 2;
+#festival-churrasco::before,
+#finger-food::before,
+#coffee-break::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  transform-origin: center center;
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, box-shadow;
 }
 
-.gold-shine.animate {
-    animation: gold-shine 3s ease-in-out forwards;
+#festival-churrasco::before {
+  background: linear-gradient(to top, rgba(10, 10, 12, 0.95) 30%, rgba(10, 10, 12, 0.15)),
+    url('/img/servicos/churrasco/churrasco-01.jpg') center/cover;
 }
 
-@keyframes gold-shine {
-    from {
-        transform: translateX(-100%) skewX(-20deg);
-    }
-
-    to {
-        transform: translateX(400%) skewX(-20deg);
-    }
+#finger-food::before {
+  background: linear-gradient(to top, rgba(10, 10, 12, 0.95) 30%, rgba(10, 10, 12, 0.15)),
+    url('/img/servicos/finger-food/finger-food-09.jpg') center/cover;
 }
- 
-/* Placeholder de imagem (wireframe) */
+
+#coffee-break::before {
+  background: linear-gradient(to top, rgba(10, 10, 12, 0.95) 30%, rgba(10, 10, 12, 0.15)),
+    url('/img/servicos/coffee-break/coffee-break-02.jpeg') center/cover;
+}
+
+.cards-grid-3 article:hover {
+  z-index: 20;
+}
+
+.cards-grid-3 article:hover::before {
+  transform: scale(1.08);
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.65), 0 0 42px rgba(201, 162, 75, 0.22);
+}
+
 .img-placeholder {
+  position: relative;
+  z-index: 5;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 160px;
-  margin-bottom: 20px;
+  min-height: 220px;
+  margin: 0 0 22px;
   padding: 12px;
-  border: 1px solid var(--borda-dourada);
-  border-radius: 6px;
-  background: transparent;
+  border: 0;
+  border-radius: 0;
+  background: linear-gradient(135deg, rgba(33, 33, 38, 0.35), rgba(13, 13, 13, 0.82));
   color: var(--texto-secundario);
   font-size: 0.8rem;
   text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transform-origin: center center;
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, box-shadow;
+}
+
+.img-placeholder:hover {
+  z-index: 20;
+  transform: scale(1.08);
+  box-shadow: 0 32px 64px rgba(0, 0, 0, 0.65), 0 0 42px rgba(201, 162, 75, 0.22);
 }
  
 .img-entradas {
-  min-height: 260px;
+  min-height: 220px;
   margin-bottom: 0;
-  flex: 1;
-  background: url('../../img/hamburguer-caseiro-artesanal.jpg') center/cover;
+  background:
+    linear-gradient(135deg, rgba(13, 13, 13, 0.08), rgba(13, 13, 13, 0.36)),
+    url("/img/servicos/finger-food/finger-food-11.jpg") center/cover no-repeat;
 }
 
 .img-tall {
@@ -119,152 +165,605 @@ h3 span {
   margin-bottom: 0;
 }
  
-/* Banner */
-.fire-banner {
-  display: flex;
-  align-items: center;
-  gap: 48px;
-  margin-bottom: 32px;
+.menu-section {
+  padding: clamp(72px, 8vw, 112px) 20px;
 }
- 
-.fire-banner-text { flex: 1; }
- 
-.fire-banner-text h2 {
-  font-size: clamp(2.6rem, 6vw, 4.5rem);
-  color: var(--laranja-fogo);
-  font-style: italic;
-  line-height: 1.05;
+
+.menu-section-light {
+  background-color: var(--off-white);
+  background-image: linear-gradient(270deg, rgba(20, 20, 24, 0.1), transparent 70%);
+  color: var(--texto-escuro);
+}
+
+.menu-section-dark {
+  background-color: var(--preto);
+  background-image: radial-gradient(ellipse at 80% 10%, rgba(201, 162, 75, 0.06), transparent 55%);
+  color: var(--texto-claro);
+}
+
+.menu-section .section-header {
+  margin-bottom: 44px;
+}
+
+.menu-section .section-header h2 {
+  margin-bottom: 12px;
+  font-family: var(--fonte-titulo);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 500;
+}
+
+.menu-section-header .tagline {
   margin-bottom: 8px;
 }
- 
-.fire-sub { margin-bottom: 8px; }
- 
-.fire-slogan {
+
+.menu-section .menu-section-header .linename {
+  color: var(--dourado);
+}
+
+.menu-section .menu-section-header h2 {
+  margin: 10px 0 16px;
+  font-size: clamp(2.3rem, 3.8vw, 3.3rem);
+  line-height: 1.12;
+}
+
+.menu-section-divider {
+  display: block;
+  width: 56px;
+  height: 2px;
+  margin-bottom: 24px;
+  background: linear-gradient(90deg, var(--dourado) 0%, rgba(201, 162, 75, 0) 100%);
+}
+
+.menu-section-header .menu-section-lead {
+  margin: 0 0 14px;
   font-family: var(--fonte-titulo);
-  font-style: italic;
-  font-size: 1.3rem;
-  color: var(--laranja-fogo);
+  font-size: clamp(1.2rem, 1.5vw, 1.38rem);
+  font-weight: 600;
+  line-height: 1.4;
 }
- 
-.fire-steps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid var(--borda-dourada);
+
+.menu-section-light .menu-section-header .menu-section-lead {
+  color: var(--texto-escuro);
 }
- 
-.menu-block {
-  padding-top: 56px;
+
+.menu-section-dark .menu-section-header .menu-section-lead {
+  color: var(--off-white);
 }
- 
-.menu-block .section-header h2 { color: var(--laranja-fogo); }
- 
-/* Listas numeradas */
-.menu-list {
-  list-style: none;
-  counter-reset: item;
+
+.menu-section-header > p:last-child {
+  max-width: 720px;
+  margin-bottom: 0;
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  line-height: 1.75;
+}
+
+.menu-section-light .section-header h2,
+.menu-section-light h3 {
+  color: var(--texto-escuro);
+}
+
+.menu-section-dark .section-header h2,
+.menu-section-dark h3 {
+  color: var(--off-white);
+}
+
+.menu-section-light .section-header p,
+.menu-section-light p {
+  color: #4a4b50;
+}
+
+.menu-section-dark .section-header p,
+.menu-section-dark p {
+  color: var(--texto-secundario);
+}
+
+.menu-section h3 {
+  height: auto;
+  margin: 0 0 14px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.45rem, 2vw, 1.8rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.gastro-fire {
+  padding-right: 0;
+  padding-left: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.fire-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 1.05fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 80px);
+  padding-left: 48px;
+  margin-bottom: 0;
+}
+
+.fire-banner-text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: flex-start;
+  padding-left: 48px;
 }
- 
-.menu-list li {
-  counter-increment: item;
-  position: relative;
-  padding-left: 32px;
+
+.fire-banner-text .tagline {
+  justify-content: flex-start;
+  margin-bottom: 8px;
+}
+
+.fire-banner-text h2 {
+  margin: 10px 0 16px;
+  color: var(--off-white);
+  font-family: var(--fonte-titulo);
+  font-size: clamp(2.3rem, 3.8vw, 3.3rem);
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.gastro-fire .fire-sub {
+  margin: 0 0 14px;
+  color: var(--off-white);
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.2rem, 1.5vw, 1.38rem);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.fire-slogan {
+  margin-bottom: 0;
+  color: var(--dourado);
+  font-family: var(--fonte-titulo);
+  font-size: 1.35rem;
+  font-style: italic;
+}
+
+.gastro-fire .fire-slogan {
   color: var(--texto-secundario);
-  font-size: 0.92rem;
-  line-height: 1.5;
+  font-family: var(--fonte-corpo);
+  font-size: clamp(0.95rem, 1.1vw, 1.05rem);
+  line-height: 1.75;
+  font-style: normal;
 }
- 
+
+.fire-budget {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.img-banner {
+  min-height: 520px;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+  background:
+    linear-gradient(135deg, rgba(13, 13, 13, 0.12), rgba(13, 13, 13, 0.38)),
+    url("/img/servicos/churrasco/churrasco-06.jpg") center/cover no-repeat;
+}
+
+.entradas-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 28px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  counter-reset: menu-item;
+  list-style: none;
+}
+
+.menu-list li {
+  position: relative;
+  padding: 14px 0 14px 28px;
+  border-bottom: 1px solid rgba(31, 32, 36, 0.12);
+  color: #4a4b50;
+  counter-increment: menu-item;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
 .menu-list li::before {
-  content: counter(item) ".";
   position: absolute;
+  top: 14px;
   left: 0;
-  color: var(--laranja-fogo);
+  color: var(--dourado-suave);
+  content: counter(menu-item) ".";
   font-weight: 600;
 }
- 
+
 .menu-list-detailed li strong {
   display: block;
+  color: var(--texto-escuro);
+  font-weight: 600;
+}
+
+.menu-list-detailed li span {
+  display: block;
+  margin-top: 4px;
+  color: #65666b;
+  font-size: 0.85rem;
+}
+
+.menu-two-cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: start;
+  column-gap: 32px;
+}
+
+.menu-three-cols {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-content: start;
+  column-gap: 32px;
+}
+
+.burger-feature {
+  padding-top: 20px;
+  border-top: 1px solid rgba(31, 32, 36, 0.16);
+}
+
+.burger-feature h3 {
+  color: var(--texto-escuro);
+}
+
+.proteins-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(32px, 5vw, 64px);
+}
+
+.protein-entry {
+  padding: 28px 0 16px;
+  border-bottom: 0;
+}
+
+.protein-entry .img-placeholder {
+  min-height: 220px;
+}
+
+.img-proteinas1 {
+  background:
+    linear-gradient(135deg, rgba(13, 13, 13, 0.08), rgba(13, 13, 13, 0.34)),
+    url("/img/servicos/churrasco/churrasco-04.png") center/cover no-repeat;
+}
+
+.img-proteinas2 {
+  background:
+    linear-gradient(135deg, rgba(13, 13, 13, 0.08), rgba(13, 13, 13, 0.34)),
+    url("/img/servicos/churrasco/churrasco-05.jpg") center/cover no-repeat;
+}
+
+.img-proteinas3 {
+  background:
+    linear-gradient(135deg, rgba(13, 13, 13, 0.08), rgba(13, 13, 13, 0.34)),
+    url("/img/servicos/churrasco/churrasco-06.jpg") center/cover no-repeat;
+}
+
+.img-proteinas4 {
+  background:
+    linear-gradient(135deg, rgba(13, 13, 13, 0.08), rgba(13, 13, 13, 0.34)),
+    url("/img/servicos/churrasco/churrasco-07.jpg") center/cover no-repeat;
+}
+
+.protein-entry p {
+  margin-bottom: 20px;
+  line-height: 1.75;
+}
+
+.protein-entry .list-label {
+  margin: 0 0 4px;
+  color: var(--dourado);
+  font-family: var(--fonte-corpo);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.menu-section-dark .menu-list li {
+  border-color: rgba(240, 240, 242, 0.12);
+  color: var(--texto-secundario);
+}
+
+.menu-section-dark .menu-list li::before {
+  color: var(--dourado);
+}
+
+.menu-section-dark .menu-list-compact li {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 0.84rem;
+}
+
+.menu-section-dark .menu-list-compact li::before {
+  top: 9px;
+}
+
+.desserts-intro,
+.entradas-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 64px);
+  margin-bottom: 44px;
+}
+
+.entradas-intro {
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items:center;
+  justify-content: space-between;
+}
+
+.desserts-intro .section-header,
+.entradas-intro .section-header {
+  max-width: none;
+  margin-bottom: 0;
+}
+
+.entradas-intro .section-header {
+  max-width: 450px;
+}
+
+.desserts-intro .img-tall {
+  min-height: 320px;
+  margin: 0;
+}
+
+.entradas-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  align-items: stretch;
+  gap: clamp(12px, 1vw, 18px);
+  min-height: 220px;
+}
+
+.entradas-intro .burger-feature {
+  display: flex;
+  grid-column: 1;
+  grid-row: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0;
+  border-top: 0;
+  text-align: right;
+}
+
+.entradas-intro .burger-feature h3 {
+  white-space: nowrap;
+}
+
+.entradas-intro .burger-feature p {
+  text-align: right;
+}
+
+.entradas-intro .img-entradas {
+  grid-column: 2;
+  grid-row: 1;
+  min-height: 240px;
+  margin: 0;
+}
+
+.desserts-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(28px, 4vw, 52px);
+}
+
+.dessert-group h3 {
+  margin-bottom: 12px;
+}
+
+.img-tall {
+  min-height: 100%;
+  margin: 0;
+  background:
+    linear-gradient(135deg, rgba(13, 13, 13, 0.04), rgba(13, 13, 13, 0.18)),
+    url("/img/servicos/coffee-break/coffee-break-02.jpeg") center/cover no-repeat;
+}
+
+.fire-closing {
+  margin: 56px 0 0;
+  color: var(--dourado);
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+  font-style: italic;
+  text-align: center;
+}
+
+.budget-steps-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: budget-step;
+}
+
+.budget-steps-list li {
+  position: relative;
+  padding: 18px 0 18px 52px;
+  border-top: 1px solid rgba(240, 240, 242, 0.12);
+  counter-increment: budget-step;
+}
+
+.budget-steps-list li::before {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  color: var(--dourado);
+  content: "0" counter(budget-step);
+  font-family: var(--fonte-titulo);
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.budget-steps-list strong,
+.budget-steps-list span {
+  display: block;
+}
+
+.budget-steps-list strong {
+  margin-bottom: 4px;
   color: var(--off-white);
   font-weight: 600;
 }
- 
-.menu-list-detailed li span {
-  display: block;
-  font-size: 0.85rem;
+
+.budget-steps-list span {
+  color: var(--texto-secundario);
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
- 
-.menu-two-cols {
+
+.cardapio-story-section {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px 36px;
-  align-content: start;
+  min-height: 460px;
+  align-items: center;
+  padding: clamp(88px, 10vw, 128px) 20px;
+  border-top: 1px solid var(--borda-sutil);
+  border-bottom: 1px solid var(--borda-sutil);
+  background-color: var(--preto);
+  background-image:
+    linear-gradient(90deg, rgba(13, 13, 13, 0.94) 0%, rgba(13, 13, 13, 0.82) 42%, rgba(13, 13, 13, 0.28) 100%),
+    url('/img/equipe/equipe-02.png');
+  background-attachment: fixed;
+  background-position: center left, right 85%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--texto-claro);
 }
- 
-.menu-list-compact li { font-size: 0.85rem; }
- 
-.entradas-layout {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 40px;
-  align-items: start;
+
+.cardapio-story-section .section-header {
+  margin-bottom: 0;
+  max-width: 720px;
 }
- 
-.burger-card { border-color: var(--laranja-fogo); }
-.burger-card h3 { color: var(--laranja-fogo); font-style: italic; }
-.burger-card .fire-slogan { font-size: 1.15rem; margin-bottom: 0; }
- 
-/* Proteínas */
-.cards-grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
- 
-.protein-card h3 { color: var(--laranja-fogo); font-style: italic; }
- 
-.list-label {
-  font-family: var(--fonte-corpo);
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--dourado);
-  margin-bottom: 12px;
-}
- 
-.protein-card .menu-list { margin-top: 0; }
- 
-/* Sobremesas */
-.sobremesas-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr 0.9fr;
-  gap: 24px;
-}
- 
-.fire-closing {
-  margin-top: 64px;
+
+.menu-cta {
+  margin-top: 80px;
+  padding-top: 56px;
+  border-top: 1px solid rgba(240, 240, 242, 0.12);
   text-align: center;
+}
+
+.menu-cta h2 {
+  margin-bottom: 12px;
+  color: var(--off-white);
   font-family: var(--fonte-titulo);
-  font-style: italic;
-  font-size: 1.4rem;
-  color: var(--dourado);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
 }
- 
-@media (max-width: 1100px) {
-  .cards-grid-4 { grid-template-columns: repeat(2, 1fr); }
+
+.menu-cta p {
+  max-width: 680px;
+  margin: 0 auto 28px;
+  color: var(--texto-secundario);
 }
- 
+
+.menu-cta .hero-buttons {
+  justify-content: center;
+}
+
+.budget-section .menu-cta {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
 @media (max-width: 992px) {
-  .fire-banner { flex-direction: column; align-items: stretch; gap: 28px; }
-  .entradas-layout,
-  .sobremesas-layout { grid-template-columns: 1fr; }
-  .img-tall { min-height: 220px; }
+  .fire-banner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-left: 0;
+  }
+
+  .fire-banner-text {
+    padding: 0 24px;
+  }
+
+  .img-banner {
+    min-height: 340px;
+  }
+
+  .entradas-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-three-cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .img-tall {
+    min-height: 240px;
+  }
 }
- 
+
 @media (max-width: 768px) {
+  .gastro-fire {
+    padding-top: 80px;
+  }
+
+  .img-banner {
+    min-height: 260px;
+  }
+
   .menu-two-cols,
-  .cards-grid-4 { grid-template-columns: 1fr; }
+  .menu-three-cols,
+  .proteins-layout,
+  .desserts-intro,
+  .entradas-intro,
+  .desserts-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .desserts-intro .img-tall {
+    min-height: 240px;
+  }
+
+  .entradas-intro .img-entradas {
+    grid-column: 2;
+    min-height: 240px;
+  }
+
+  .entradas-visual {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .entradas-intro .burger-feature h3 {
+    white-space: normal;
+  }
+
+  .protein-entry {
+    padding: 24px 0;
+  }
+
+  .menu-cta {
+    margin-top: 56px;
+    padding-top: 40px;
+  }
+
+  .menu-cta .hero-buttons {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .cardapio-story-section {
+    background-attachment: scroll;
+    background-image:
+      linear-gradient(180deg, rgba(13, 13, 13, 0.82) 0%, rgba(13, 13, 13, 0.72) 55%, rgba(13, 13, 13, 0.88) 100%),
+      url('/img/equipe/equipe-02.png');
+    background-position: center, center 50%;
+    background-size: cover;
+  }
 }

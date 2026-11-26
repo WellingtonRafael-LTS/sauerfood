@@ -45,7 +45,7 @@ export function renderHeader(container) {
   }).join('');
 
   container.innerHTML = `
-    <header class="site-header">
+    <div class="site-header">
       <div class="header-container">
         <a href="/wireframes/inicio/index.html" class="header-logo" aria-label="Sauer Food - Ir para a página inicial">
           <img src="/img/brand/logo-sauer.png" alt="Logomarca Sauer Food" />
@@ -67,7 +67,7 @@ export function renderHeader(container) {
           </div>
         </nav>
       </div>
-    </header>
+    </div>
   `;
 
   const header = container.querySelector('.site-header');
