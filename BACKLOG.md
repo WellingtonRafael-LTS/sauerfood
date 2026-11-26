@@ -6,6 +6,141 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 26/11/2026 — Alinhamento do Hero do Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Igualada a distancia lateral do texto do hero do Cardapio ao hero dos Eventos sem alterar a imagem de fundo.
+
+### 26/11/2026 — Remocao dos Espacos Vazios dos Cards de Proteinas
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Removida a linha inferior e reduzido o preenchimento vazio dos cards de proteinas.
+
+### 25/11/2026 — Efeitos de Sombra nas Imagens do Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Unificados os efeitos de sombra e ampliacao no hover das imagens de conteudo e dos cards de modalidade.
+
+### 25/11/2026 — Espacamento do Bloco do Hamburguer
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Adicionado um pequeno espaco entre o texto e a imagem do hamburguer.
+
+### 25/11/2026 — Reforco do Alinhamento do Texto
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Sobreposta a regra global de texto justificado para alinhar a descricao do hamburguer a direita.
+
+### 25/11/2026 — Alinhamento do Texto do Hamburguer
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Quebrada a descricao em duas linhas e alinhado o bloco do hamburguer a direita, junto a base da imagem.
+
+### 25/11/2026 — Ampliacao do Bloco do Hamburguer
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Redistribuido o espaco da introducao para alargar o texto do hamburguer e manter o titulo em uma linha no desktop.
+
+### 25/11/2026 — Correcao do Posicionamento do Bloco de Hamburguer
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Fixada a imagem e a descricao na mesma linha da grade, evitando que a descricao caia abaixo da imagem.
+
+### 25/11/2026 — Layout Lado a Lado em Telas Menores
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Mantidos o texto do hamburguer e a imagem lado a lado no breakpoint mobile.
+
+### 25/11/2026 — Correcao da Imagem e Introducao de Entradas
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Restaurada uma altura minima para a imagem e limitado o paragrafo para acomodar o bloco do hamburguer ao lado.
+
+### 25/11/2026 — Ajuste de Proporcao da Introducao de Entradas
+- Arquivos: `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/README.md`, `BACKLOG.md`.
+- Resumo:
+  - Reduzida a imagem para acompanhar a altura da introducao e posicionado o texto do hamburguer a esquerda dela.
+
+### 25/11/2026 — Cor dos Rótulos das Secoes do Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Corrigida a sobrescrita de cor para manter dourados os textos de apoio acima dos títulos de Entradas, Proteínas e Sobremesas.
+
+### 25/11/2026 — Frase de Fechamento das Entradas
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Movida a frase de destaque para abaixo da lista de entradas e igualada sua tipografia e tamanho ao fechamento das sobremesas.
+
+### 25/11/2026 — Ajuste da Opcao de Hamburguer
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/README.md`, `BACKLOG.md`.
+- Resumo:
+  - Posicionada a opcao de hamburguer abaixo da imagem da introducao de Entradas.
+
+### 25/11/2026 — Reorganizacao da Secao de Entradas
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/README.md`, `BACKLOG.md`.
+- Resumo:
+  - Posicionados titulo e imagem lado a lado, com as entradas distribuidas em tres colunas e o hambúrguer opcional em um bloco separado abaixo.
+
+### 25/11/2026 — Reposicionamento Central da Imagem de Fundo
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Reduzido pela metade o posicionamento vertical da imagem, de 100% para 50%.
+
+### 25/11/2026 — Posicionamento Inferior da Imagem de Fundo
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Alinhada a imagem de fundo ao limite inferior da secao em desktop e mobile.
+
+### 25/11/2026 — Novo Ajuste da Posicao da Imagem de Fundo
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Duplicado o deslocamento vertical da imagem de fundo da secao de experiencia.
+
+### 25/11/2026 — Ajuste da Posicao da Imagem de Fundo
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Deslocada levemente para cima a imagem de fundo da secao de experiencia.
+
+### 25/11/2026 — Restauracao do Efeito de Fundo Original
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Restaurado o fundo fixo no desktop, mantendo a imagem cobrindo toda a seção.
+
+### 25/11/2026 — Imagem de Fundo Preenchendo a Secao de Experiencia
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Ajustado o fundo para preencher toda a seção, recortando as partes superior e inferior da imagem.
+
+### 25/11/2026 — Ajuste da Escala da Imagem de Fundo do Cardapio
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Reduzido o recorte da imagem `equipe-02.png` no banner para mostrar mais da foto.
+
+### 25/11/2026 — Correcao da Imagem de Fundo da Secao de Experiencia
+- Arquivos: `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Atualizada a imagem de fundo da secao para `equipe-02.png`, conforme solicitado.
+
+### 25/11/2026 — Secao de Experiencia com Imagem da Equipe no Cardapio
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/README.md`, `BACKLOG.md`.
+- Resumo:
+  - Substituida a lista de recursos futuros por uma secao de transicao com imagem de fundo da equipe, texto institucional e CTA final preservado.
+
+### 25/11/2026 — Reorganizacao da Secao de Sobremesas
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Posicionada a imagem ao lado do titulo e da descricao, com os dois grupos de sobremesas abaixo ocupando toda a largura disponivel.
+
+### 25/11/2026 — Ajuste da Apresentacao Textual de Gastro Fire
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
+- Resumo:
+  - Mantido Gastro Fire como titulo unico, com frase de destaque em negrito e explicacao breve antes do passo a passo.
+
+### 25/11/2026 — Orientacoes de Orcamento Antes do Cardapio Gastro Fire
+- Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `wireframes/cardapio/README.md`, `BACKLOG.md`.
+- Resumo:
+  - Movidas as orientacoes de montagem do orcamento para Gastro Fire, substituindo as tags e mantendo os recursos futuros e o CTA na secao final.
+
 ### 24/11/2026 — Padrao de Cabecalho nas Secoes do Cardapio
 - Arquivos: `wireframes/cardapio/index.html`, `wireframes/cardapio/cardapio.css`, `BACKLOG.md`.
 - Resumo:
