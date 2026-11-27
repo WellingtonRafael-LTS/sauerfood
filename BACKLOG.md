@@ -6,6 +6,12 @@ Regra: registrar de forma sucinta toda alteracao feita no projeto (data, arquivo
 
 ## Historico de Alteracoes
 
+### 26/11/2026 — Correcao Estrutural do Ponto de Montagem do Footer no Contato
+- Arquivos: `wireframes/contato/index.html`, `BACKLOG.md`.
+- Resumo:
+  - Eliminados o bloco de script duplicado e o botao whatsapp estatico residual no final do HTML de contato.
+  - Corrigido o container de montagem para <div id="footer-root"></div>, restabelecendo a montagem automatica do footer global pelo main.js com 100% de sucesso em build e lint.
+
 ### 26/11/2026 — Remocao do Efeito de Brilho no Foco de Observacoes
 - Arquivos: `wireframes/contato/contato.css`, `BACKLOG.md`.
 - Resumo:
